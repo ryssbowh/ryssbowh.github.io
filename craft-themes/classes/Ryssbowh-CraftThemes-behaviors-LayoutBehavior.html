@@ -110,12 +110,17 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="behaviors/LayoutBehavior.php"><a href="files/behaviors-layoutbehavior.html"><abbr title="behaviors/LayoutBehavior.php">LayoutBehavior.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
-        
-    <section class="phpdocumentor-description"></section>
+            <p class="phpdocumentor-summary">This behaviour is attached to some Craft elements (CategoryGroup, EntryType, Volume, TagGroup, GlobalSet)</p>
+
+    <section class="phpdocumentor-description"><p>It gives a shorter way to access those element's layouts :
+$group = \Craft::$app-&gt;categories-&gt;getGroupById(1);
+$layout = $group-&gt;getLayout('theme-handle');
+$layout = $group-&gt;getCurrentThemeLayout();</p>
+</section>
 
 
 
@@ -133,7 +138,7 @@
                 <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Ryssbowh-CraftThemes-behaviors-LayoutBehavior.html#property_owner">$owner</a>
     <span>
-                &nbsp;: <abbr title="\Ryssbowh\CraftThemes\behaviors\CategoryGroup">CategoryGroup</abbr>|<abbr title="\Ryssbowh\CraftThemes\behaviors\EntryType">EntryType</abbr>|<abbr title="\Ryssbowh\CraftThemes\behaviors\Volume">Volume</abbr>|<abbr title="\Ryssbowh\CraftThemes\behaviors\TagGroup">TagGroup</abbr>|<abbr title="\Ryssbowh\CraftThemes\behaviors\GlobalSet">GlobalSet</abbr>            </span>
+                &nbsp;: <abbr title="\craft\models\CategoryGroup">CategoryGroup</abbr>|<abbr title="\craft\models\EntryType">EntryType</abbr>|<abbr title="\craft\base\Volume">Volume</abbr>|<abbr title="\craft\models\TagGroup">TagGroup</abbr>|<abbr title="\craft\elements\GlobalSet">GlobalSet</abbr>            </span>
 </dt>
 <dd></dd>
 
@@ -149,7 +154,7 @@
     <span>
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>|null    </span>
 </dt>
-<dd>Layout getter fro the current theme</dd>
+<dd>Layout getter from the current theme</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-behaviors-LayoutBehavior.html#method_getLayout">getLayout()</a>
@@ -186,14 +191,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="behaviors/LayoutBehavior.php"><a href="files/behaviors-layoutbehavior.html"><abbr title="behaviors/LayoutBehavior.php">LayoutBehavior.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Ryssbowh\CraftThemes\behaviors\CategoryGroup">CategoryGroup</abbr>|<abbr title="\Ryssbowh\CraftThemes\behaviors\EntryType">EntryType</abbr>|<abbr title="\Ryssbowh\CraftThemes\behaviors\Volume">Volume</abbr>|<abbr title="\Ryssbowh\CraftThemes\behaviors\TagGroup">TagGroup</abbr>|<abbr title="\Ryssbowh\CraftThemes\behaviors\GlobalSet">GlobalSet</abbr></span>
+        <span class="phpdocumentor-signature__type"><abbr title="\craft\models\CategoryGroup">CategoryGroup</abbr>|<abbr title="\craft\models\EntryType">EntryType</abbr>|<abbr title="\craft\base\Volume">Volume</abbr>|<abbr title="\craft\models\TagGroup">TagGroup</abbr>|<abbr title="\craft\elements\GlobalSet">GlobalSet</abbr></span>
     <span class="phpdocumentor-signature__name">$owner</span>
     </code>
 
@@ -218,7 +223,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="behaviors/LayoutBehavior.php"><a href="files/behaviors-layoutbehavior.html"><abbr title="behaviors/LayoutBehavior.php">LayoutBehavior.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -254,11 +259,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="behaviors/LayoutBehavior.php"><a href="files/behaviors-layoutbehavior.html"><abbr title="behaviors/LayoutBehavior.php">LayoutBehavior.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Layout getter fro the current theme</p>
+        <p class="phpdocumentor-summary">Layout getter from the current theme</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -287,7 +292,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="behaviors/LayoutBehavior.php"><a href="files/behaviors-layoutbehavior.html"><abbr title="behaviors/LayoutBehavior.php">LayoutBehavior.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -305,7 +310,9 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>theme instance or theme handle</p>
+</section>
+
             </dd>
             </dl>
 

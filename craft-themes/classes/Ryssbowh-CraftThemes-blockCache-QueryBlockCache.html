@@ -94,7 +94,7 @@
     QueryBlockCache
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html"><abbr title="\Ryssbowh\CraftThemes\blockCache\BlockCacheStrategy">BlockCacheStrategy</abbr></a>
+        extends <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html"><abbr title="\Ryssbowh\CraftThemes\base\BlockCacheStrategy">BlockCacheStrategy</abbr></a>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -110,12 +110,14 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="blockCache/QueryBlockCache.php"><a href="files/blockcache-queryblockcache.html"><abbr title="blockCache/QueryBlockCache.php">QueryBlockCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
-        
-    <section class="phpdocumentor-description"></section>
+            <p class="phpdocumentor-summary">This strategy will cache blocks differently for each url path, query string included.</p>
+
+    <section class="phpdocumentor-description"><p>It has options to cache differently for each user, for guests/non guests or for each view port (mobile, tablet, desktop)</p>
+</section>
 
 
 
@@ -138,28 +140,28 @@
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#property__options">$_options</a>
+    <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#property__options">$_options</a>
     <span>
-                &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-BlockCacheStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></a>            </span>
+                &nbsp;: <abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr>            </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#method_fields">fields()</a>
+    <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_fields">fields()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#method_flush">flush()</a>
+    <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_flush">flush()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Flush cache</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#method_getCache">getCache()</a>
+    <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_getCache">getCache()</a>
     <span>
                         &nbsp;: string|null    </span>
 </dt>
@@ -187,28 +189,28 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#method_getOptions">getOptions()</a>
+    <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_getOptions">getOptions()</a>
     <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-BlockCacheStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></a>    </span>
+                        &nbsp;: <abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr>    </span>
 </dt>
 <dd>Get options model (populated)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-blockCache-QueryBlockCache.html#method_getOptionsModel">getOptionsModel()</a>
     <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-BlockCacheStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></a>    </span>
+                        &nbsp;: <abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr>    </span>
 </dt>
 <dd>Get options model</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#method_setCache">setCache()</a>
+    <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_setCache">setCache()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Set a block cache</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#method_buildKey">buildKey()</a>
+    <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_buildKey">buildKey()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
@@ -254,7 +256,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="blockCache/QueryBlockCache.php"><a href="files/blockcache-queryblockcache.html"><abbr title="blockCache/QueryBlockCache.php">QueryBlockCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -291,21 +293,21 @@
 >
     <h4 class="phpdocumentor-element__name" id="property__options">
         $_options
-        <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#property__options" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#property__options" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="blockCache/BlockCacheStrategy.php"><a href="files/blockcache-blockcachestrategy.html"><abbr title="blockCache/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="base/BlockCacheStrategy.php"><a href="files/base-blockcachestrategy.html"><abbr title="base/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Ryssbowh-CraftThemes-models-BlockCacheStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></a></span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></span>
     <span class="phpdocumentor-signature__name">$_options</span>
     </code>
 
@@ -329,12 +331,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_fields">
         fields()
-        <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#method_fields" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_fields" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="blockCache/BlockCacheStrategy.php"><a href="files/blockcache-blockcachestrategy.html"><abbr title="blockCache/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="base/BlockCacheStrategy.php"><a href="files/base-blockcachestrategy.html"><abbr title="base/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -374,12 +376,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_flush">
         flush()
-        <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#method_flush" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_flush" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="blockCache/BlockCacheStrategy.php"><a href="files/blockcache-blockcachestrategy.html"><abbr title="blockCache/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="base/BlockCacheStrategy.php"><a href="files/base-blockcachestrategy.html"><abbr title="base/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -420,12 +422,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getCache">
         getCache()
-        <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#method_getCache" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_getCache" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="blockCache/BlockCacheStrategy.php"><a href="files/blockcache-blockcachestrategy.html"><abbr title="blockCache/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="base/BlockCacheStrategy.php"><a href="files/base-blockcachestrategy.html"><abbr title="base/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -481,7 +483,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="blockCache/QueryBlockCache.php"><a href="files/blockcache-queryblockcache.html"><abbr title="blockCache/QueryBlockCache.php">QueryBlockCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -527,7 +529,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="blockCache/QueryBlockCache.php"><a href="files/blockcache-queryblockcache.html"><abbr title="blockCache/QueryBlockCache.php">QueryBlockCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -572,7 +574,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="blockCache/QueryBlockCache.php"><a href="files/blockcache-queryblockcache.html"><abbr title="blockCache/QueryBlockCache.php">QueryBlockCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -612,12 +614,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getOptions">
         getOptions()
-        <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#method_getOptions" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_getOptions" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="blockCache/BlockCacheStrategy.php"><a href="files/blockcache-blockcachestrategy.html"><abbr title="blockCache/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="base/BlockCacheStrategy.php"><a href="files/base-blockcachestrategy.html"><abbr title="base/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -625,7 +627,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockCacheStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">getOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></span></code>
 
     
     
@@ -645,7 +647,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockCacheStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></span>
             &mdash;
         
     
@@ -663,7 +665,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="blockCache/QueryBlockCache.php"><a href="files/blockcache-queryblockcache.html"><abbr title="blockCache/QueryBlockCache.php">QueryBlockCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -671,7 +673,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getOptionsModel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockCacheStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">getOptionsModel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></span></code>
 
     
     
@@ -691,7 +693,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockCacheStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></span>
             &mdash;
         
     
@@ -704,12 +706,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_setCache">
         setCache()
-        <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#method_setCache" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_setCache" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="blockCache/BlockCacheStrategy.php"><a href="files/blockcache-blockcachestrategy.html"><abbr title="blockCache/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="base/BlockCacheStrategy.php"><a href="files/base-blockcachestrategy.html"><abbr title="base/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -774,12 +776,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_buildKey">
         buildKey()
-        <a href="classes/Ryssbowh-CraftThemes-blockCache-BlockCacheStrategy.html#method_buildKey" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_buildKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="blockCache/BlockCacheStrategy.php"><a href="files/blockcache-blockcachestrategy.html"><abbr title="blockCache/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="base/BlockCacheStrategy.php"><a href="files/base-blockcachestrategy.html"><abbr title="base/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -822,7 +824,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="blockCache/QueryBlockCache.php"><a href="files/blockcache-queryblockcache.html"><abbr title="blockCache/QueryBlockCache.php">QueryBlockCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -878,7 +880,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="blockCache/QueryBlockCache.php"><a href="files/blockcache-queryblockcache.html"><abbr title="blockCache/QueryBlockCache.php">QueryBlockCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -924,7 +926,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="blockCache/QueryBlockCache.php"><a href="files/blockcache-queryblockcache.html"><abbr title="blockCache/QueryBlockCache.php">QueryBlockCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
