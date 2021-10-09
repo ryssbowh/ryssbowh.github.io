@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Documentation</title>
+    <title>Craft Themes v3 Class Reference</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
@@ -23,7 +23,7 @@
     </head>
 <body id="top">
     <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Craft Themes v3 Class Reference</a></h1>
     <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
     <label class="phpdocumentor-header__menu-icon" for="menu-button">
         <i class="fas fa-bars"></i>
@@ -101,14 +101,14 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/interfaces/BlockCacheStrategyInterface.php"><a href="files/src-interfaces-blockcachestrategyinterface.html"><abbr title="src/interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">8</span>
+    <span class="phpdocumentor-element-found-in__line">11</span>
 
     </aside>
 
-        
-    <section class="phpdocumentor-description"></section>
+            <p class="phpdocumentor-summary">A cache strategy will cache a block differently according to their internal options</p>
+
 
 
 
@@ -133,7 +133,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getCache">getCache()</a>
     <span>
-                        &nbsp;: null    </span>
+                        &nbsp;: string|null    </span>
 </dt>
 <dd>get a block cache data.</dd>
 
@@ -201,9 +201,9 @@
         <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_flush" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/interfaces/BlockCacheStrategyInterface.php"><a href="files/src-interfaces-blockcachestrategyinterface.html"><abbr title="src/interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -234,9 +234,9 @@
         <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getCache" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/interfaces/BlockCacheStrategyInterface.php"><a href="files/src-interfaces-blockcachestrategyinterface.html"><abbr title="src/interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -244,7 +244,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$block</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null</span></code>
+                <span class="phpdocumentor-signature__name">getCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$block</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
         <section class="phpdocumentor-description"><p>Returns null if cache is not set.</p>
 </section>
@@ -263,7 +263,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">null</span>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
             &mdash;
         
     
@@ -279,9 +279,9 @@
         <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getDescription" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/interfaces/BlockCacheStrategyInterface.php"><a href="files/src-interfaces-blockcachestrategyinterface.html"><abbr title="src/interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -312,9 +312,9 @@
         <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getHandle" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/interfaces/BlockCacheStrategyInterface.php"><a href="files/src-interfaces-blockcachestrategyinterface.html"><abbr title="src/interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -345,9 +345,9 @@
         <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/interfaces/BlockCacheStrategyInterface.php"><a href="files/src-interfaces-blockcachestrategyinterface.html"><abbr title="src/interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -378,9 +378,9 @@
         <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getOptions" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/interfaces/BlockCacheStrategyInterface.php"><a href="files/src-interfaces-blockcachestrategyinterface.html"><abbr title="src/interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -411,9 +411,9 @@
         <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getOptionsModel" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/interfaces/BlockCacheStrategyInterface.php"><a href="files/src-interfaces-blockcachestrategyinterface.html"><abbr title="src/interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -444,9 +444,9 @@
         <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_setCache" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/interfaces/BlockCacheStrategyInterface.php"><a href="files/src-interfaces-blockcachestrategyinterface.html"><abbr title="src/interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
