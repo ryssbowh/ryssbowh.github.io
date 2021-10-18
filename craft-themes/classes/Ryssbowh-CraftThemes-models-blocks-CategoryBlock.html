@@ -111,11 +111,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/blocks/CategoryBlock.php"><a href="files/models-blocks-categoryblock.html"><abbr title="models/blocks/CategoryBlock.php">CategoryBlock.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Base class for all blocks</p>
+            <p class="phpdocumentor-summary">Block displaying some categories</p>
 
 
 
@@ -188,9 +188,9 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#property__category">$_category</a>
+    <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#property__categories">$_categories</a>
     <span>
-                &nbsp;: <abbr title="\craft\elements\Category">Category</abbr>            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd></dd>
 
@@ -223,7 +223,7 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#method_fields">fields()</a>
+    <a href="classes/Ryssbowh-CraftThemes-models-Block.html#method_fields">fields()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
@@ -239,23 +239,16 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-Block.html#method_getCacheStrategyOptions">getCacheStrategyOptions()</a>
     <span>
-                        &nbsp;: <abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr>|null    </span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-blockCacheOptions-BlockCacheStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\blockCacheOptions\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></a>|null    </span>
 </dt>
 <dd>Get block cache strategy options</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#method_getCategory">getCategory()</a>
+    <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#method_getCategories">getCategories()</a>
     <span>
                         &nbsp;: <abbr title="\craft\elements\Category">Category</abbr>|null    </span>
 </dt>
 <dd>Get category as defined in options</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#method_getCategoryLayout">getCategoryLayout()</a>
-    <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>|null    </span>
-</dt>
-<dd>Get layout associated to category defined in options</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-Block.html#method_getConfig">getConfig()</a>
@@ -265,11 +258,11 @@
 <dd>Project config to be saved</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#method_getGroups">getGroups()</a>
+    <a href="classes/Ryssbowh-CraftThemes-models-Block.html#method_getErrors">getErrors()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: mixed    </span>
 </dt>
-<dd>Get all category groups as array</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-Block.html#method_getHandle">getHandle()</a>
@@ -328,6 +321,13 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-Block.html#method_hasErrors">hasErrors()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-Block.html#method_init">init()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -368,13 +368,6 @@
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Options setter</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-models-Block.html#method_toArray">toArray()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
 
         </dl>
 
@@ -436,7 +429,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/blocks/CategoryBlock.php"><a href="files/models-blocks-categoryblock.html"><abbr title="models/blocks/CategoryBlock.php">CategoryBlock.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -651,25 +644,25 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__category">
-        $_category
-        <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#property__category" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property__categories">
+        $_categories
+        <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#property__categories" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/blocks/CategoryBlock.php"><a href="files/models-blocks-categoryblock.html"><abbr title="models/blocks/CategoryBlock.php">CategoryBlock.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\craft\elements\Category">Category</abbr></span>
-    <span class="phpdocumentor-signature__name">$_category</span>
-     = <span class="phpdocumentor-signature__default-value">false</span></code>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$_categories</span>
+    </code>
 
     
     
@@ -760,7 +753,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">289</span>
+    <span class="phpdocumentor-element-found-in__line">317</span>
 
     </aside>
 
@@ -846,12 +839,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_fields">
         fields()
-        <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#method_fields" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-models-Block.html#method_fields" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="models/blocks/CategoryBlock.php"><a href="files/models-blocks-categoryblock.html"><abbr title="models/blocks/CategoryBlock.php">CategoryBlock.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 
     </aside>
 
@@ -896,7 +889,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">270</span>
+    <span class="phpdocumentor-element-found-in__line">298</span>
 
     </aside>
 
@@ -941,7 +934,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">258</span>
 
     </aside>
 
@@ -949,14 +942,14 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getCacheStrategyOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr>|null</span></code>
+                <span class="phpdocumentor-signature__name">getCacheStrategyOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-blockCacheOptions-BlockCacheStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\blockCacheOptions\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></a>|null</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\models\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr>|null</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-blockCacheOptions-BlockCacheStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\blockCacheOptions\BlockCacheStrategyOptions">BlockCacheStrategyOptions</abbr></a>|null</span>
             &mdash;
         
     
@@ -967,14 +960,14 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getCategory">
-        getCategory()
-        <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#method_getCategory" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getCategories">
+        getCategories()
+        <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#method_getCategories" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/blocks/CategoryBlock.php"><a href="files/models-blocks-categoryblock.html"><abbr title="models/blocks/CategoryBlock.php">CategoryBlock.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -982,7 +975,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getCategory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\craft\elements\Category">Category</abbr>|null</span></code>
+                <span class="phpdocumentor-signature__name">getCategories</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\craft\elements\Category">Category</abbr>|null</span></code>
 
     
     
@@ -990,39 +983,6 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\craft\elements\Category">Category</abbr>|null</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getCategoryLayout">
-        getCategoryLayout()
-        <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#method_getCategoryLayout" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="models/blocks/CategoryBlock.php"><a href="files/models-blocks-categoryblock.html"><abbr title="models/blocks/CategoryBlock.php">CategoryBlock.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">95</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get layout associated to category defined in options</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getCategoryLayout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>|null</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>|null</span>
             &mdash;
         
     
@@ -1079,29 +1039,52 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getGroups">
-        getGroups()
-        <a href="classes/Ryssbowh-CraftThemes-models-blocks-CategoryBlock.html#method_getGroups" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getErrors">
+        getErrors()
+        <a href="classes/Ryssbowh-CraftThemes-models-Block.html#method_getErrors" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="models/blocks/CategoryBlock.php"><a href="files/models-blocks-categoryblock.html"><abbr title="models/blocks/CategoryBlock.php">CategoryBlock.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get all category groups as array</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getGroups</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getErrors</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attribute</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$attribute</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
-    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
         
     
@@ -1119,7 +1102,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 
     </aside>
 
@@ -1211,7 +1194,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/blocks/CategoryBlock.php"><a href="files/models-blocks-categoryblock.html"><abbr title="models/blocks/CategoryBlock.php">CategoryBlock.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -1257,7 +1240,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">203</span>
+    <span class="phpdocumentor-element-found-in__line">240</span>
 
     </aside>
 
@@ -1303,7 +1286,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/blocks/CategoryBlock.php"><a href="files/models-blocks-categoryblock.html"><abbr title="models/blocks/CategoryBlock.php">CategoryBlock.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -1348,7 +1331,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">244</span>
+    <span class="phpdocumentor-element-found-in__line">270</span>
 
     </aside>
 
@@ -1394,7 +1377,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/blocks/CategoryBlock.php"><a href="files/models-blocks-categoryblock.html"><abbr title="models/blocks/CategoryBlock.php">CategoryBlock.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -1440,7 +1423,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/blocks/CategoryBlock.php"><a href="files/models-blocks-categoryblock.html"><abbr title="models/blocks/CategoryBlock.php">CategoryBlock.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -1468,6 +1451,62 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasErrors">
+        hasErrors()
+        <a href="classes/Ryssbowh-CraftThemes-models-Block.html#method_hasErrors" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">173</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">hasErrors</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attribute</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$attribute</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
         
     
@@ -1576,7 +1615,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">216</span>
 
     </aside>
 
@@ -1622,7 +1661,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">297</span>
+    <span class="phpdocumentor-element-found-in__line">325</span>
 
     </aside>
 
@@ -1724,7 +1763,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">255</span>
+    <span class="phpdocumentor-element-found-in__line">281</span>
 
     </aside>
 
@@ -1743,78 +1782,6 @@
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_toArray">
-        toArray()
-        <a href="classes/Ryssbowh-CraftThemes-models-Block.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="models/Block.php"><a href="files/models-block.html"><abbr title="models/Block.php">Block.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">219</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fields</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$expand</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$recursive</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$fields</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$expand</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$recursive</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
             </dd>
             </dl>
 

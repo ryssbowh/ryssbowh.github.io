@@ -110,7 +110,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="controllers/CpAjaxController.php"><a href="files/controllers-cpajaxcontroller.html"><abbr title="controllers/CpAjaxController.php">CpAjaxController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -201,18 +201,25 @@
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionCategories">actionCategories()</a>
+    <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionAssetsData">actionAssetsData()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Return categories for a category group uid</dd>
+<dd>Return assets data for an array of ids</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionEntries">actionEntries()</a>
+    <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionCategoriesData">actionCategoriesData()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Return entries for an entry type uid</dd>
+<dd>Return categories data for an array of ids</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionEntriesData">actionEntriesData()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Return entries data for an array of ids</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionInstall">actionInstall()</a>
@@ -222,11 +229,11 @@
 <dd>(Re)install all layouts</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionUsers">actionUsers()</a>
+    <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionUsersData">actionUsersData()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Return users</dd>
+<dd>Return users data for an array of ids</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_afterAction">afterAction()</a>
@@ -594,35 +601,25 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_actionCategories">
-        actionCategories()
-        <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionCategories" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_actionAssetsData">
+        actionAssetsData()
+        <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionAssetsData" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="controllers/CpAjaxController.php"><a href="files/controllers-cpajaxcontroller.html"><abbr title="controllers/CpAjaxController.php">CpAjaxController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Return categories for a category group uid</p>
+        <p class="phpdocumentor-summary">Return assets data for an array of ids</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">actionCategories</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">actionAssetsData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -637,9 +634,9 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_actionEntries">
-        actionEntries()
-        <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionEntries" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_actionCategoriesData">
+        actionCategoriesData()
+        <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionCategoriesData" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="controllers/CpAjaxController.php"><a href="files/controllers-cpajaxcontroller.html"><abbr title="controllers/CpAjaxController.php">CpAjaxController.php</abbr></a></abbr>
@@ -648,24 +645,47 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">Return entries for an entry type uid</p>
+        <p class="phpdocumentor-summary">Return categories data for an array of ids</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">actionEntries</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">actionCategoriesData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+    
+    
 
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_actionEntriesData">
+        actionEntriesData()
+        <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionEntriesData" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/CpAjaxController.php"><a href="files/controllers-cpajaxcontroller.html"><abbr title="controllers/CpAjaxController.php">CpAjaxController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">121</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return entries data for an array of ids</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">actionEntriesData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -687,7 +707,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="controllers/CpAjaxController.php"><a href="files/controllers-cpajaxcontroller.html"><abbr title="controllers/CpAjaxController.php">CpAjaxController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -713,22 +733,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_actionUsers">
-        actionUsers()
-        <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionUsers" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_actionUsersData">
+        actionUsersData()
+        <a href="classes/Ryssbowh-CraftThemes-controllers-CpAjaxController.html#method_actionUsersData" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="controllers/CpAjaxController.php"><a href="files/controllers-cpajaxcontroller.html"><abbr title="controllers/CpAjaxController.php">CpAjaxController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Return users</p>
+        <p class="phpdocumentor-summary">Return users data for an array of ids</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">actionUsers</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">actionUsersData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
     
@@ -753,7 +773,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="controllers/CpAjaxController.php"><a href="files/controllers-cpajaxcontroller.html"><abbr title="controllers/CpAjaxController.php">CpAjaxController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -817,7 +837,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="controllers/CpAjaxController.php"><a href="files/controllers-cpajaxcontroller.html"><abbr title="controllers/CpAjaxController.php">CpAjaxController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
