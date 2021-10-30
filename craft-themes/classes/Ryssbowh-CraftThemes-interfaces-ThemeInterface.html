@@ -134,6 +134,20 @@ They define preferences for rendering page elements.</p>
 <dd>Callback after the theme has been set for a request</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_afterThemeInstall">afterThemeInstall()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Callback after the plugin is installed.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_afterThemeUninstall">afterThemeUninstall()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Callback after the plugin is uninstalled.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getAssetUrl">getAssetUrl()</a>
     <span>
                         &nbsp;: string    </span>
@@ -153,6 +167,13 @@ They define preferences for rendering page elements.</p>
                         &nbsp;: bool    </span>
 </dt>
 <dd>Does this theme have a preview image</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getIsThemeDataInstalled">getIsThemeDataInstalled()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Is the theme data (layouts etc) installed</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getParent">getParent()</a>
@@ -274,6 +295,76 @@ They define preferences for rendering page elements.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_afterThemeInstall">
+        afterThemeInstall()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_afterThemeInstall" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">128</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Callback after the plugin is installed.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">afterThemeInstall</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>At this point the theme data (layouts etc) is installed.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_afterThemeUninstall">
+        afterThemeUninstall()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_afterThemeUninstall" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">122</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Callback after the plugin is uninstalled.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">afterThemeUninstall</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>At this point the theme data (layouts etc) is uninstalled.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getAssetUrl">
         getAssetUrl()
         <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getAssetUrl" class="headerlink"><i class="fas fa-link"></i></a>
@@ -368,6 +459,39 @@ They define preferences for rendering page elements.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getHasPreview</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getIsThemeDataInstalled">
+        getIsThemeDataInstalled()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getIsThemeDataInstalled" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">116</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Is the theme data (layouts etc) installed</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getIsThemeDataInstalled</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
     

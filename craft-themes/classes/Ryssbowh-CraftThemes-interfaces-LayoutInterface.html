@@ -204,11 +204,18 @@ Layouts have regions, as defined by their theme.</p>
 <dd>Get description</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getDisplayByHandle">getDisplayByHandle()</a>
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getEditBlocksUrl">getEditBlocksUrl()</a>
     <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayInterface">DisplayInterface</abbr></a>|null    </span>
+                        &nbsp;: string    </span>
 </dt>
-<dd>Get a display by handle for a view mode</dd>
+<dd>Get the url to edit blocks.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getEditDisplaysUrl">getEditDisplaysUrl()</a>
+    <span>
+                        &nbsp;: string|null    </span>
+</dt>
+<dd>Get the url to edit displays for a view mode.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getElement">getElement()</a>
@@ -300,13 +307,6 @@ Layouts have regions, as defined by their theme.</p>
                         &nbsp;: string    </span>
 </dt>
 <dd>Render this layout for an element</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_replaceDisplay">replaceDisplay()</a>
-    <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>    </span>
-</dt>
-<dd>Replaces a display in this layout, based on its id.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_setBlocks">setBlocks()</a>
@@ -659,7 +659,7 @@ Layouts have regions, as defined by their theme.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
@@ -751,37 +751,68 @@ Layouts have regions, as defined by their theme.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getDisplayByHandle">
-        getDisplayByHandle()
-        <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getDisplayByHandle" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getEditBlocksUrl">
+        getEditBlocksUrl()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getEditBlocksUrl" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">192</span>
+    <span class="phpdocumentor-element-found-in__line">216</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get a display by handle for a view mode</p>
+        <p class="phpdocumentor-summary">Get the url to edit blocks.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getDisplayByHandle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$viewMode</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayInterface">DisplayInterface</abbr></a>|null</span></code>
+                <span class="phpdocumentor-signature__name">getEditBlocksUrl</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>Returns the blocks url for the default layout if this layout doesn't have blocks</p>
+</section>
 
     
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getEditDisplaysUrl">
+        getEditDisplaysUrl()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getEditDisplaysUrl" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">207</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the url to edit displays for a view mode.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getEditDisplaysUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>|string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$viewMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+        <section class="phpdocumentor-description"><p>Returns null if the layout doesn't have displays.
+Takes the default view mode if $viewMode is null</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$viewMode</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$handle</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>|string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -790,7 +821,7 @@ Layouts have regions, as defined by their theme.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayInterface">DisplayInterface</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
             &mdash;
         
     
@@ -874,7 +905,7 @@ Layouts have regions, as defined by their theme.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">214</span>
+    <span class="phpdocumentor-element-found-in__line">197</span>
 
     </aside>
 
@@ -1246,7 +1277,7 @@ Layouts have regions, as defined by their theme.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 
     </aside>
 
@@ -1279,49 +1310,6 @@ Layouts have regions, as defined by their theme.</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_replaceDisplay">
-        replaceDisplay()
-        <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_replaceDisplay" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">200</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Replaces a display in this layout, based on its id.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">replaceDisplay</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayInterface">DisplayInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$display</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a></span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$display</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayInterface">DisplayInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a></span>
             &mdash;
         
     

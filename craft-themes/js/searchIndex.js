@@ -101,26 +101,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-assets-FileDisplayerAsset.html#property_js"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\JquerySerializeJSON",
-            "name": "JquerySerializeJSON",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-assets-JquerySerializeJSON.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\JquerySerializeJSON\u003A\u003A\u0024sourcePath",
-            "name": "sourcePath",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-assets-JquerySerializeJSON.html#property_sourcePath"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\JquerySerializeJSON\u003A\u003A\u0024js",
-            "name": "js",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-assets-JquerySerializeJSON.html#property_js"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\JquerySerializeJSON\u003A\u003A\u0024depends",
-            "name": "depends",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-assets-JquerySerializeJSON.html#property_depends"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\ListAssets",
             "name": "ListAssets",
             "summary": "",
@@ -393,18 +373,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\base\\ThemePlugin\u003A\u003AafterThemeUninstall\u0028\u0029",
             "name": "afterThemeUninstall",
-            "summary": "",
+            "summary": "Callback\u0020after\u0020the\u0020plugin\u0020is\u0020uninstalled.",
             "url": "classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_afterThemeUninstall"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\base\\ThemePlugin\u003A\u003AafterThemeInstall\u0028\u0029",
             "name": "afterThemeInstall",
-            "summary": "",
+            "summary": "Callback\u0020after\u0020the\u0020plugin\u0020is\u0020installed.",
             "url": "classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_afterThemeInstall"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\base\\ThemePlugin\u003A\u003AafterSet\u0028\u0029",
             "name": "afterSet",
             "summary": "Callback\u0020after\u0020the\u0020theme\u0020has\u0020been\u0020set\u0020for\u0020a\u0020request",
             "url": "classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_afterSet"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\base\\ThemePlugin\u003A\u003AgetIsThemeDataInstalled\u0028\u0029",
+            "name": "getIsThemeDataInstalled",
+            "summary": "Is\u0020the\u0020theme\u0020data\u0020\u0028layouts\u0020etc\u0029\u0020installed",
+            "url": "classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getIsThemeDataInstalled"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\base\\ThemePlugin\u003A\u003AgetHasPreview\u0028\u0029",
             "name": "getHasPreview",
@@ -610,6 +595,16 @@ Search.appendIndex(
             "name": "getCurrentThemeLayout",
             "summary": "Layout\u0020getter\u0020from\u0020the\u0020current\u0020theme",
             "url": "classes/Ryssbowh-CraftThemes-behaviors-LayoutBehavior.html#method_getCurrentThemeLayout"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\behaviors\\LayoutBehavior\u003A\u003AgetEditDisplaysUrl\u0028\u0029",
+            "name": "getEditDisplaysUrl",
+            "summary": "Get\u0020the\u0020url\u0020to\u0020edit\u0020displays\u0020for\u0020a\u0020theme\u0020and\u0020a\u0020view\u0020mode.",
+            "url": "classes/Ryssbowh-CraftThemes-behaviors-LayoutBehavior.html#method_getEditDisplaysUrl"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\behaviors\\LayoutBehavior\u003A\u003AgetEditBlocksUrl\u0028\u0029",
+            "name": "getEditBlocksUrl",
+            "summary": "Get\u0020the\u0020url\u0020to\u0020edit\u0020blocks\u0020for\u0020a\u0020theme.",
+            "url": "classes/Ryssbowh-CraftThemes-behaviors-LayoutBehavior.html#method_getEditBlocksUrl"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\behaviors\\LayoutBehavior\u003A\u003A\u0024owner",
             "name": "owner",
@@ -1231,16 +1226,6 @@ Search.appendIndex(
             "summary": "Displayer\u0020defaults\u0020\u005B\u0027assetKind\u0027\u0020\u003D\u003E\u0020\u0027displayerHandle\u0027\u005D",
             "url": "classes/Ryssbowh-CraftThemes-events-FileDisplayerEvent.html#property_defaults"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\events\\InstallThemeEvent",
-            "name": "InstallThemeEvent",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-events-InstallThemeEvent.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\events\\InstallThemeEvent\u003A\u003A\u0024theme",
-            "name": "theme",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-events-InstallThemeEvent.html#property_theme"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\events\\LayoutEvent",
             "name": "LayoutEvent",
             "summary": "",
@@ -1471,15 +1456,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-exceptions-DisplayException.html#method_noCraftField"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\exceptions\\DisplayException\u003A\u003AonSave\u0028\u0029",
-            "name": "onSave",
+            "fqsen": "\\Ryssbowh\\CraftThemes\\exceptions\\DisplayException\u003A\u003AinvalidType\u0028\u0029",
+            "name": "invalidType",
             "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-exceptions-DisplayException.html#method_onSave"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\exceptions\\DisplayException\u003A\u003AcountErrors\u0028\u0029",
-            "name": "countErrors",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-exceptions-DisplayException.html#method_countErrors"
+            "url": "classes/Ryssbowh-CraftThemes-exceptions-DisplayException.html#method_invalidType"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\exceptions\\DisplayMatrixException",
             "name": "DisplayMatrixException",
@@ -2446,16 +2426,6 @@ Search.appendIndex(
             "summary": "Is\u0020a\u0020region\u0020defined",
             "url": "classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_hasRegion"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\LayoutInterface\u003A\u003AgetDisplayByHandle\u0028\u0029",
-            "name": "getDisplayByHandle",
-            "summary": "Get\u0020a\u0020display\u0020by\u0020handle\u0020for\u0020a\u0020view\u0020mode",
-            "url": "classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getDisplayByHandle"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\LayoutInterface\u003A\u003AreplaceDisplay\u0028\u0029",
-            "name": "replaceDisplay",
-            "summary": "Replaces\u0020a\u0020display\u0020in\u0020this\u0020layout,\u0020based\u0020on\u0020its\u0020id.",
-            "url": "classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_replaceDisplay"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\LayoutInterface\u003A\u003AgetCraftFields\u0028\u0029",
             "name": "getCraftFields",
             "summary": "Get\u0020all\u0020craft\u0020fields\u0020defined\u0020on\u0020this\u0020layout\u0027s\u0020element",
@@ -2465,6 +2435,16 @@ Search.appendIndex(
             "name": "getFieldLayout",
             "summary": "Get\u0020layout\u0027s\u0020element\u0020field\u0020layout",
             "url": "classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getFieldLayout"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\LayoutInterface\u003A\u003AgetEditDisplaysUrl\u0028\u0029",
+            "name": "getEditDisplaysUrl",
+            "summary": "Get\u0020the\u0020url\u0020to\u0020edit\u0020displays\u0020for\u0020a\u0020view\u0020mode.",
+            "url": "classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getEditDisplaysUrl"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\LayoutInterface\u003A\u003AgetEditBlocksUrl\u0028\u0029",
+            "name": "getEditBlocksUrl",
+            "summary": "Get\u0020the\u0020url\u0020to\u0020edit\u0020blocks.",
+            "url": "classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getEditBlocksUrl"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\LayoutInterface\u003A\u003Arender\u0028\u0029",
             "name": "render",
@@ -2505,6 +2485,11 @@ Search.appendIndex(
             "name": "getBlocks",
             "summary": "Blocks\u0020getter",
             "url": "classes/Ryssbowh-CraftThemes-interfaces-RegionInterface.html#method_getBlocks"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\RegionInterface\u003A\u003AhasBlocks\u0028\u0029",
+            "name": "hasBlocks",
+            "summary": "Does\u0020this\u0020region\u0020have\u0020blocks",
+            "url": "classes/Ryssbowh-CraftThemes-interfaces-RegionInterface.html#method_hasBlocks"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\RegionInterface\u003A\u003AgetVisibleBlocks\u0028\u0029",
             "name": "getVisibleBlocks",
@@ -2605,6 +2590,21 @@ Search.appendIndex(
             "name": "getRegionsTemplate",
             "summary": "Get\u0020the\u0020base\u0020template\u0020for\u0020rendering\u0020regions",
             "url": "classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getRegionsTemplate"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\ThemeInterface\u003A\u003AgetIsThemeDataInstalled\u0028\u0029",
+            "name": "getIsThemeDataInstalled",
+            "summary": "Is\u0020the\u0020theme\u0020data\u0020\u0028layouts\u0020etc\u0029\u0020installed",
+            "url": "classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getIsThemeDataInstalled"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\ThemeInterface\u003A\u003AafterThemeUninstall\u0028\u0029",
+            "name": "afterThemeUninstall",
+            "summary": "Callback\u0020after\u0020the\u0020plugin\u0020is\u0020uninstalled.",
+            "url": "classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_afterThemeUninstall"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\ThemeInterface\u003A\u003AafterThemeInstall\u0028\u0029",
+            "name": "afterThemeInstall",
+            "summary": "Callback\u0020after\u0020the\u0020plugin\u0020is\u0020installed.",
+            "url": "classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_afterThemeInstall"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\ThemePreferencesInterface",
             "name": "ThemePreferencesInterface",
@@ -6291,6 +6291,11 @@ Search.appendIndex(
             "summary": "Validates\u0020custom\u0020attribute",
             "url": "classes/Ryssbowh-CraftThemes-models-fileDisplayerOptions-ImageTransformOptions.html#method_validateCustom"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fileDisplayerOptions\\ImageTransformOptions\u003A\u003AvalidateSizes\u0028\u0029",
+            "name": "validateSizes",
+            "summary": "Validates\u0020custom\u0020attribute",
+            "url": "classes/Ryssbowh-CraftThemes-models-fileDisplayerOptions-ImageTransformOptions.html#method_validateSizes"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fileDisplayerOptions\\ImageTransformOptions\u003A\u003A\u0024transform",
             "name": "transform",
             "summary": "",
@@ -6300,6 +6305,11 @@ Search.appendIndex(
             "name": "custom",
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-models-fileDisplayerOptions-ImageTransformOptions.html#property_custom"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fileDisplayerOptions\\ImageTransformOptions\u003A\u003A\u0024sizes",
+            "name": "sizes",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-models-fileDisplayerOptions-ImageTransformOptions.html#property_sizes"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fileDisplayerOptions\\LinkOptions",
             "name": "LinkOptions",
@@ -6916,16 +6926,6 @@ Search.appendIndex(
             "summary": "Is\u0020a\u0020region\u0020defined",
             "url": "classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_hasRegion"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\layouts\\Layout\u003A\u003AgetDisplayByHandle\u0028\u0029",
-            "name": "getDisplayByHandle",
-            "summary": "Get\u0020a\u0020display\u0020by\u0020handle\u0020for\u0020a\u0020view\u0020mode",
-            "url": "classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getDisplayByHandle"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\layouts\\Layout\u003A\u003AreplaceDisplay\u0028\u0029",
-            "name": "replaceDisplay",
-            "summary": "Replaces\u0020a\u0020display\u0020in\u0020this\u0020layout,\u0020based\u0020on\u0020its\u0020id.",
-            "url": "classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_replaceDisplay"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\layouts\\Layout\u003A\u003AgetCraftFields\u0028\u0029",
             "name": "getCraftFields",
             "summary": "Get\u0020all\u0020craft\u0020fields\u0020defined\u0020on\u0020this\u0020layout\u0027s\u0020element",
@@ -6945,6 +6945,16 @@ Search.appendIndex(
             "name": "getFieldLayout",
             "summary": "Get\u0020layout\u0027s\u0020element\u0020field\u0020layout",
             "url": "classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getFieldLayout"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\layouts\\Layout\u003A\u003AgetEditDisplaysUrl\u0028\u0029",
+            "name": "getEditDisplaysUrl",
+            "summary": "Get\u0020the\u0020url\u0020to\u0020edit\u0020displays\u0020for\u0020a\u0020view\u0020mode.",
+            "url": "classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getEditDisplaysUrl"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\layouts\\Layout\u003A\u003AgetEditBlocksUrl\u0028\u0029",
+            "name": "getEditBlocksUrl",
+            "summary": "Get\u0020the\u0020url\u0020to\u0020edit\u0020blocks.",
+            "url": "classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getEditBlocksUrl"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\layouts\\Layout\u003A\u003AloadElement\u0028\u0029",
             "name": "loadElement",
@@ -6990,11 +7000,6 @@ Search.appendIndex(
             "name": "_element",
             "summary": "Element\u0020associated\u0020with\u0020this\u0020layout\u0020\u0028entry\u0020type,\u0020user,\u0020category\u0020group\u0020etc\u0029",
             "url": "classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property__element"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\layouts\\Layout\u003A\u003A\u0024_displays",
-            "name": "_displays",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property__displays"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\layouts\\Layout\u003A\u003A\u0024_viewModes",
             "name": "_viewModes",
@@ -7111,6 +7116,11 @@ Search.appendIndex(
             "summary": "Blocks\u0020setter",
             "url": "classes/Ryssbowh-CraftThemes-models-Region.html#method_setBlocks"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Region\u003A\u003AhasBlocks\u0028\u0029",
+            "name": "hasBlocks",
+            "summary": "Does\u0020this\u0020region\u0020have\u0020blocks",
+            "url": "classes/Ryssbowh-CraftThemes-models-Region.html#method_hasBlocks"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Region\u003A\u003AgetVisibleBlocks\u0028\u0029",
             "name": "getVisibleBlocks",
             "summary": "Get\u0020visible\u0020blocks",
@@ -7171,16 +7181,6 @@ Search.appendIndex(
             "summary": "Redirect\u0020to\u0020options\u0020getter",
             "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#method_getRedirectToOptions"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Settings\u003A\u003AgetRules\u0028\u0029",
-            "name": "getRules",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#method_getRules"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Settings\u003A\u003AgetDevModeEnabled\u0028\u0029",
-            "name": "getDevModeEnabled",
-            "summary": "dev\u0020mode\u0020enabled\u0020getter",
-            "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#method_getDevModeEnabled"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Settings\u003A\u003AgetBlockCacheEnabled\u0028\u0029",
             "name": "getBlockCacheEnabled",
             "summary": "block\u0020cache\u0020enabled\u0020getter",
@@ -7196,10 +7196,10 @@ Search.appendIndex(
             "summary": "rules\u0020cache\u0020enabled\u0020getter",
             "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#method_getRulesCacheEnabled"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Settings\u003A\u003A\u0024rules",
-            "name": "rules",
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Settings\u003A\u003A\u0024themesRules",
+            "name": "themesRules",
             "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#property_rules"
+            "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#property_themesRules"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Settings\u003A\u003A\u0024default",
             "name": "default",
@@ -7226,11 +7226,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#property_setCp"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Settings\u003A\u003A\u0024devMode",
-            "name": "devMode",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#property_devMode"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Settings\u003A\u003A\u0024eagerLoad",
             "name": "eagerLoad",
             "summary": "",
@@ -7256,10 +7251,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#property_redirectTo"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Settings\u003A\u003A\u0024showShortcuts",
-            "name": "showShortcuts",
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Settings\u003A\u003A\u0024showCpShortcuts",
+            "name": "showCpShortcuts",
             "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#property_showShortcuts"
+            "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#property_showCpShortcuts"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\ViewMode",
             "name": "ViewMode",
@@ -7700,11 +7695,6 @@ Search.appendIndex(
             "name": "rebuildConfig",
             "summary": "Respond\u0020to\u0020rebuild\u0020config\u0020event",
             "url": "classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_rebuildConfig"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\services\\DisplayService\u003A\u003AonCraftFieldDeleted\u0028\u0029",
-            "name": "onCraftFieldDeleted",
-            "summary": "Callback\u0020when\u0020a\u0020field\u0020is\u0020deleted\nResave\u0020layout\u0020for\u0020which\u0020a\u0020deleted\u0020field\u0020was\u0020present",
-            "url": "classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_onCraftFieldDeleted"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\DisplayService\u003A\u003AonCraftFieldSaved\u0028\u0029",
             "name": "onCraftFieldSaved",
@@ -8208,12 +8198,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\LayoutService\u003A\u003AinstallThemeData\u0028\u0029",
             "name": "installThemeData",
-            "summary": "Install\u0020layouts\u0020for\u0020a\u0020theme,\u0020will\u0020deletes\u0020orphans",
+            "summary": "Install\u0020layouts\u0020for\u0020a\u0020theme,\u0020will\u0020deletes\u0020orphans.",
             "url": "classes/Ryssbowh-CraftThemes-services-LayoutService.html#method_installThemeData"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\LayoutService\u003A\u003AuninstallThemeData\u0028\u0029",
             "name": "uninstallThemeData",
-            "summary": "Deletes\u0020all\u0020layouts\u0020for\u0020a\u0020theme",
+            "summary": "Deletes\u0020all\u0020layouts\u0020for\u0020a\u0020theme.",
             "url": "classes/Ryssbowh-CraftThemes-services-LayoutService.html#method_uninstallThemeData"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\LayoutService\u003A\u003AgetDefault\u0028\u0029",
@@ -8318,7 +8308,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\LayoutService\u003A\u003AgetCustomLayouts\u0028\u0029",
             "name": "getCustomLayouts",
-            "summary": "",
+            "summary": "Get\u0020all\u0020custom\u0020layouts\u0020for\u0020a\u0020theme",
             "url": "classes/Ryssbowh-CraftThemes-services-LayoutService.html#method_getCustomLayouts"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\LayoutService\u003A\u003AcreateCategoryLayouts\u0028\u0029",
@@ -8661,6 +8651,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-services-ShortcutsService.html#property_inited"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ShortcutsService\u003A\u003A\u0024showShortcuts",
+            "name": "showShortcuts",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-services-ShortcutsService.html#property_showShortcuts"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\TablesService",
             "name": "TablesService",
             "summary": "",
@@ -8780,6 +8775,11 @@ Search.appendIndex(
             "name": "EVENT_AFTER_INSTALL_THEME",
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#constant_EVENT_AFTER_INSTALL_THEME"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ThemesRegistry\u003A\u003AEVENT_AFTER_UNINSTALL_THEME",
+            "name": "EVENT_AFTER_UNINSTALL_THEME",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#constant_EVENT_AFTER_UNINSTALL_THEME"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ThemesRegistry\u003A\u003A\u0024themes",
             "name": "themes",
@@ -8925,6 +8925,11 @@ Search.appendIndex(
             "name": "ViewService",
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-services-ViewService.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ViewService\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-services-ViewService.html#method_init"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ViewService\u003A\u003AbeforeRenderPage\u0028\u0029",
             "name": "beforeRenderPage",
@@ -9116,6 +9121,11 @@ Search.appendIndex(
             "summary": "inheritDoc",
             "url": "classes/Ryssbowh-CraftThemes-Themes.html#method_init"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\Themes\u003A\u003AinitPro\u0028\u0029",
+            "name": "initPro",
+            "summary": "Initialise\u0020for\u0020pro",
+            "url": "classes/Ryssbowh-CraftThemes-Themes.html#method_initPro"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\Themes\u003A\u003Aeditions\u0028\u0029",
             "name": "editions",
             "summary": "",
@@ -9168,8 +9178,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\Themes\u003A\u003AregisterSwitchEdition\u0028\u0029",
             "name": "registerSwitchEdition",
-            "summary": "Registers\u0020to\u0020edition\u0020change\u0020event.\u0020Installs\u0020all\u0020layouts\u0020if\u0020edition\u0020is\u0020pro",
+            "summary": "Registers\u0020to\u0020edition\u0020change\u0020event.\u0020Installs\u0020all\u0020themes\u0020data\u0020if\u0020edition\u0020is\u0020pro",
             "url": "classes/Ryssbowh-CraftThemes-Themes.html#method_registerSwitchEdition"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\Themes\u003A\u003AregisterCpHooks\u0028\u0029",
+            "name": "registerCpHooks",
+            "summary": "Modify\u0020some\u0020cp\u0020pages\u0020through\u0020hooks",
+            "url": "classes/Ryssbowh-CraftThemes-Themes.html#method_registerCpHooks"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\Themes\u003A\u003AregisterCraftEvents\u0028\u0029",
             "name": "registerCraftEvents",
@@ -9280,6 +9295,26 @@ Search.appendIndex(
             "name": "themeUrl",
             "summary": "inheritDoc",
             "url": "classes/Ryssbowh-CraftThemes-twig-TwigTheme.html#method_themeUrl"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\ElementsAssets",
+            "name": "ElementsAssets",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-assets-ElementsAssets.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\ElementsAssets\u003A\u003A\u0024sourcePath",
+            "name": "sourcePath",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-assets-ElementsAssets.html#property_sourcePath"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\ElementsAssets\u003A\u003A\u0024css",
+            "name": "css",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-assets-ElementsAssets.html#property_css"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\ElementsAssets\u003A\u003A\u0024depends",
+            "name": "depends",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-assets-ElementsAssets.html#property_depends"
         },                {
             "fqsen": "\\",
             "name": "\\",
