@@ -110,7 +110,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -130,20 +130,6 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#constant_EVENT_AFTER_INSTALL_THEME">EVENT_AFTER_INSTALL_THEME</a>
-    <span>
-        &nbsp;= &#039;after_install_theme&#039;                    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#constant_EVENT_AFTER_UNINSTALL_THEME">EVENT_AFTER_UNINSTALL_THEME</a>
-    <span>
-        &nbsp;= &#039;after_uninstall_theme&#039;                    </span>
-</dt>
-<dd></dd>
-
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#constant_EVENT_THEME_SET">EVENT_THEME_SET</a>
     <span>
@@ -236,9 +222,16 @@
 <dd>Does a theme exist</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#method_installTheme">installTheme()</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#method_installAll">installAll()</a>
     <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a>    </span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Install all theme&#039;s data</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#method_installThemeData">installThemeData()</a>
+    <span>
+                        &nbsp;: mixed    </span>
 </dt>
 <dd>Install a theme</dd>
 
@@ -264,7 +257,7 @@
 <dd>Sets current theme</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#method_uninstallTheme">uninstallTheme()</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#method_uninstallThemeData">uninstallThemeData()</a>
     <span>
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a>    </span>
 </dt>
@@ -379,64 +372,6 @@
             <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_EVENT_AFTER_INSTALL_THEME">
-        EVENT_AFTER_INSTALL_THEME
-        <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#constant_EVENT_AFTER_INSTALL_THEME" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">20</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">EVENT_AFTER_INSTALL_THEME</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;after_install_theme&#039;</span>
-</code>
-
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_EVENT_AFTER_UNINSTALL_THEME">
-        EVENT_AFTER_UNINSTALL_THEME
-        <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#constant_EVENT_AFTER_UNINSTALL_THEME" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">21</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">EVENT_AFTER_UNINSTALL_THEME</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;after_uninstall_theme&#039;</span>
-</code>
-
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_EVENT_THEME_SET">
         EVENT_THEME_SET
         <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#constant_EVENT_THEME_SET" class="headerlink"><i class="fas fa-link"></i></a>
@@ -445,7 +380,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -474,7 +409,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -652,7 +587,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">241</span>
 
     </aside>
 
@@ -844,7 +779,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -901,7 +836,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
     </aside>
 
@@ -937,14 +872,57 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_installTheme">
-        installTheme()
-        <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#method_installTheme" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_installAll">
+        installAll()
+        <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#method_installAll" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">201</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Install all theme&#039;s data</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">installAll</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$force</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$force</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_installThemeData">
+        installThemeData()
+        <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#method_installThemeData" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">214</span>
 
     </aside>
 
@@ -952,7 +930,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">installTheme</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$theme</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">installThemeData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$theme</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$force</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -962,19 +940,23 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$force</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
             </dd>
             </dl>
 
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"><p>$theme</p>
-</section>
-
+        
     
 </article>
                     <article
@@ -1033,7 +1015,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">242</span>
+    <span class="phpdocumentor-element-found-in__line">251</span>
 
     </aside>
 
@@ -1102,14 +1084,14 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_uninstallTheme">
-        uninstallTheme()
-        <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#method_uninstallTheme" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_uninstallThemeData">
+        uninstallThemeData()
+        <a href="classes/Ryssbowh-CraftThemes-services-ThemesRegistry.html#method_uninstallThemeData" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">215</span>
+    <span class="phpdocumentor-element-found-in__line">229</span>
 
     </aside>
 
@@ -1117,7 +1099,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">uninstallTheme</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$theme</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">uninstallThemeData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$theme</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1155,7 +1137,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -1188,7 +1170,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -1221,7 +1203,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -1254,7 +1236,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -1287,7 +1269,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -1320,7 +1302,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -1353,7 +1335,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -1386,7 +1368,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -1419,7 +1401,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -1452,7 +1434,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ThemesRegistry.php"><a href="files/services-themesregistry.html"><abbr title="services/ThemesRegistry.php">ThemesRegistry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">250</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
@@ -1485,7 +1467,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -1518,7 +1500,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -1551,7 +1533,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -1601,7 +1583,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 

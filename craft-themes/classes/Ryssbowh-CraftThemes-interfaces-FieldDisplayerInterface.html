@@ -124,11 +124,25 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_beforeRender">beforeRender()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Callback before rendering, returning false will skip the field rendering.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_eagerLoad">eagerLoad()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Eager load fields</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_getField">getField()</a>
+    <span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a>    </span>
+</dt>
+<dd>Field getter</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_getFieldTarget">getFieldTarget()</a>
@@ -161,7 +175,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_getOptions">getOptions()</a>
     <span>
-                        &nbsp;: <abbr title="\craft\base\Model">Model</abbr>    </span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayerOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\FieldDisplayerOptions">FieldDisplayerOptions</abbr></a>    </span>
 </dt>
 <dd>Get options</dd>
 
@@ -171,6 +185,20 @@
                         &nbsp;: string    </span>
 </dt>
 <dd>Get options model class</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_getTheme">getTheme()</a>
+    <span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a>    </span>
+</dt>
+<dd>Theme getter</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_setField">setField()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Field setter</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_setOptions">setOptions()</a>
@@ -196,6 +224,51 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_beforeRender">
+        beforeRender()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_beforeRender" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FieldDisplayerInterface.php"><a href="files/interfaces-fielddisplayerinterface.html"><abbr title="interfaces/FieldDisplayerInterface.php">FieldDisplayerInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">96</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Callback before rendering, returning false will skip the field rendering.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">beforeRender</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>The value will be null when this is called for a cached content block.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_eagerLoad">
         eagerLoad()
         <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_eagerLoad" class="headerlink"><i class="fas fa-link"></i></a>
@@ -203,7 +276,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FieldDisplayerInterface.php"><a href="files/interfaces-fielddisplayerinterface.html"><abbr title="interfaces/FieldDisplayerInterface.php">FieldDisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -219,6 +292,39 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getField">
+        getField()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_getField" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FieldDisplayerInterface.php"><a href="files/interfaces-fielddisplayerinterface.html"><abbr title="interfaces/FieldDisplayerInterface.php">FieldDisplayerInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Field getter</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getField</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a></span>
             &mdash;
         
     
@@ -302,7 +408,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FieldDisplayerInterface.php"><a href="files/interfaces-fielddisplayerinterface.html"><abbr title="interfaces/FieldDisplayerInterface.php">FieldDisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -335,7 +441,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FieldDisplayerInterface.php"><a href="files/interfaces-fielddisplayerinterface.html"><abbr title="interfaces/FieldDisplayerInterface.php">FieldDisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -368,7 +474,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FieldDisplayerInterface.php"><a href="files/interfaces-fielddisplayerinterface.html"><abbr title="interfaces/FieldDisplayerInterface.php">FieldDisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -376,14 +482,14 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\craft\base\Model">Model</abbr></span></code>
+                <span class="phpdocumentor-signature__name">getOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayerOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\FieldDisplayerOptions">FieldDisplayerOptions</abbr></a></span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\craft\base\Model">Model</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayerOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\FieldDisplayerOptions">FieldDisplayerOptions</abbr></a></span>
             &mdash;
         
     
@@ -401,7 +507,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FieldDisplayerInterface.php"><a href="files/interfaces-fielddisplayerinterface.html"><abbr title="interfaces/FieldDisplayerInterface.php">FieldDisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -427,6 +533,82 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getTheme">
+        getTheme()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_getTheme" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FieldDisplayerInterface.php"><a href="files/interfaces-fielddisplayerinterface.html"><abbr title="interfaces/FieldDisplayerInterface.php">FieldDisplayerInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Theme getter</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getTheme</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setField">
+        setField()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_setField" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FieldDisplayerInterface.php"><a href="files/interfaces-fielddisplayerinterface.html"><abbr title="interfaces/FieldDisplayerInterface.php">FieldDisplayerInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Field setter</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setField</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$field</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setOptions">
         setOptions()
         <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html#method_setOptions" class="headerlink"><i class="fas fa-link"></i></a>
@@ -434,7 +616,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FieldDisplayerInterface.php"><a href="files/interfaces-fielddisplayerinterface.html"><abbr title="interfaces/FieldDisplayerInterface.php">FieldDisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 

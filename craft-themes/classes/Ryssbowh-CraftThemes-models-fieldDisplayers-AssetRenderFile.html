@@ -111,7 +111,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fieldDisplayers/AssetRenderFile.php"><a href="files/models-fielddisplayers-assetrenderfile.html"><abbr title="models/fieldDisplayers/AssetRenderFile.php">AssetRenderFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -146,13 +146,6 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRenderFile.html#property__displayerMapping">$_displayerMapping</a>
-    <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#property__field">$_field</a>
     <span>
                 &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-Field.html"><abbr title="\Ryssbowh\CraftThemes\models\Field">Field</abbr></a>            </span>
@@ -167,6 +160,20 @@
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_afterValidate">afterValidate()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_beforeRender">beforeRender()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Callback before rendering, returning false will skip the field rendering.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_eagerLoad">eagerLoad()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
@@ -174,25 +181,32 @@
 <dd>Eager load fields</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRenderFile.html#method_fields">fields()</a>
+    <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_fields">fields()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRenderFile.html#method_getDisplayersMapping">getDisplayersMapping()</a>
+    <a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRenderFile.html#method_getAllowedFileKinds">getAllowedFileKinds()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Get available displayers, indexed by asset kind</dd>
+<dd>Get available file kinds</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_getErrors">getErrors()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_getField">getField()</a>
     <span>
-                        &nbsp;: object|null    </span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a>    </span>
 </dt>
-<dd>TO BE REVIEWED</dd>
+<dd>Field getter</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRenderFile.html#method_getFieldTarget">getFieldTarget()</a>
@@ -225,7 +239,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_getOptions">getOptions()</a>
     <span>
-                        &nbsp;: <abbr title="\craft\base\Model">Model</abbr>    </span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayerOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\FieldDisplayerOptions">FieldDisplayerOptions</abbr></a>    </span>
 </dt>
 <dd>Get options</dd>
 
@@ -234,21 +248,28 @@
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd>Get options model class</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_getTheme">getTheme()</a>
     <span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a>    </span>
+</dt>
+<dd>Theme getter</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_hasErrors">hasErrors()</a>
+    <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>TO BE REVIEWED</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_setField">setField()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>TO BE REVIEWED</dd>
+<dd>Field setter</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_setOptions">setOptions()</a>
@@ -285,7 +306,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fieldDisplayers/AssetRenderFile.php"><a href="files/models-fielddisplayers-assetrenderfile.html"><abbr title="models/fieldDisplayers/AssetRenderFile.php">AssetRenderFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -341,38 +362,6 @@
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$isDefault</span>
      = <span class="phpdocumentor-signature__default-value">false</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property__displayerMapping">
-        $_displayerMapping
-        <a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRenderFile.html#property__displayerMapping" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="models/fieldDisplayers/AssetRenderFile.php"><a href="files/models-fielddisplayers-assetrenderfile.html"><abbr title="models/fieldDisplayers/AssetRenderFile.php">AssetRenderFile.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">25</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_displayerMapping</span>
-    </code>
 
     
     
@@ -456,6 +445,107 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_afterValidate">
+        afterValidate()
+        <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_afterValidate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/FieldDisplayer.php"><a href="files/models-fielddisplayer.html"><abbr title="models/FieldDisplayer.php">FieldDisplayer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">59</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">afterValidate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_beforeRender">
+        beforeRender()
+        <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_beforeRender" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/FieldDisplayer.php"><a href="files/models-fielddisplayer.html"><abbr title="models/FieldDisplayer.php">FieldDisplayer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">142</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Callback before rendering, returning false will skip the field rendering.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">beforeRender</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_eagerLoad">
         eagerLoad()
         <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_eagerLoad" class="headerlink"><i class="fas fa-link"></i></a>
@@ -463,7 +553,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FieldDisplayer.php"><a href="files/models-fielddisplayer.html"><abbr title="models/FieldDisplayer.php">FieldDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -504,12 +594,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_fields">
         fields()
-        <a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRenderFile.html#method_fields" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_fields" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="models/fieldDisplayers/AssetRenderFile.php"><a href="files/models-fielddisplayers-assetrenderfile.html"><abbr title="models/fieldDisplayers/AssetRenderFile.php">AssetRenderFile.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="models/FieldDisplayer.php"><a href="files/models-fielddisplayer.html"><abbr title="models/FieldDisplayer.php">FieldDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -547,22 +637,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getDisplayersMapping">
-        getDisplayersMapping()
-        <a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRenderFile.html#method_getDisplayersMapping" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getAllowedFileKinds">
+        getAllowedFileKinds()
+        <a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRenderFile.html#method_getAllowedFileKinds" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fieldDisplayers/AssetRenderFile.php"><a href="files/models-fielddisplayers-assetrenderfile.html"><abbr title="models/fieldDisplayers/AssetRenderFile.php">AssetRenderFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get available displayers, indexed by asset kind</p>
+        <p class="phpdocumentor-summary">Get available file kinds</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getDisplayersMapping</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getAllowedFileKinds</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
     
@@ -580,6 +670,62 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getErrors">
+        getErrors()
+        <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_getErrors" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/FieldDisplayer.php"><a href="files/models-fielddisplayer.html"><abbr title="models/FieldDisplayer.php">FieldDisplayer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getErrors</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attribute</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$attribute</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getField">
         getField()
         <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_getField" class="headerlink"><i class="fas fa-link"></i></a>
@@ -587,22 +733,35 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FieldDisplayer.php"><a href="files/models-fielddisplayer.html"><abbr title="models/FieldDisplayer.php">FieldDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">TO BE REVIEWED</p>
+        <p class="phpdocumentor-summary">Field getter</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getField</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|null</span></code>
+                <span class="phpdocumentor-signature__name">getField</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a></span></code>
 
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|null</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a></span>
             &mdash;
         
     
@@ -620,7 +779,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fieldDisplayers/AssetRenderFile.php"><a href="files/models-fielddisplayers-assetrenderfile.html"><abbr title="models/fieldDisplayers/AssetRenderFile.php">AssetRenderFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -711,7 +870,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FieldDisplayer.php"><a href="files/models-fielddisplayer.html"><abbr title="models/FieldDisplayer.php">FieldDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -757,7 +916,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fieldDisplayers/AssetRenderFile.php"><a href="files/models-fielddisplayers-assetrenderfile.html"><abbr title="models/fieldDisplayers/AssetRenderFile.php">AssetRenderFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -802,7 +961,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FieldDisplayer.php"><a href="files/models-fielddisplayer.html"><abbr title="models/FieldDisplayer.php">FieldDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -810,7 +969,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\craft\base\Model">Model</abbr></span></code>
+                <span class="phpdocumentor-signature__name">getOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayerOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\FieldDisplayerOptions">FieldDisplayerOptions</abbr></a></span></code>
 
     
     
@@ -830,7 +989,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\craft\base\Model">Model</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayerOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\FieldDisplayerOptions">FieldDisplayerOptions</abbr></a></span>
             &mdash;
         
     
@@ -848,12 +1007,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fieldDisplayers/AssetRenderFile.php"><a href="files/models-fielddisplayers-assetrenderfile.html"><abbr title="models/fieldDisplayers/AssetRenderFile.php">AssetRenderFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get options model class</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getOptionsModel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
@@ -894,19 +1052,88 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FieldDisplayer.php"><a href="files/models-fielddisplayer.html"><abbr title="models/FieldDisplayer.php">FieldDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">TO BE REVIEWED</p>
+        <p class="phpdocumentor-summary">Theme getter</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getTheme</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">getTheme</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a></span></code>
 
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ThemeInterface">ThemeInterface</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasErrors">
+        hasErrors()
+        <a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html#method_hasErrors" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/FieldDisplayer.php"><a href="files/models-fielddisplayer.html"><abbr title="models/FieldDisplayer.php">FieldDisplayer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">hasErrors</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attribute</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$attribute</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
@@ -927,30 +1154,42 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FieldDisplayer.php"><a href="files/models-fielddisplayer.html"><abbr title="models/FieldDisplayer.php">FieldDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">TO BE REVIEWED</p>
+        <p class="phpdocumentor-summary">Field setter</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setField</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">setField</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$field</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
@@ -971,7 +1210,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FieldDisplayer.php"><a href="files/models-fielddisplayer.html"><abbr title="models/FieldDisplayer.php">FieldDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 

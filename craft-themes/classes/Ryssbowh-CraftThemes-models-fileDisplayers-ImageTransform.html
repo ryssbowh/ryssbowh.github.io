@@ -111,7 +111,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fileDisplayers/ImageTransform.php"><a href="files/models-filedisplayers-imagetransform.html"><abbr title="models/fileDisplayers/ImageTransform.php">ImageTransform.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">11</span>
 
     </aside>
 
@@ -139,13 +139,6 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Ryssbowh-CraftThemes-models-fileDisplayers-ImageTransform.html#property_hasOptions">$hasOptions</a>
-    <span>
-                &nbsp;: bool            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Ryssbowh-CraftThemes-models-FileDisplayer.html#property_isDefault">$isDefault</a>
     <span>
                 &nbsp;: bool            </span>
@@ -162,11 +155,18 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Ryssbowh-CraftThemes-models-FileDisplayer.html#property__options">$_options</a>
     <span>
-                &nbsp;: <abbr title="\craft\base\Model">Model</abbr>            </span>
+                &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-FileDisplayerOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\FileDisplayerOptions">FileDisplayerOptions</abbr></a>            </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-FileDisplayer.html#method_beforeRender">beforeRender()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Callback before rendering, returning false will skip the file rendering</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-fileDisplayers-ImageTransform.html#method_fields">fields()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -186,6 +186,13 @@
                         &nbsp;: string    </span>
 </dt>
 <dd>Get handle</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-FileDisplayer.html#method_getHasOptions">getHasOptions()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Does this displayer define options</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-fileDisplayers-ImageTransform.html#method_getImageTransforms">getImageTransforms()</a>
@@ -218,9 +225,9 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-fileDisplayers-ImageTransform.html#method_getOptionsModel">getOptionsModel()</a>
     <span>
-                        &nbsp;: <abbr title="\craft\base\Model">Model</abbr>    </span>
+                        &nbsp;: string    </span>
 </dt>
-<dd>Get options model</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-FileDisplayer.html#method_getTheme">getTheme()</a>
@@ -264,7 +271,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fileDisplayers/ImageTransform.php"><a href="files/models-filedisplayers-imagetransform.html"><abbr title="models/fileDisplayers/ImageTransform.php">ImageTransform.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -274,38 +281,6 @@
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$handle</span>
      = <span class="phpdocumentor-signature__default-value">&#039;image_transform&#039;</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_hasOptions">
-        $hasOptions
-        <a href="classes/Ryssbowh-CraftThemes-models-fileDisplayers-ImageTransform.html#property_hasOptions" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="models/fileDisplayers/ImageTransform.php"><a href="files/models-filedisplayers-imagetransform.html"><abbr title="models/fileDisplayers/ImageTransform.php">ImageTransform.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">22</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$hasOptions</span>
-     = <span class="phpdocumentor-signature__default-value">true</span></code>
 
     
     
@@ -328,7 +303,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FileDisplayer.php"><a href="files/models-filedisplayer.html"><abbr title="models/FileDisplayer.php">FileDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -360,7 +335,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FileDisplayer.php"><a href="files/models-filedisplayer.html"><abbr title="models/FileDisplayer.php">FileDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -392,14 +367,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FileDisplayer.php"><a href="files/models-filedisplayer.html"><abbr title="models/FileDisplayer.php">FileDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\craft\base\Model">Model</abbr></span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Ryssbowh-CraftThemes-models-FileDisplayerOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\FileDisplayerOptions">FileDisplayerOptions</abbr></a></span>
     <span class="phpdocumentor-signature__name">$_options</span>
     </code>
 
@@ -421,6 +396,62 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_beforeRender">
+        beforeRender()
+        <a href="classes/Ryssbowh-CraftThemes-models-FileDisplayer.html#method_beforeRender" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/FileDisplayer.php"><a href="files/models-filedisplayer.html"><abbr title="models/FileDisplayer.php">FileDisplayer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">96</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Callback before rendering, returning false will skip the file rendering</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">beforeRender</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\elements\Asset">Asset</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$asset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$asset</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\elements\Asset">Asset</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_fields">
         fields()
         <a href="classes/Ryssbowh-CraftThemes-models-fileDisplayers-ImageTransform.html#method_fields" class="headerlink"><i class="fas fa-link"></i></a>
@@ -428,7 +459,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fileDisplayers/ImageTransform.php"><a href="files/models-filedisplayers-imagetransform.html"><abbr title="models/fileDisplayers/ImageTransform.php">ImageTransform.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -473,7 +504,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FileDisplayer.php"><a href="files/models-filedisplayer.html"><abbr title="models/FileDisplayer.php">FileDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -519,7 +550,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FileDisplayer.php"><a href="files/models-filedisplayer.html"><abbr title="models/FileDisplayer.php">FileDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -558,6 +589,52 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getHasOptions">
+        getHasOptions()
+        <a href="classes/Ryssbowh-CraftThemes-models-FileDisplayer.html#method_getHasOptions" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/FileDisplayer.php"><a href="files/models-filedisplayer.html"><abbr title="models/FileDisplayer.php">FileDisplayer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Does this displayer define options</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getHasOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getImageTransforms">
         getImageTransforms()
         <a href="classes/Ryssbowh-CraftThemes-models-fileDisplayers-ImageTransform.html#method_getImageTransforms" class="headerlink"><i class="fas fa-link"></i></a>
@@ -565,7 +642,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fileDisplayers/ImageTransform.php"><a href="files/models-filedisplayers-imagetransform.html"><abbr title="models/fileDisplayers/ImageTransform.php">ImageTransform.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -598,7 +675,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fileDisplayers/ImageTransform.php"><a href="files/models-filedisplayers-imagetransform.html"><abbr title="models/fileDisplayers/ImageTransform.php">ImageTransform.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -643,7 +720,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fileDisplayers/ImageTransform.php"><a href="files/models-filedisplayers-imagetransform.html"><abbr title="models/fileDisplayers/ImageTransform.php">ImageTransform.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -688,7 +765,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FileDisplayer.php"><a href="files/models-filedisplayer.html"><abbr title="models/FileDisplayer.php">FileDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -734,15 +811,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/fileDisplayers/ImageTransform.php"><a href="files/models-filedisplayers-imagetransform.html"><abbr title="models/fileDisplayers/ImageTransform.php">ImageTransform.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get options model</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getOptionsModel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\craft\base\Model">Model</abbr></span></code>
+                <span class="phpdocumentor-signature__name">getOptionsModel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
@@ -762,7 +838,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\craft\base\Model">Model</abbr></span>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
@@ -780,7 +856,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FileDisplayer.php"><a href="files/models-filedisplayer.html"><abbr title="models/FileDisplayer.php">FileDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -813,7 +889,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/FileDisplayer.php"><a href="files/models-filedisplayer.html"><abbr title="models/FileDisplayer.php">FileDisplayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 

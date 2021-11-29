@@ -132,6 +132,27 @@ and can be assigned to theme&#039;s regions.</p>
 <dd>Callback after the block has been saved</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_beforeRender">beforeRender()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Callback before rendering, returning false will skip the block rendering.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_getCacheStrategy">getCacheStrategy()</a>
+    <span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockCacheStrategyInterface">BlockCacheStrategyInterface</abbr></a>|null    </span>
+</dt>
+<dd>Get the cache strategy for this block</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_getCacheTags">getCacheTags()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get extra cache dependencies tags</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_getConfig">getConfig()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
@@ -176,14 +197,14 @@ and can be assigned to theme&#039;s regions.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_getOptions">getOptions()</a>
     <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockOptionsInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockOptionsInterface">BlockOptionsInterface</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-BlockOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockOptions">BlockOptions</abbr></a>    </span>
 </dt>
 <dd>Get options model</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_getOptionsModel">getOptionsModel()</a>
     <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockOptionsInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockOptionsInterface">BlockOptionsInterface</abbr></a>    </span>
+                        &nbsp;: string    </span>
 </dt>
 <dd>Model that defines this block&#039;s options</dd>
 
@@ -193,6 +214,13 @@ and can be assigned to theme&#039;s regions.</p>
                         &nbsp;: string    </span>
 </dt>
 <dd>Small description getter</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_getTemplates">getTemplates()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get available templates</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_isVisible">isVisible()</a>
@@ -214,6 +242,17 @@ and can be assigned to theme&#039;s regions.</p>
                         &nbsp;: string    </span>
 </dt>
 <dd>Render this block</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_setCacheStrategy">setCacheStrategy()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Set the cache strategy, $strategy should be an array :
+[
+    &#039;handle&#039; =&gt; &#039;strategyHandle&#039;,
+    &#039;options&#039; =&gt; []
+]</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_setLayout">setLayout()</a>
@@ -253,7 +292,7 @@ and can be assigned to theme&#039;s regions.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -279,6 +318,117 @@ and can be assigned to theme&#039;s regions.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_beforeRender">
+        beforeRender()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_beforeRender" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">145</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Callback before rendering, returning false will skip the block rendering.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">beforeRender</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fromCache</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$fromCache</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>whether the block is rendered from cache or not</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCacheStrategy">
+        getCacheStrategy()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_getCacheStrategy" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the cache strategy for this block</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getCacheStrategy</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockCacheStrategyInterface">BlockCacheStrategyInterface</abbr></a>|null</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockCacheStrategyInterface">BlockCacheStrategyInterface</abbr></a>|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCacheTags">
+        getCacheTags()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_getCacheTags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">137</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get extra cache dependencies tags</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getCacheTags</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getConfig">
         getConfig()
         <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_getConfig" class="headerlink"><i class="fas fa-link"></i></a>
@@ -286,7 +436,7 @@ and can be assigned to theme&#039;s regions.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -352,7 +502,7 @@ and can be assigned to theme&#039;s regions.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -418,7 +568,7 @@ and can be assigned to theme&#039;s regions.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -492,14 +642,14 @@ and can be assigned to theme&#039;s regions.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockOptionsInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockOptionsInterface">BlockOptionsInterface</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">getOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockOptions">BlockOptions</abbr></a></span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockOptionsInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockOptionsInterface">BlockOptionsInterface</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockOptions">BlockOptions</abbr></a></span>
             &mdash;
         
     
@@ -517,7 +667,7 @@ and can be assigned to theme&#039;s regions.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -525,14 +675,14 @@ and can be assigned to theme&#039;s regions.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getOptionsModel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockOptionsInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockOptionsInterface">BlockOptionsInterface</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">getOptionsModel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockOptionsInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockOptionsInterface">BlockOptionsInterface</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
@@ -566,6 +716,56 @@ and can be assigned to theme&#039;s regions.</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTemplates">
+        getTemplates()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_getTemplates" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">130</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get available templates</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getTemplates</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$layout</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-RegionInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionInterface">RegionInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$region</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$layout</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$region</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-RegionInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionInterface">RegionInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
         
     
@@ -616,7 +816,7 @@ and can be assigned to theme&#039;s regions.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -649,7 +849,7 @@ and can be assigned to theme&#039;s regions.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -675,6 +875,53 @@ and can be assigned to theme&#039;s regions.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setCacheStrategy">
+        setCacheStrategy()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_setCacheStrategy" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set the cache strategy, $strategy should be an array :
+[
+    &#039;handle&#039; =&gt; &#039;strategyHandle&#039;,
+    &#039;options&#039; =&gt; []
+]</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setCacheStrategy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$strategy</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$strategy</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setLayout">
         setLayout()
         <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html#method_setLayout" class="headerlink"><i class="fas fa-link"></i></a>
@@ -682,7 +929,7 @@ and can be assigned to theme&#039;s regions.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockInterface.php"><a href="files/interfaces-blockinterface.html"><abbr title="interfaces/BlockInterface.php">BlockInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 

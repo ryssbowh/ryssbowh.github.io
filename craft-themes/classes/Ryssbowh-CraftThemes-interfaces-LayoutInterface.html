@@ -225,13 +225,6 @@ Layouts have regions, as defined by their theme.</p>
 <dd>Get element associated to that layout (category group, entry type, User etc)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getElementMachineName">getElementMachineName()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Get the machine name describing the element associated to this layout</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getFieldLayout">getFieldLayout()</a>
     <span>
                         &nbsp;: <abbr title="\craft\models\FieldLayout">FieldLayout</abbr>    </span>
@@ -251,6 +244,20 @@ Layouts have regions, as defined by their theme.</p>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Get layout regions</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getTemplates">getTemplates()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get available templates</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getTemplatingKey">getTemplatingKey()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Get the portion of template name associated with this element.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getTheme">getTheme()</a>
@@ -659,7 +666,7 @@ Layouts have regions, as defined by their theme.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">190</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 
     </aside>
 
@@ -758,7 +765,7 @@ Layouts have regions, as defined by their theme.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">216</span>
+    <span class="phpdocumentor-element-found-in__line">219</span>
 
     </aside>
 
@@ -793,7 +800,7 @@ Layouts have regions, as defined by their theme.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">210</span>
 
     </aside>
 
@@ -865,39 +872,6 @@ Takes the default view mode if $viewMode is null</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getElementMachineName">
-        getElementMachineName()
-        <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getElementMachineName" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">166</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get the machine name describing the element associated to this layout</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getElementMachineName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_getFieldLayout">
         getFieldLayout()
         <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getFieldLayout" class="headerlink"><i class="fas fa-link"></i></a>
@@ -905,7 +879,7 @@ Takes the default view mode if $viewMode is null</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">200</span>
 
     </aside>
 
@@ -938,7 +912,7 @@ Takes the default view mode if $viewMode is null</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 
     </aside>
 
@@ -997,6 +971,86 @@ Takes the default view mode if $viewMode is null</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTemplates">
+        getTemplates()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getTemplates" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">227</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get available templates</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getTemplates</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$viewMode</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$viewMode</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTemplatingKey">
+        getTemplatingKey()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html#method_getTemplatingKey" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">169</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the portion of template name associated with this element.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getTemplatingKey</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>This would be 'blog-article' for an entry type 'article' of a section 'blog'.
+Or 'authors' for a category group 'authors'
+Etc</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
@@ -1191,7 +1245,7 @@ Takes the default view mode if $viewMode is null</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -1277,7 +1331,7 @@ Takes the default view mode if $viewMode is null</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/LayoutInterface.php"><a href="files/interfaces-layoutinterface.html"><abbr title="interfaces/LayoutInterface.php">LayoutInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">225</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 

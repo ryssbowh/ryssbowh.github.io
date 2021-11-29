@@ -110,7 +110,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
@@ -173,11 +173,25 @@
 <dd>Ensure a displayer handle is valid for a field class</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-services-FieldDisplayerService.html#method_getAllByFieldTarget">getAllByFieldTarget()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get all displayers indexed by the field target (either the craft field class or the field class)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-FieldDisplayerService.html#method_getByHandle">getByHandle()</a>
     <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldDisplayerInterface">FieldDisplayerInterface</abbr></a>|null    </span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldDisplayerInterface">FieldDisplayerInterface</abbr></a>    </span>
 </dt>
 <dd>Get a displayer by handle</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-services-FieldDisplayerService.html#method_getClassByHandle">getClassByHandle()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Get a displayer class by handle</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-FieldDisplayerService.html#method_getDefaultHandle">getDefaultHandle()</a>
@@ -345,7 +359,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
@@ -389,7 +403,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -422,7 +436,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -455,7 +469,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -492,7 +506,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -525,7 +539,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -582,6 +596,39 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getAllByFieldTarget">
+        getAllByFieldTarget()
+        <a href="classes/Ryssbowh-CraftThemes-services-FieldDisplayerService.html#method_getAllByFieldTarget" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">155</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get all displayers indexed by the field target (either the craft field class or the field class)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getAllByFieldTarget</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getByHandle">
         getByHandle()
         <a href="classes/Ryssbowh-CraftThemes-services-FieldDisplayerService.html#method_getByHandle" class="headerlink"><i class="fas fa-link"></i></a>
@@ -589,7 +636,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -597,7 +644,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getByHandle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldDisplayerInterface">FieldDisplayerInterface</abbr></a>|null</span></code>
+                <span class="phpdocumentor-signature__name">getByHandle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldDisplayerInterface">FieldDisplayerInterface</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -628,7 +675,64 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldDisplayerInterface">FieldDisplayerInterface</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldDisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldDisplayerInterface">FieldDisplayerInterface</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getClassByHandle">
+        getClassByHandle()
+        <a href="classes/Ryssbowh-CraftThemes-services-FieldDisplayerService.html#method_getClassByHandle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">89</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get a displayer class by handle</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getClassByHandle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$handle</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Ryssbowh-CraftThemes-exceptions-FieldDisplayerException.html"><abbr title="\Ryssbowh\CraftThemes\exceptions\FieldDisplayerException">FieldDisplayerException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
@@ -646,7 +750,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -689,7 +793,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -722,7 +826,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -765,7 +869,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -798,7 +902,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -841,7 +945,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -874,7 +978,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -907,7 +1011,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -940,7 +1044,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -973,7 +1077,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">189</span>
 
     </aside>
 
@@ -1030,7 +1134,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -1063,7 +1167,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -1096,7 +1200,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -1129,7 +1233,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -1172,7 +1276,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -1205,7 +1309,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -1238,7 +1342,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -1271,7 +1375,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldDisplayerService.php"><a href="files/services-fielddisplayerservice.html"><abbr title="services/FieldDisplayerService.php">FieldDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
@@ -1304,7 +1408,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -1337,7 +1441,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -1387,7 +1491,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
