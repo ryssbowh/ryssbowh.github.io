@@ -110,7 +110,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
@@ -131,7 +131,21 @@
 
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#constant_REGISTER_DISPLAYERS">REGISTER_DISPLAYERS</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#constant_EVENT_DEFAULT_DISPLAYERS">EVENT_DEFAULT_DISPLAYERS</a>
+    <span>
+        &nbsp;= &#039;default_displayer&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#constant_EVENT_KIND_TARGETS">EVENT_KIND_TARGETS</a>
+    <span>
+        &nbsp;= &#039;kind_targets&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#constant_EVENT_REGISTER_DISPLAYERS">EVENT_REGISTER_DISPLAYERS</a>
     <span>
         &nbsp;= &#039;register_displayer&#039;                    </span>
 </dt>
@@ -140,23 +154,23 @@
                 <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#property__defaults">$_defaults</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd>Defaults displayer mapping, indexed by asset kinds</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#property__displayers">$_displayers</a>
-    <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;string|int, string&gt;            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#property__mapping">$_mapping</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#property__displayers">$_displayers</a>
+    <span>
+                &nbsp;: array&lt;string|int, string&gt;            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#property__kindTargets">$_kindTargets</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>Displayer mapping, indexed by asset kinds</dd>
+<dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_all">all()</a>
@@ -173,25 +187,39 @@
 <dd>Get a displayer by handle</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_getClassByHandle">getClassByHandle()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Get a displayer class by handle</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_getDefaults">getDefaults()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
-<dd>Defaults getter</dd>
+<dd>Get default displayers, indexed by kind</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_getForKind">getForKind()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FileDisplayerInterface">FileDisplayerInterface</abbr></a>&gt;    </span>
 </dt>
 <dd>Get displayers for an asset kind</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_getMapping">getMapping()</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_getKindTargets">getKindTargets()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, string&gt;    </span>
+</dt>
+<dd>Get the kind targets for an displayer handle</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method__getKindTargets">_getKindTargets()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Mapping getter</dd>
+<dd>Resolve an array of kinds, changing &#039;*&#039; to all defined kinds</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_blockCacheService">blockCacheService()</a>
@@ -245,7 +273,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_getByHandles">getByHandles()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FileDisplayerInterface">FileDisplayerInterface</abbr></a>&gt;    </span>
 </dt>
 <dd>Get displayers by handles</dd>
 
@@ -255,6 +283,13 @@
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-services-GroupsService.html"><abbr title="\Ryssbowh\CraftThemes\services\GroupsService">GroupsService</abbr></a>    </span>
 </dt>
 <dd>Get the groups service</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_isDisplayerValidForKind">isDisplayerValidForKind()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Is a displayer valid for a kind</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_layoutService">layoutService()</a>
@@ -276,6 +311,20 @@
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Registers displayers</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_registerDefaults">registerDefaults()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Register default displayers</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_registerTargets">registerTargets()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Register asset kind targets</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_themesRegistry">themesRegistry()</a>
@@ -309,15 +358,15 @@
             <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_REGISTER_DISPLAYERS">
-        REGISTER_DISPLAYERS
-        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#constant_REGISTER_DISPLAYERS" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="constant_EVENT_DEFAULT_DISPLAYERS">
+        EVENT_DEFAULT_DISPLAYERS
+        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#constant_EVENT_DEFAULT_DISPLAYERS" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -325,7 +374,65 @@
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">REGISTER_DISPLAYERS</span>
+    <span class="phpdocumentor-signature__name">EVENT_DEFAULT_DISPLAYERS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;default_displayer&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EVENT_KIND_TARGETS">
+        EVENT_KIND_TARGETS
+        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#constant_EVENT_KIND_TARGETS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">15</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EVENT_KIND_TARGETS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;kind_targets&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EVENT_REGISTER_DISPLAYERS">
+        EVENT_REGISTER_DISPLAYERS
+        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#constant_EVENT_REGISTER_DISPLAYERS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">14</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EVENT_REGISTER_DISPLAYERS</span>
     = <span class="phpdocumentor-signature__default-value">&#039;register_displayer&#039;</span>
 </code>
 
@@ -361,15 +468,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Defaults displayer mapping, indexed by asset kinds</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$_defaults</span>
     </code>
 
@@ -394,14 +500,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$_displayers</span>
     </code>
 
@@ -417,26 +523,25 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__mapping">
-        $_mapping
-        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#property__mapping" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property__kindTargets">
+        $_kindTargets
+        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#property__kindTargets" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Displayer mapping, indexed by asset kinds</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_mapping</span>
-    </code>
+    <span class="phpdocumentor-signature__name">$_kindTargets</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -463,7 +568,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -496,7 +601,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -532,6 +637,63 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getClassByHandle">
+        getClassByHandle()
+        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_getClassByHandle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get a displayer class by handle</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getClassByHandle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$handle</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Ryssbowh\CraftThemes\services\FieldDisplayerException">FieldDisplayerException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getDefaults">
         getDefaults()
         <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_getDefaults" class="headerlink"><i class="fas fa-link"></i></a>
@@ -539,22 +701,22 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Defaults getter</p>
+        <p class="phpdocumentor-summary">Get default displayers, indexed by kind</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getDefaults</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getDefaults</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
             &mdash;
         
     
@@ -572,7 +734,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -580,7 +742,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getForKind</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kind</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getForKind</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kind</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FileDisplayerInterface">FileDisplayerInterface</abbr></a>&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -597,7 +759,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FileDisplayerInterface">FileDisplayerInterface</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -608,25 +770,78 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getMapping">
-        getMapping()
-        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_getMapping" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getKindTargets">
+        getKindTargets()
+        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_getKindTargets" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Mapping getter</p>
+        <p class="phpdocumentor-summary">Get the kind targets for an displayer handle</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getMapping</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getKindTargets</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$displayerHandle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
     
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$displayerHandle</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__getKindTargets">
+        _getKindTargets()
+        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method__getKindTargets" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">193</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Resolve an array of kinds, changing &#039;*&#039; to all defined kinds</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">_getKindTargets</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kinds</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$kinds</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -879,7 +1094,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -887,7 +1102,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">getByHandles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handles</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getByHandles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handles</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FileDisplayerInterface">FileDisplayerInterface</abbr></a>&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -904,7 +1119,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FileDisplayerInterface">FileDisplayerInterface</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -938,6 +1153,56 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-GroupsService.html"><abbr title="\Ryssbowh\CraftThemes\services\GroupsService">GroupsService</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isDisplayerValidForKind">
+        isDisplayerValidForKind()
+        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_isDisplayerValidForKind" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">213</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Is a displayer valid for a kind</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">isDisplayerValidForKind</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$displayerHandle</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kind</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$displayerHandle</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$kind</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -1021,7 +1286,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -1033,6 +1298,83 @@
 
     
     
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_registerDefaults">
+        registerDefaults()
+        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_registerDefaults" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">144</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Register default displayers</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">registerDefaults</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_registerTargets">
+        registerTargets()
+        <a href="classes/Ryssbowh-CraftThemes-services-FileDisplayerService.html#method_registerTargets" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/FileDisplayerService.php"><a href="files/services-filedisplayerservice.html"><abbr title="services/FileDisplayerService.php">FileDisplayerService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">176</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Register asset kind targets</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">registerTargets</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$displayerHandle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$displayerHandle</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>

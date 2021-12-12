@@ -133,14 +133,14 @@
                 <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Ryssbowh-CraftThemes-base-BlockProvider.html#property__allDefinedBlocks">$_allDefinedBlocks</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;string|int, string&gt;            </span>
 </dt>
 <dd>block classes defined by this provider, indexed by blocks handles</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Ryssbowh-CraftThemes-blockProviders-SystemBlockProvider.html#property__definedBlocks">$_definedBlocks</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;string|int, string&gt;            </span>
 </dt>
 <dd>block classes defined by this provider</dd>
 
@@ -161,16 +161,16 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-base-BlockProvider.html#method_getBlocks">getBlocks()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>&gt;    </span>
 </dt>
 <dd>Get all defined blocks as objects</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-base-BlockProvider.html#method_getDefinedBlocks">getDefinedBlocks()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
-<dd>Get all defined blocks</dd>
+<dd>Get all defined blocks classes</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-blockProviders-SystemBlockProvider.html#method_getHandle">getHandle()</a>
@@ -222,7 +222,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$_allDefinedBlocks</span>
     </code>
 
@@ -255,13 +255,26 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$_definedBlocks</span>
      = <span class="phpdocumentor-signature__default-value">[RyssbowhCraftThemesmodelslocksTemplateBlock::class, RyssbowhCraftThemesmodelslocksContentBlock::class, RyssbowhCraftThemesmodelslocksTwigBlock::class, RyssbowhCraftThemesmodelslocksEntryBlock::class, RyssbowhCraftThemesmodelslocksCategoryBlock::class, RyssbowhCraftThemesmodelslocksAssetBlock::class, RyssbowhCraftThemesmodelslocksUserBlock::class, RyssbowhCraftThemesmodelslocksCurrentUserBlock::class, RyssbowhCraftThemesmodelslocksGlobalBlock::class, RyssbowhCraftThemesmodelslocksSiteNameBlock::class, RyssbowhCraftThemesmodelslocksFlashMessagesBlock::class]</span></code>
 
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
 
 </article>
             </section>
@@ -393,7 +406,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getBlocks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getBlocks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>&gt;</span></code>
 
     
     
@@ -413,7 +426,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -435,11 +448,11 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get all defined blocks</p>
+        <p class="phpdocumentor-summary">Get all defined blocks classes</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getDefinedBlocks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getDefinedBlocks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
     
     
@@ -459,7 +472,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
             &mdash;
         
     

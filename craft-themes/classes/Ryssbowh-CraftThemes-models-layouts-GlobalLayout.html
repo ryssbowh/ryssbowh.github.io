@@ -186,7 +186,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property__regions">$_regions</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-RegionInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionInterface">RegionInterface</abbr></a>&gt;            </span>
 </dt>
 <dd></dd>
 
@@ -200,7 +200,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property__viewModes">$_viewModes</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>&gt;            </span>
 </dt>
 <dd></dd>
 
@@ -219,6 +219,13 @@
 <dd>Add a view mode</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_afterValidate">afterValidate()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-GlobalLayout.html#method_canHaveBlocks">canHaveBlocks()</a>
     <span>
                         &nbsp;: bool    </span>
@@ -233,13 +240,6 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_eagerLoadFields">eagerLoadFields()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Eager load layout fields</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_fields">fields()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -249,7 +249,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getBlocks">getBlocks()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>&gt;    </span>
 </dt>
 <dd>Blocks getter</dd>
 
@@ -263,7 +263,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getCraftFields">getCraftFields()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string|int, <abbr title="\craft\base\Field">Field</abbr>&gt;    </span>
 </dt>
 <dd>Get all craft fields defined on this layout&#039;s element</dd>
 
@@ -303,6 +303,13 @@
 <dd>Get element associated to that layout (category group, entry type, User etc)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getErrors">getErrors()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getFieldLayout">getFieldLayout()</a>
     <span>
                         &nbsp;: <abbr title="\craft\models\FieldLayout">FieldLayout</abbr>    </span>
@@ -319,14 +326,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getRegion">getRegion()</a>
     <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-Region.html"><abbr title="\Ryssbowh\CraftThemes\models\Region">Region</abbr></a>    </span>
+                        &nbsp;: <abbr title="\Ryssbowh\CraftThemes\interfaces\Region">Region</abbr>    </span>
 </dt>
 <dd>Get a region by handle.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getRegions">getRegions()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-RegionInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionInterface">RegionInterface</abbr></a>&gt;    </span>
 </dt>
 <dd>Get layout regions</dd>
 
@@ -368,7 +375,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getViewModes">getViewModes()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>&gt;    </span>
 </dt>
 <dd>Get view modes defined for that layout</dd>
 
@@ -378,6 +385,13 @@
                         &nbsp;: bool    </span>
 </dt>
 <dd>Can this layout define displays.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_hasErrors">hasErrors()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_hasRegion">hasRegion()</a>
@@ -477,7 +491,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -509,7 +523,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -541,7 +555,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -573,7 +587,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -606,7 +620,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -638,7 +652,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -670,7 +684,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -703,14 +717,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-RegionInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionInterface">RegionInterface</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$_regions</span>
     </code>
 
@@ -767,14 +781,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$_viewModes</span>
     </code>
 
@@ -803,7 +817,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">351</span>
+    <span class="phpdocumentor-element-found-in__line">387</span>
 
     </aside>
 
@@ -866,7 +880,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">289</span>
+    <span class="phpdocumentor-element-found-in__line">325</span>
 
     </aside>
 
@@ -905,6 +919,51 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_afterValidate">
+        afterValidate()
+        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_afterValidate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">127</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">afterValidate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
         
     
@@ -1006,69 +1065,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_eagerLoadFields">
-        eagerLoadFields()
-        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_eagerLoadFields" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">144</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Eager load layout fields</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">eagerLoadFields</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Element">Element</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$element</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$viewMode</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$element</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Element">Element</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$viewMode</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_fields">
         fields()
         <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_fields" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1076,7 +1072,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">317</span>
+    <span class="phpdocumentor-element-found-in__line">353</span>
 
     </aside>
 
@@ -1121,7 +1117,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">325</span>
+    <span class="phpdocumentor-element-found-in__line">361</span>
 
     </aside>
 
@@ -1129,7 +1125,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getBlocks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getBlocks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>&gt;</span></code>
 
     
     
@@ -1149,7 +1145,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -1167,7 +1163,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">198</span>
+    <span class="phpdocumentor-element-found-in__line">234</span>
 
     </aside>
 
@@ -1213,7 +1209,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">379</span>
+    <span class="phpdocumentor-element-found-in__line">415</span>
 
     </aside>
 
@@ -1221,7 +1217,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getCraftFields</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getCraftFields</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\craft\base\Field">Field</abbr>&gt;</span></code>
 
     
     
@@ -1241,7 +1237,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\craft\base\Field">Field</abbr>&gt;</span>
             &mdash;
         
     
@@ -1259,7 +1255,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">250</span>
+    <span class="phpdocumentor-element-found-in__line">286</span>
 
     </aside>
 
@@ -1351,7 +1347,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">444</span>
+    <span class="phpdocumentor-element-found-in__line">480</span>
 
     </aside>
 
@@ -1397,7 +1393,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">428</span>
+    <span class="phpdocumentor-element-found-in__line">464</span>
 
     </aside>
 
@@ -1453,7 +1449,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -1492,6 +1488,62 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getErrors">
+        getErrors()
+        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getErrors" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">154</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getErrors</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attribute</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$attribute</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getFieldLayout">
         getFieldLayout()
         <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getFieldLayout" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1499,7 +1551,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">420</span>
+    <span class="phpdocumentor-element-found-in__line">456</span>
 
     </aside>
 
@@ -1545,7 +1597,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -1578,7 +1630,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">360</span>
+    <span class="phpdocumentor-element-found-in__line">396</span>
 
     </aside>
 
@@ -1586,7 +1638,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getRegion</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-Region.html"><abbr title="\Ryssbowh\CraftThemes\models\Region">Region</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">getRegion</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\interfaces\Region">Region</abbr></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1616,7 +1668,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-Region.html"><abbr title="\Ryssbowh\CraftThemes\models\Region">Region</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\interfaces\Region">Region</abbr></span>
             &mdash;
         
     
@@ -1634,7 +1686,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
@@ -1642,7 +1694,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getRegions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getRegions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-RegionInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionInterface">RegionInterface</abbr></a>&gt;</span></code>
 
     
     
@@ -1662,7 +1714,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-RegionInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionInterface">RegionInterface</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -1680,7 +1732,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">403</span>
+    <span class="phpdocumentor-element-found-in__line">439</span>
 
     </aside>
 
@@ -1736,7 +1788,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">309</span>
+    <span class="phpdocumentor-element-found-in__line">345</span>
 
     </aside>
 
@@ -1782,7 +1834,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -1828,7 +1880,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -1874,7 +1926,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">262</span>
+    <span class="phpdocumentor-element-found-in__line">298</span>
 
     </aside>
 
@@ -1930,7 +1982,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">239</span>
+    <span class="phpdocumentor-element-found-in__line">275</span>
 
     </aside>
 
@@ -1938,7 +1990,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getViewModes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getViewModes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>&gt;</span></code>
 
     
     
@@ -1958,7 +2010,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -1976,7 +2028,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">200</span>
 
     </aside>
 
@@ -2015,6 +2067,62 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_hasErrors">
+        hasErrors()
+        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_hasErrors" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">138</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">hasErrors</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attribute</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$attribute</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_hasRegion">
         hasRegion()
         <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_hasRegion" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2022,7 +2130,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">371</span>
+    <span class="phpdocumentor-element-found-in__line">407</span>
 
     </aside>
 
@@ -2078,7 +2186,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">301</span>
+    <span class="phpdocumentor-element-found-in__line">337</span>
 
     </aside>
 
@@ -2134,7 +2242,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">387</span>
+    <span class="phpdocumentor-element-found-in__line">423</span>
 
     </aside>
 
@@ -2142,7 +2250,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">render</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Element">Element</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$element</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$viewMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">ViewModeService::DEFAULT_HANDLE</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">render</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Element">Element</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$element</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$viewMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">ViewModeService::DEFAULT_HANDLE</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2156,7 +2264,7 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$viewMode</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">ViewModeService::DEFAULT_HANDLE</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2197,7 +2305,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">395</span>
+    <span class="phpdocumentor-element-found-in__line">431</span>
 
     </aside>
 
@@ -2242,7 +2350,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">337</span>
+    <span class="phpdocumentor-element-found-in__line">373</span>
 
     </aside>
 
@@ -2298,7 +2406,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">231</span>
+    <span class="phpdocumentor-element-found-in__line">267</span>
 
     </aside>
 
@@ -2355,7 +2463,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">275</span>
+    <span class="phpdocumentor-element-found-in__line">311</span>
 
     </aside>
 
@@ -2411,7 +2519,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -2444,7 +2552,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 

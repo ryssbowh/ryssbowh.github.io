@@ -92,6 +92,9 @@
     <article class="phpdocumentor-element -interface">
         <h2 class="phpdocumentor-content__title">
     FileDisplayerInterface
+            <span class="phpdocumentor-element__extends">
+            extends
+                            <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a>                    </span>
                 <div class="phpdocumentor-element__package">
             in
             <ul class="phpdocumentor-breadcrumbs">
@@ -123,12 +126,40 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#constant_CACHE_PREFIX">CACHE_PREFIX</a>
+    <span>
+        &nbsp;= &#039;file&#039;                    </span>
+</dt>
+<dd>Prefix used when caching this type of displayers</dd>
+
                     <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_beforeRender">beforeRender()</a>
     <span>
                         &nbsp;: bool    </span>
 </dt>
 <dd>Callback before rendering, returning false will skip the file rendering</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_eagerLoad">eagerLoad()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, string&gt;    </span>
+</dt>
+<dd>Modify eager load map</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_getCanBeCached">getCanBeCached()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Can this displayer be cached</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_getDescription">getDescription()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Description/helper shown in CP</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_getDisplayer">getDisplayer()</a>
@@ -138,14 +169,21 @@
 <dd>Displayer getter</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_getHandle">getHandle()</a>
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_getField">getField()</a>
+    <span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a>    </span>
+</dt>
+<dd>Field getter</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_getHandle">getHandle()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
 <dd>Get handle</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_getHasOptions">getHasOptions()</a>
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_getHasOptions">getHasOptions()</a>
     <span>
                         &nbsp;: bool    </span>
 </dt>
@@ -154,12 +192,12 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_getKindTargets">getKindTargets()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;|string    </span>
+                        &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
 <dd>Which file kind this displayer can handle.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_getName">getName()</a>
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_getName">getName()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
@@ -173,11 +211,11 @@
 <dd>Get options</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_getOptionsModel">getOptionsModel()</a>
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_isDefault">isDefault()</a>
     <span>
-                        &nbsp;: <abbr title="\craft\base\Model">Model</abbr>    </span>
+                        &nbsp;: bool    </span>
 </dt>
-<dd>Get options model</dd>
+<dd>Is this displayer the default for an asset kind</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_setDisplayer">setDisplayer()</a>
@@ -191,6 +229,41 @@
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CACHE_PREFIX">
+        CACHE_PREFIX
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#constant_CACHE_PREFIX" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FileDisplayerInterface.php"><a href="files/interfaces-filedisplayerinterface.html"><abbr title="interfaces/FileDisplayerInterface.php">FileDisplayerInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Prefix used when caching this type of displayers</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CACHE_PREFIX</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;file&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
@@ -210,7 +283,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FileDisplayerInterface.php"><a href="files/interfaces-filedisplayerinterface.html"><abbr title="interfaces/FileDisplayerInterface.php">FileDisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -246,6 +319,129 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_eagerLoad">
+        eagerLoad()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_eagerLoad" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/DisplayerInterface.php"><a href="files/interfaces-displayerinterface.html"><abbr title="interfaces/DisplayerInterface.php">DisplayerInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">59</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Modify eager load map</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">eagerLoad</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eagerLoad</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$eagerLoad</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$prefix</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$level</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCanBeCached">
+        getCanBeCached()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_getCanBeCached" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/DisplayerInterface.php"><a href="files/interfaces-displayerinterface.html"><abbr title="interfaces/DisplayerInterface.php">DisplayerInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Can this displayer be cached</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getCanBeCached</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDescription">
+        getDescription()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_getDescription" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/DisplayerInterface.php"><a href="files/interfaces-displayerinterface.html"><abbr title="interfaces/DisplayerInterface.php">DisplayerInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Description/helper shown in CP</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getDescription</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getDisplayer">
         getDisplayer()
         <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_getDisplayer" class="headerlink"><i class="fas fa-link"></i></a>
@@ -253,7 +449,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FileDisplayerInterface.php"><a href="files/interfaces-filedisplayerinterface.html"><abbr title="interfaces/FileDisplayerInterface.php">FileDisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -279,14 +475,47 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getHandle">
-        getHandle()
-        <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_getHandle" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getField">
+        getField()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_getField" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FileDisplayerInterface.php"><a href="files/interfaces-filedisplayerinterface.html"><abbr title="interfaces/FileDisplayerInterface.php">FileDisplayerInterface.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/DisplayerInterface.php"><a href="files/interfaces-displayerinterface.html"><abbr title="interfaces/DisplayerInterface.php">DisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Field getter</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getField</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getHandle">
+        getHandle()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_getHandle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/DisplayerInterface.php"><a href="files/interfaces-displayerinterface.html"><abbr title="interfaces/DisplayerInterface.php">DisplayerInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -294,7 +523,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getHandle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getHandle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
@@ -314,12 +543,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getHasOptions">
         getHasOptions()
-        <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_getHasOptions" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_getHasOptions" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FileDisplayerInterface.php"><a href="files/interfaces-filedisplayerinterface.html"><abbr title="interfaces/FileDisplayerInterface.php">FileDisplayerInterface.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/DisplayerInterface.php"><a href="files/interfaces-displayerinterface.html"><abbr title="interfaces/DisplayerInterface.php">DisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -352,7 +581,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FileDisplayerInterface.php"><a href="files/interfaces-filedisplayerinterface.html"><abbr title="interfaces/FileDisplayerInterface.php">FileDisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -360,17 +589,17 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getKindTargets</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getKindTargets</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
-        <section class="phpdocumentor-description"><p>array[string] or
-'*' for all asset kinds</p>
+        <section class="phpdocumentor-description"><p>Developers should use FileDisplayerService::getKindTargets(string $displayerHandle) instead</p>
+<p>'*' is a valid kind and will be resolved to all asset kinds</p>
 </section>
 
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|string</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
             &mdash;
         
     
@@ -383,12 +612,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getName">
         getName()
-        <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_getName" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html#method_getName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FileDisplayerInterface.php"><a href="files/interfaces-filedisplayerinterface.html"><abbr title="interfaces/FileDisplayerInterface.php">FileDisplayerInterface.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/DisplayerInterface.php"><a href="files/interfaces-displayerinterface.html"><abbr title="interfaces/DisplayerInterface.php">DisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -421,7 +650,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FileDisplayerInterface.php"><a href="files/interfaces-filedisplayerinterface.html"><abbr title="interfaces/FileDisplayerInterface.php">FileDisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -445,31 +674,41 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getOptionsModel">
-        getOptionsModel()
-        <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_getOptionsModel" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_isDefault">
+        isDefault()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#method_isDefault" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FileDisplayerInterface.php"><a href="files/interfaces-filedisplayerinterface.html"><abbr title="interfaces/FileDisplayerInterface.php">FileDisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get options model</p>
+        <p class="phpdocumentor-summary">Is this displayer the default for an asset kind</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getOptionsModel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\craft\base\Model">Model</abbr></span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">isDefault</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kind</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$kind</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\craft\base\Model">Model</abbr></span>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -487,7 +726,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/FileDisplayerInterface.php"><a href="files/interfaces-filedisplayerinterface.html"><abbr title="interfaces/FileDisplayerInterface.php">FileDisplayerInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 

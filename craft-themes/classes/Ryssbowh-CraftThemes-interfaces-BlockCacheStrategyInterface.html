@@ -124,11 +124,11 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_flush">flush()</a>
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_buildKey">buildKey()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Flush cache</dd>
+<dd>Get the cache key elements specific to this strategy</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getCache">getCache()</a>
@@ -143,6 +143,13 @@
                         &nbsp;: string    </span>
 </dt>
 <dd>Get strategy description</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getDuration">getDuration()</a>
+    <span>
+                        &nbsp;: int|null    </span>
+</dt>
+<dd>Get cache duration (seconds)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getHandle">getHandle()</a>
@@ -164,13 +171,6 @@
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-BlockStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockStrategyOptions">BlockStrategyOptions</abbr></a>    </span>
 </dt>
 <dd>Get options model (populated)</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getOptionsModel">getOptionsModel()</a>
-    <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-BlockStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockStrategyOptions">BlockStrategyOptions</abbr></a>    </span>
-</dt>
-<dd>Get options model</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_setCache">setCache()</a>
@@ -196,29 +196,39 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_flush">
-        flush()
-        <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_flush" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_buildKey">
+        buildKey()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_buildKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Flush cache</p>
+        <p class="phpdocumentor-summary">Get the cache key elements specific to this strategy</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">flush</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">buildKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$block</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$block</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
         
     
@@ -307,6 +317,39 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getDuration">
+        getDuration()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getDuration" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get cache duration (seconds)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getDuration</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getHandle">
         getHandle()
         <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getHandle" class="headerlink"><i class="fas fa-link"></i></a>
@@ -380,7 +423,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -389,39 +432,6 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockStrategyOptions">BlockStrategyOptions</abbr></a></span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockStrategyOptions">BlockStrategyOptions</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getOptionsModel">
-        getOptionsModel()
-        <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockCacheStrategyInterface.html#method_getOptionsModel" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/BlockCacheStrategyInterface.php"><a href="files/interfaces-blockcachestrategyinterface.html"><abbr title="interfaces/BlockCacheStrategyInterface.php">BlockCacheStrategyInterface.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">68</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get options model</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getOptionsModel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockStrategyOptions">BlockStrategyOptions</abbr></a></span></code>
 
     
     

@@ -154,18 +154,18 @@
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_buildKey">buildKey()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_fields">fields()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_flush">flush()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Flush cache</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_getCache">getCache()</a>
@@ -180,6 +180,13 @@
                         &nbsp;: string    </span>
 </dt>
 <dd>Get strategy description</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getDuration">getDuration()</a>
+    <span>
+                        &nbsp;: int|null    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getHandle">getHandle()</a>
@@ -203,13 +210,6 @@
 <dd>Get options model (populated)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getOptionsModel">getOptionsModel()</a>
-    <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-BlockStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockStrategyOptions">BlockStrategyOptions</abbr></a>    </span>
-</dt>
-<dd>Get options model</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_init">init()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -224,32 +224,11 @@
 <dd>Set a block cache</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_buildKey">buildKey()</a>
+    <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getOptionsModel">getOptionsModel()</a>
     <span>
-                        &nbsp;: string    </span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-models-BlockStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockStrategyOptions">BlockStrategyOptions</abbr></a>    </span>
 </dt>
-<dd>Builds a cache key for a block</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getKey">getKey()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Get the cache key specific to this strategy</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getKeyPrefix">getKeyPrefix()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Get the cache key prefix specific to this strategy</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getTag">getTag()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Get this strategy cache dependency tag</dd>
+<dd>Get options model</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getViewPort">getViewPort()</a>
@@ -382,24 +361,35 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_fields">
-        fields()
-        <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_fields" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_buildKey">
+        buildKey()
+        <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_buildKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="base/BlockCacheStrategy.php"><a href="files/base-blockcachestrategy.html"><abbr title="base/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="blockCache/PathBlockCache.php"><a href="files/blockcache-pathblockcache.html"><abbr title="blockCache/PathBlockCache.php">PathBlockCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">fields</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">buildKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$block</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$block</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -416,7 +406,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
         
     
@@ -427,22 +417,21 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_flush">
-        flush()
-        <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_flush" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_fields">
+        fields()
+        <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_fields" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/BlockCacheStrategy.php"><a href="files/base-blockcachestrategy.html"><abbr title="base/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Flush cache</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">flush</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">fields</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
     
@@ -575,6 +564,51 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getDuration">
+        getDuration()
+        <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getDuration" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="blockCache/PathBlockCache.php"><a href="files/blockcache-pathblockcache.html"><abbr title="blockCache/PathBlockCache.php">PathBlockCache.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getDuration</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getHandle">
         getHandle()
         <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getHandle" class="headerlink"><i class="fas fa-link"></i></a>
@@ -672,7 +706,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/BlockCacheStrategy.php"><a href="files/base-blockcachestrategy.html"><abbr title="base/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -681,52 +715,6 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockStrategyOptions">BlockStrategyOptions</abbr></a></span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockStrategyOptions">BlockStrategyOptions</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getOptionsModel">
-        getOptionsModel()
-        <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getOptionsModel" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="blockCache/PathBlockCache.php"><a href="files/blockcache-pathblockcache.html"><abbr title="blockCache/PathBlockCache.php">PathBlockCache.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">57</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get options model</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getOptionsModel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockStrategyOptions">BlockStrategyOptions</abbr></a></span></code>
 
     
     
@@ -797,7 +785,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/BlockCacheStrategy.php"><a href="files/base-blockcachestrategy.html"><abbr title="base/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -860,121 +848,22 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_buildKey">
-        buildKey()
-        <a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html#method_buildKey" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="base/BlockCacheStrategy.php"><a href="files/base-blockcachestrategy.html"><abbr title="base/BlockCacheStrategy.php">BlockCacheStrategy.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">89</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Builds a cache key for a block</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">buildKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$block</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$block</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getKey">
-        getKey()
-        <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getKey" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getOptionsModel">
+        getOptionsModel()
+        <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getOptionsModel" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="blockCache/PathBlockCache.php"><a href="files/blockcache-pathblockcache.html"><abbr title="blockCache/PathBlockCache.php">PathBlockCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get the cache key specific to this strategy</p>
+        <p class="phpdocumentor-summary">Get options model</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">getKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$block</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$block</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getKeyPrefix">
-        getKeyPrefix()
-        <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getKeyPrefix" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="blockCache/PathBlockCache.php"><a href="files/blockcache-pathblockcache.html"><abbr title="blockCache/PathBlockCache.php">PathBlockCache.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">83</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get the cache key prefix specific to this strategy</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">getKeyPrefix</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">getOptionsModel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockStrategyOptions">BlockStrategyOptions</abbr></a></span></code>
 
     
     
@@ -994,53 +883,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getTag">
-        getTag()
-        <a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html#method_getTag" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="blockCache/PathBlockCache.php"><a href="files/blockcache-pathblockcache.html"><abbr title="blockCache/PathBlockCache.php">PathBlockCache.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">91</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get this strategy cache dependency tag</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">getTag</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-models-BlockStrategyOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\BlockStrategyOptions">BlockStrategyOptions</abbr></a></span>
             &mdash;
         
     
@@ -1058,7 +901,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="blockCache/PathBlockCache.php"><a href="files/blockcache-pathblockcache.html"><abbr title="blockCache/PathBlockCache.php">PathBlockCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
