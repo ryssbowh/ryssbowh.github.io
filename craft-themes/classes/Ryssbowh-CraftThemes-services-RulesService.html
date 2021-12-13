@@ -131,9 +131,9 @@
 
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-RulesService.html#constant_CACHE_TAG">CACHE_TAG</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-RulesService.html#constant_RULES_CACHE_TAG">RULES_CACHE_TAG</a>
     <span>
-        &nbsp;= &#039;themes.rules&#039;                    </span>
+        &nbsp;= &#039;themes::rules&#039;                    </span>
 </dt>
 <dd></dd>
 
@@ -242,6 +242,13 @@ get the theme either from cache or from defined theme rules</dd>
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html"><abbr title="\Ryssbowh\CraftThemes\services\DisplayService">DisplayService</abbr></a>    </span>
 </dt>
 <dd>Get the display service</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_eagerLoadingService">eagerLoadingService()</a>
+    <span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html"><abbr title="\Ryssbowh\CraftThemes\services\EagerLoadingService">EagerLoadingService</abbr></a>    </span>
+</dt>
+<dd>Get the eager loading service</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_fieldDisplayersService">fieldDisplayersService()</a>
@@ -362,6 +369,13 @@ get the theme either from cache or from defined theme rules</dd>
 </dt>
 <dd>Get the view mode service</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_viewService">viewService()</a>
+    <span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-services-ViewService.html"><abbr title="\Ryssbowh\CraftThemes\services\ViewService">ViewService</abbr></a>    </span>
+</dt>
+<dd>Get the view service</dd>
+
         </dl>
 
 
@@ -373,9 +387,9 @@ get the theme either from cache or from defined theme rules</dd>
             <a href="classes/Ryssbowh-CraftThemes-services-RulesService.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_CACHE_TAG">
-        CACHE_TAG
-        <a href="classes/Ryssbowh-CraftThemes-services-RulesService.html#constant_CACHE_TAG" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="constant_RULES_CACHE_TAG">
+        RULES_CACHE_TAG
+        <a href="classes/Ryssbowh-CraftThemes-services-RulesService.html#constant_RULES_CACHE_TAG" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -389,8 +403,8 @@ get the theme either from cache or from defined theme rules</dd>
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">CACHE_TAG</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;themes.rules&#039;</span>
+    <span class="phpdocumentor-signature__name">RULES_CACHE_TAG</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;themes::rules&#039;</span>
 </code>
 
 
@@ -784,7 +798,7 @@ get the theme either from cache or from defined theme rules</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -817,7 +831,7 @@ get the theme either from cache or from defined theme rules</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -883,7 +897,7 @@ get the theme either from cache or from defined theme rules</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -899,6 +913,39 @@ get the theme either from cache or from defined theme rules</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html"><abbr title="\Ryssbowh\CraftThemes\services\DisplayService">DisplayService</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_eagerLoadingService">
+        eagerLoadingService()
+        <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_eagerLoadingService" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">146</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the eager loading service</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">eagerLoadingService</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html"><abbr title="\Ryssbowh\CraftThemes\services\EagerLoadingService">EagerLoadingService</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html"><abbr title="\Ryssbowh\CraftThemes\services\EagerLoadingService">EagerLoadingService</abbr></a></span>
             &mdash;
         
     
@@ -949,7 +996,7 @@ get the theme either from cache or from defined theme rules</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -982,7 +1029,7 @@ get the theme either from cache or from defined theme rules</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -1099,7 +1146,7 @@ get the theme either from cache or from defined theme rules</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -1132,7 +1179,7 @@ get the theme either from cache or from defined theme rules</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -1165,7 +1212,7 @@ get the theme either from cache or from defined theme rules</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -1545,7 +1592,7 @@ get the theme either from cache or from defined theme rules</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -1611,6 +1658,39 @@ get the theme either from cache or from defined theme rules</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html"><abbr title="\Ryssbowh\CraftThemes\services\ViewModeService">ViewModeService</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_viewService">
+        viewService()
+        <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_viewService" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/Service.php"><a href="files/services-service.html"><abbr title="services/Service.php">Service.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the view service</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">viewService</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-ViewService.html"><abbr title="\Ryssbowh\CraftThemes\services\ViewService">ViewService</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-ViewService.html"><abbr title="\Ryssbowh\CraftThemes\services\ViewService">ViewService</abbr></a></span>
             &mdash;
         
     

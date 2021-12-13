@@ -91,7 +91,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    DisplayerCacheService
+    EagerLoadingService
 
         <span class="phpdocumentor-element__extends">
         extends <a href="classes/Ryssbowh-CraftThemes-services-Service.html"><abbr title="\Ryssbowh\CraftThemes\services\Service">Service</abbr></a>
@@ -108,9 +108,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayerCacheService.php"><a href="files/services-displayercacheservice.html"><abbr title="services/DisplayerCacheService.php">DisplayerCacheService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="services/EagerLoadingService.php"><a href="files/services-eagerloadingservice.html"><abbr title="services/EagerLoadingService.php">EagerLoadingService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">8</span>
 
     </aside>
 
@@ -131,53 +131,39 @@
 
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#constant_DISPLAYER_CACHE_TAG">DISPLAYER_CACHE_TAG</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#constant_EAGERLOAD_CACHE_TAG">EAGERLOAD_CACHE_TAG</a>
     <span>
-        &nbsp;= &#039;themes::displayers&#039;                    </span>
+        &nbsp;= &#039;themes::eagerLoad&#039;                    </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#property_cache">$cache</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#property_cache">$cache</a>
     <span>
                 &nbsp;: <abbr title="\yii\caching\CacheInterface">CacheInterface</abbr>            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#property_cacheEnabled">$cacheEnabled</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#property_cacheEnabled">$cacheEnabled</a>
     <span>
                 &nbsp;: bool            </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_flush">flush()</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#method_flushCache">flushCache()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>Flush all displayer cache</dd>
+<dd>Flush eager loading cache</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_getCache">getCache()</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#method_getEagerLoadable">getEagerLoadable()</a>
     <span>
-                        &nbsp;: string|null    </span>
+                        &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
-<dd>Get a displayer cache</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_startCaching">startCaching()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Start displayer caching</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_stopCaching">stopCaching()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Stop displayer caching</dd>
+<dd>Returns all the fields that can be eager loaded on a view mode and stores it in cache</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_blockCacheService">blockCacheService()</a>
@@ -199,13 +185,6 @@
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-services-BlockService.html"><abbr title="\Ryssbowh\CraftThemes\services\BlockService">BlockService</abbr></a>    </span>
 </dt>
 <dd>Get the blocks service</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_buildKey">buildKey()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Build a key to cache a displayer</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_displayService">displayService()</a>
@@ -243,13 +222,6 @@
 <dd>Get the file displayers service</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_getContentBlock">getContentBlock()</a>
-    <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a>    </span>
-</dt>
-<dd>Get the content block</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_groupsService">groupsService()</a>
     <span>
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-services-GroupsService.html"><abbr title="\Ryssbowh\CraftThemes\services\GroupsService">GroupsService</abbr></a>    </span>
@@ -269,20 +241,6 @@
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-services-MatrixService.html"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></a>    </span>
 </dt>
 <dd>Get the matrix service</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_setCache">setCache()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Set a displayer cache</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_shouldCache">shouldCache()</a>
-    <span>
-                        &nbsp;: bool    </span>
-</dt>
-<dd>Should a displayer be cached</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_themesRegistry">themesRegistry()</a>
@@ -320,18 +278,18 @@
     <section class="phpdocumentor-constants">
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
-            <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_DISPLAYER_CACHE_TAG">
-        DISPLAYER_CACHE_TAG
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#constant_DISPLAYER_CACHE_TAG" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="constant_EAGERLOAD_CACHE_TAG">
+        EAGERLOAD_CACHE_TAG
+        <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#constant_EAGERLOAD_CACHE_TAG" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayerCacheService.php"><a href="files/services-displayercacheservice.html"><abbr title="services/DisplayerCacheService.php">DisplayerCacheService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="services/EagerLoadingService.php"><a href="files/services-eagerloadingservice.html"><abbr title="services/EagerLoadingService.php">EagerLoadingService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
@@ -339,8 +297,8 @@
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">DISPLAYER_CACHE_TAG</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;themes::displayers&#039;</span>
+    <span class="phpdocumentor-signature__name">EAGERLOAD_CACHE_TAG</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;themes::eagerLoad&#039;</span>
 </code>
 
 
@@ -357,7 +315,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -368,14 +326,14 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_cache">
         $cache
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#property_cache" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#property_cache" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayerCacheService.php"><a href="files/services-displayercacheservice.html"><abbr title="services/DisplayerCacheService.php">DisplayerCacheService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="services/EagerLoadingService.php"><a href="files/services-eagerloadingservice.html"><abbr title="services/EagerLoadingService.php">EagerLoadingService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -400,14 +358,14 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_cacheEnabled">
         $cacheEnabled
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#property_cacheEnabled" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#property_cacheEnabled" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayerCacheService.php"><a href="files/services-displayercacheservice.html"><abbr title="services/DisplayerCacheService.php">DisplayerCacheService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="services/EagerLoadingService.php"><a href="files/services-eagerloadingservice.html"><abbr title="services/EagerLoadingService.php">EagerLoadingService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
@@ -428,7 +386,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -436,22 +394,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_flush">
-        flush()
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_flush" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_flushCache">
+        flushCache()
+        <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#method_flushCache" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayerCacheService.php"><a href="files/services-displayercacheservice.html"><abbr title="services/DisplayerCacheService.php">DisplayerCacheService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="services/EagerLoadingService.php"><a href="files/services-eagerloadingservice.html"><abbr title="services/EagerLoadingService.php">EagerLoadingService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Flush all displayer cache</p>
+        <p class="phpdocumentor-summary">Flush eager loading cache</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">flush</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">flushCache</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
     
@@ -469,36 +427,29 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getCache">
-        getCache()
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_getCache" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getEagerLoadable">
+        getEagerLoadable()
+        <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#method_getEagerLoadable" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayerCacheService.php"><a href="files/services-displayercacheservice.html"><abbr title="services/DisplayerCacheService.php">DisplayerCacheService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="services/EagerLoadingService.php"><a href="files/services-eagerloadingservice.html"><abbr title="services/EagerLoadingService.php">EagerLoadingService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get a displayer cache</p>
+        <p class="phpdocumentor-summary">Returns all the fields that can be eager loaded on a view mode and stores it in cache</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$displayer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cachePrefix</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+                <span class="phpdocumentor-signature__name">getEagerLoadable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$viewMode</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$displayer</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$cachePrefix</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$viewMode</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -508,107 +459,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_startCaching">
-        startCaching()
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_startCaching" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayerCacheService.php"><a href="files/services-displayercacheservice.html"><abbr title="services/DisplayerCacheService.php">DisplayerCacheService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">32</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Start displayer caching</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">startCaching</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$displayer</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$displayer</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_stopCaching">
-        stopCaching()
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_stopCaching" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayerCacheService.php"><a href="files/services-displayercacheservice.html"><abbr title="services/DisplayerCacheService.php">DisplayerCacheService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">47</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Stop displayer caching</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">stopCaching</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$displayer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cachePrefix</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$displayer</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$data</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$cachePrefix</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
             &mdash;
         
     
@@ -708,56 +559,6 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-BlockService.html"><abbr title="\Ryssbowh\CraftThemes\services\BlockService">BlockService</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_buildKey">
-        buildKey()
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_buildKey" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayerCacheService.php"><a href="files/services-displayercacheservice.html"><abbr title="services/DisplayerCacheService.php">DisplayerCacheService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">127</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Build a key to cache a displayer</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">buildKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$displayer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cachePrefix</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$displayer</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$cachePrefix</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
@@ -933,39 +734,6 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getContentBlock">
-        getContentBlock()
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_getContentBlock" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayerCacheService.php"><a href="files/services-displayercacheservice.html"><abbr title="services/DisplayerCacheService.php">DisplayerCacheService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">141</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get the content block</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">getContentBlock</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a></span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-BlockInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\BlockInterface">BlockInterface</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_groupsService">
         groupsService()
         <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_groupsService" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1055,114 +823,6 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-MatrixService.html"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setCache">
-        setCache()
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_setCache" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayerCacheService.php"><a href="files/services-displayercacheservice.html"><abbr title="services/DisplayerCacheService.php">DisplayerCacheService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">111</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set a displayer cache</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">setCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$displayer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\yii\caching\TagDependency">TagDependency</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dep</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cachePrefix</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$displayer</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$data</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$dep</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\yii\caching\TagDependency">TagDependency</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$cachePrefix</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_shouldCache">
-        shouldCache()
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#method_shouldCache" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayerCacheService.php"><a href="files/services-displayercacheservice.html"><abbr title="services/DisplayerCacheService.php">DisplayerCacheService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">99</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Should a displayer be cached</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">shouldCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$displayer</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$displayer</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayerInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayerInterface">DisplayerInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -1394,7 +1054,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayerCacheService.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Ryssbowh-CraftThemes-services-EagerLoadingService.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
