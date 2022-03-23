@@ -317,13 +317,6 @@
 <dd>Folder where the templates are stored for this theme</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_hasDataInstalled">hasDataInstalled()</a>
-    <span>
-                        &nbsp;: bool    </span>
-</dt>
-<dd>Does this theme have project config driven data (layouts etc) installed.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_isPartial">isPartial()</a>
     <span>
                         &nbsp;: bool    </span>
@@ -336,6 +329,13 @@
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Register this theme&#039;s assets in view for a specific path</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_beforeInstall">beforeInstall()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Make sure themes plugin is installed before installing</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_defineRegions">defineRegions()</a>
@@ -682,7 +682,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">231</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -967,7 +967,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">240</span>
 
     </aside>
 
@@ -1105,7 +1105,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 
     </aside>
 
@@ -1197,7 +1197,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">258</span>
+    <span class="phpdocumentor-element-found-in__line">260</span>
 
     </aside>
 
@@ -1243,7 +1243,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">266</span>
+    <span class="phpdocumentor-element-found-in__line">268</span>
 
     </aside>
 
@@ -1386,52 +1386,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_hasDataInstalled">
-        hasDataInstalled()
-        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_hasDataInstalled" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">223</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Does this theme have project config driven data (layouts etc) installed.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">hasDataInstalled</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_isPartial">
         isPartial()
         <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_isPartial" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1534,6 +1488,53 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_beforeInstall">
+        beforeInstall()
+        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_beforeInstall" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">232</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Make sure themes plugin is installed before installing</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">beforeInstall</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">3.1.0</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_defineRegions">
         defineRegions()
         <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_defineRegions" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1541,7 +1542,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">408</span>
+    <span class="phpdocumentor-element-found-in__line">410</span>
 
     </aside>
 
@@ -1583,7 +1584,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">380</span>
+    <span class="phpdocumentor-element-found-in__line">382</span>
 
     </aside>
 
@@ -1626,7 +1627,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">359</span>
+    <span class="phpdocumentor-element-found-in__line">361</span>
 
     </aside>
 
@@ -1659,7 +1660,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">369</span>
+    <span class="phpdocumentor-element-found-in__line">371</span>
 
     </aside>
 
@@ -1692,7 +1693,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">303</span>
+    <span class="phpdocumentor-element-found-in__line">305</span>
 
     </aside>
 
@@ -1725,7 +1726,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">319</span>
+    <span class="phpdocumentor-element-found-in__line">321</span>
 
     </aside>
 

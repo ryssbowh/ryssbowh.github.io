@@ -158,6 +158,8 @@ of the page elements when they are rendered.</dd>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-assets-ThemesBaseAssets.html"><abbr title="\Ryssbowh\CraftThemes\assets\ThemesBaseAssets">ThemesBaseAssets</abbr></a></dt>
         <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-assets-VueAssets.html"><abbr title="\Ryssbowh\CraftThemes\assets\VueAssets">VueAssets</abbr></a></dt>
+        <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-base-BlockCacheStrategy.html"><abbr title="\Ryssbowh\CraftThemes\base\BlockCacheStrategy">BlockCacheStrategy</abbr></a></dt>
         <dd>Base class for all block cache strategies</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-base-BlockProvider.html"><abbr title="\Ryssbowh\CraftThemes\base\BlockProvider">BlockProvider</abbr></a></dt>
@@ -168,6 +170,8 @@ of the page elements when they are rendered.</dd>
         <dd>Default class for all theme preferences</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-behaviors-LayoutBehavior.html"><abbr title="\Ryssbowh\CraftThemes\behaviors\LayoutBehavior">LayoutBehavior</abbr></a></dt>
         <dd>This behaviour is attached to some Craft elements (CategoryGroup, EntryType, Volume, TagGroup, GlobalSet)</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-behaviors-ProductTypeLayoutBehavior.html"><abbr title="\Ryssbowh\CraftThemes\behaviors\ProductTypeLayoutBehavior">ProductTypeLayoutBehavior</abbr></a></dt>
+        <dd>This behaviour is attached to all product types. Behaviors on product types can&#039;t be added before commerce 3.4.12.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-blockCache-GlobalBlockCache.html"><abbr title="\Ryssbowh\CraftThemes\blockCache\GlobalBlockCache">GlobalBlockCache</abbr></a></dt>
         <dd>This strategy will cache blocks regardless of the url.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-blockCache-PathBlockCache.html"><abbr title="\Ryssbowh\CraftThemes\blockCache\PathBlockCache">PathBlockCache</abbr></a></dt>
@@ -202,6 +206,8 @@ of the page elements when they are rendered.</dd>
         <dd>Controller for actions related to theme list</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-controllers-CpViewModesAjaxController.html"><abbr title="\Ryssbowh\CraftThemes\controllers\CpViewModesAjaxController">CpViewModesAjaxController</abbr></a></dt>
         <dd>Controller for ajax actions related to view modes</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-events-AvailableLayoutsEvent.html"><abbr title="\Ryssbowh\CraftThemes\events\AvailableLayoutsEvent">AvailableLayoutsEvent</abbr></a></dt>
+        <dd>Event to register available layouts</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-events-BlockEvent.html"><abbr title="\Ryssbowh\CraftThemes\events\BlockEvent">BlockEvent</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-events-DefinableOptionsDefinitions.html"><abbr title="\Ryssbowh\CraftThemes\events\DefinableOptionsDefinitions">DefinableOptionsDefinitions</abbr></a></dt>
@@ -230,7 +236,13 @@ of the page elements when they are rendered.</dd>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-events-RegisterFileDisplayerEvent.html"><abbr title="\Ryssbowh\CraftThemes\events\RegisterFileDisplayerEvent">RegisterFileDisplayerEvent</abbr></a></dt>
         <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-events-RegisterLayoutTypesEvent.html"><abbr title="\Ryssbowh\CraftThemes\events\RegisterLayoutTypesEvent">RegisterLayoutTypesEvent</abbr></a></dt>
+        <dd>Event to register layout types</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-events-RelatedPluginsEvent.html"><abbr title="\Ryssbowh\CraftThemes\events\RelatedPluginsEvent">RelatedPluginsEvent</abbr></a></dt>
+        <dd>Event to register plugins related to themes</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-events-RenderEvent.html"><abbr title="\Ryssbowh\CraftThemes\events\RenderEvent">RenderEvent</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-events-ResolveRequestLayoutEvent.html"><abbr title="\Ryssbowh\CraftThemes\events\ResolveRequestLayoutEvent">ResolveRequestLayoutEvent</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-events-ScssCompilerEvent.html"><abbr title="\Ryssbowh\CraftThemes\events\ScssCompilerEvent">ScssCompilerEvent</abbr></a></dt>
         <dd></dd>
@@ -272,16 +284,22 @@ of the page elements when they are rendered.</dd>
         <dd>Defines a list of attributes for a html element.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-helpers-ClassBag.html"><abbr title="\Ryssbowh\CraftThemes\helpers\ClassBag">ClassBag</abbr></a></dt>
         <dd>Defines a list of classes for a html element.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-helpers-PluginsHelper.html"><abbr title="\Ryssbowh\CraftThemes\helpers\PluginsHelper">PluginsHelper</abbr></a></dt>
+        <dd>Helper for operations related to plugins</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-helpers-ProjectConfigHelper.html"><abbr title="\Ryssbowh\CraftThemes\helpers\ProjectConfigHelper">ProjectConfigHelper</abbr></a></dt>
         <dd>Helper to ensure some project config changes are applied before others</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-helpers-ViewModesHelper.html"><abbr title="\Ryssbowh\CraftThemes\helpers\ViewModesHelper">ViewModesHelper</abbr></a></dt>
         <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-Installer.html"><abbr title="\Ryssbowh\CraftThemes\Installer">Installer</abbr></a></dt>
-        <dd>Yii module listening to events related to Themes installation</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-jobs-ReinstallLayoutsJob.html"><abbr title="\Ryssbowh\CraftThemes\jobs\ReinstallLayoutsJob">ReinstallLayoutsJob</abbr></a></dt>
+        <dd>Reinstall all layouts</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-migrations-Install.html"><abbr title="\Ryssbowh\CraftThemes\migrations\Install">Install</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-migrations-m211129-192847-InstallV3.html"><abbr title="\Ryssbowh\CraftThemes\migrations\m211129_192847_InstallV3">m211129_192847_InstallV3</abbr></a></dt>
         <dd>m211129_192847_InstallV3 migration.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-migrations-m220228-090716-AddLayoutParent.html"><abbr title="\Ryssbowh\CraftThemes\migrations\m220228_090716_AddLayoutParent">m220228_090716_AddLayoutParent</abbr></a></dt>
+        <dd>m220228_090716_AddLayoutParent migration.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-migrations-m220303-071106-AddParentTable.html"><abbr title="\Ryssbowh\CraftThemes\migrations\m220303_071106_AddParentTable">m220303_071106_AddParentTable</abbr></a></dt>
+        <dd>m220303_071106_AddParentTable migration.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-Block.html"><abbr title="\Ryssbowh\CraftThemes\models\Block">Block</abbr></a></dt>
         <dd>Base class for all blocks</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-blockCacheOptions-GlobalOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\blockCacheOptions\GlobalOptions">GlobalOptions</abbr></a></dt>
@@ -366,12 +384,16 @@ of the page elements when they are rendered.</dd>
         <dd>Base class for all items</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-DisplayMatrixType.html"><abbr title="\Ryssbowh\CraftThemes\models\DisplayMatrixType">DisplayMatrixType</abbr></a></dt>
         <dd>Class that handles a block type inside a matrix</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-DisplaySuperTableType.html"><abbr title="\Ryssbowh\CraftThemes\models\DisplaySuperTableType">DisplaySuperTableType</abbr></a></dt>
+        <dd>Class that handles a block type inside a super table</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-EventDefinableOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\EventDefinableOptions">EventDefinableOptions</abbr></a></dt>
         <dd>Base class for a set of options that have definitions that can be modified through an event</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-Field.html"><abbr title="\Ryssbowh\CraftThemes\models\Field">Field</abbr></a></dt>
         <dd>Base class for all fields</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayer.html"><abbr title="\Ryssbowh\CraftThemes\models\FieldDisplayer">FieldDisplayer</abbr></a></dt>
         <dd>Base class for all field displayers</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-AllowedQtyDefaultOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\AllowedQtyDefaultOptions">AllowedQtyDefaultOptions</abbr></a></dt>
+        <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-AssetRenderedOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\AssetRenderedOptions">AssetRenderedOptions</abbr></a></dt>
         <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-AssetRenderFileOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\AssetRenderFileOptions">AssetRenderFileOptions</abbr></a></dt>
@@ -392,6 +414,8 @@ of the page elements when they are rendered.</dd>
         <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-DateTimeOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\DateTimeOptions">DateTimeOptions</abbr></a></dt>
         <dd>Base class for all field displayer options</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-DimensionsDefaultOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\DimensionsDefaultOptions">DimensionsDefaultOptions</abbr></a></dt>
+        <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-DropdownLabelOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\DropdownLabelOptions">DropdownLabelOptions</abbr></a></dt>
         <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-ElementLinkOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\ElementLinkOptions">ElementLinkOptions</abbr></a></dt>
@@ -408,6 +432,8 @@ of the page elements when they are rendered.</dd>
         <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-LightswitchLabelOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\LightswitchLabelOptions">LightswitchLabelOptions</abbr></a></dt>
         <dd>Base class for all field displayer options</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-LinkFieldDefaultOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\LinkFieldDefaultOptions">LinkFieldDefaultOptions</abbr></a></dt>
+        <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-MatrixDefaultOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\MatrixDefaultOptions">MatrixDefaultOptions</abbr></a></dt>
         <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-MatrixSlickOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\MatrixSlickOptions">MatrixSlickOptions</abbr></a></dt>
@@ -420,11 +446,21 @@ of the page elements when they are rendered.</dd>
         <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-PlainTextTruncatedOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\PlainTextTruncatedOptions">PlainTextTruncatedOptions</abbr></a></dt>
         <dd>Base class for all field displayer options</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-PriceDefaultOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\PriceDefaultOptions">PriceDefaultOptions</abbr></a></dt>
+        <dd>Base class for all field displayer options</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-ProductRenderedOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\ProductRenderedOptions">ProductRenderedOptions</abbr></a></dt>
+        <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-RadioButtonsLabelOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\RadioButtonsLabelOptions">RadioButtonsLabelOptions</abbr></a></dt>
         <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-RedactorFullOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\RedactorFullOptions">RedactorFullOptions</abbr></a></dt>
         <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-RedactorTruncatedOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\RedactorTruncatedOptions">RedactorTruncatedOptions</abbr></a></dt>
+        <dd>Base class for all field displayer options</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-StockDefaultOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\StockDefaultOptions">StockDefaultOptions</abbr></a></dt>
+        <dd>Base class for all field displayer options</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-SuperTableDefaultOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\SuperTableDefaultOptions">SuperTableDefaultOptions</abbr></a></dt>
+        <dd>Base class for all field displayer options</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-SuperTableSlickOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\SuperTableSlickOptions">SuperTableSlickOptions</abbr></a></dt>
         <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-TableDefaultOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\TableDefaultOptions">TableDefaultOptions</abbr></a></dt>
         <dd>Base class for all field displayer options</dd>
@@ -450,8 +486,16 @@ of the page elements when they are rendered.</dd>
         <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-UserSlickOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\UserSlickOptions">UserSlickOptions</abbr></a></dt>
         <dd>Base class for all field displayer options</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-VariantRenderedOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\VariantRenderedOptions">VariantRenderedOptions</abbr></a></dt>
+        <dd>Base class for all field displayer options</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-VariantsRenderedOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\VariantsRenderedOptions">VariantsRenderedOptions</abbr></a></dt>
+        <dd>Base class for all field displayer options</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-WeightDefaultOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayerOptions\WeightDefaultOptions">WeightDefaultOptions</abbr></a></dt>
+        <dd>Base class for all field displayer options</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-FieldDisplayerOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\FieldDisplayerOptions">FieldDisplayerOptions</abbr></a></dt>
         <dd>Base class for all field displayer options</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AllowedQtyDefault.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\AllowedQtyDefault">AllowedQtyDefault</abbr></a></dt>
+        <dd>Renders a variant dimensions</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRendered.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\AssetRendered">AssetRendered</abbr></a></dt>
         <dd>Renders an asset field as rendered using a view mode</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRenderFile.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\AssetRenderFile">AssetRenderFile</abbr></a></dt>
@@ -472,6 +516,8 @@ of the page elements when they are rendered.</dd>
         <dd>Renders a date field</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-DateTime.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\DateTime">DateTime</abbr></a></dt>
         <dd>Renders a date field</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-DimensionsDefault.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\DimensionsDefault">DimensionsDefault</abbr></a></dt>
+        <dd>Renders a variant dimensions</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-DropdownLabel.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\DropdownLabel">DropdownLabel</abbr></a></dt>
         <dd>Renders a dropdown field</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-ElementLink.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\ElementLink">ElementLink</abbr></a></dt>
@@ -488,6 +534,8 @@ of the page elements when they are rendered.</dd>
         <dd>Renders an asset file</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-LightswitchLabel.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\LightswitchLabel">LightswitchLabel</abbr></a></dt>
         <dd>Renders a lightswitch field</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-LinkFieldDefault.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\LinkFieldDefault">LinkFieldDefault</abbr></a></dt>
+        <dd>Renders one link field</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MatrixDefault.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\MatrixDefault">MatrixDefault</abbr></a></dt>
         <dd>Renders a matrix field</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MatrixSlick.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\MatrixSlick">MatrixSlick</abbr></a></dt>
@@ -500,12 +548,24 @@ of the page elements when they are rendered.</dd>
         <dd>Renders a plain text field</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-PlainTextTruncated.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\PlainTextTruncated">PlainTextTruncated</abbr></a></dt>
         <dd>Renders a plain text field as truncated</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-PriceDefault.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\PriceDefault">PriceDefault</abbr></a></dt>
+        <dd>Renders a variant price</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-ProductRendered.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\ProductRendered">ProductRendered</abbr></a></dt>
+        <dd>Renders a product field as rendered using a view mode</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-ProductVariantsRendered.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\ProductVariantsRendered">ProductVariantsRendered</abbr></a></dt>
+        <dd>Renders the variants of a product</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-RadioButtonsLabel.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\RadioButtonsLabel">RadioButtonsLabel</abbr></a></dt>
         <dd>Renders a radio butons field</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-RedactorFull.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\RedactorFull">RedactorFull</abbr></a></dt>
         <dd>Renders a redactor field</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-RedactorTruncated.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\RedactorTruncated">RedactorTruncated</abbr></a></dt>
         <dd>Renders a redactor field as truncated</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-StockDefault.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\StockDefault">StockDefault</abbr></a></dt>
+        <dd>Renders a number field</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-SuperTableDefault.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\SuperTableDefault">SuperTableDefault</abbr></a></dt>
+        <dd>Renders a super table field</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-SuperTableSlick.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\SuperTableSlick">SuperTableSlick</abbr></a></dt>
+        <dd>Renders a super table field as a slick carousel</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-TableDefault.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\TableDefault">TableDefault</abbr></a></dt>
         <dd>Renders a table field</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-TagLabel.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\TagLabel">TagLabel</abbr></a></dt>
@@ -530,6 +590,12 @@ of the page elements when they are rendered.</dd>
         <dd>Renders a user field as rendered using a view mode</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-UserSlick.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\UserSlick">UserSlick</abbr></a></dt>
         <dd>Renders a user field as a slick carousel</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-VariantRendered.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\VariantRendered">VariantRendered</abbr></a></dt>
+        <dd>Renders a product field as rendered using a view mode</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fieldDisplayers-WeightDefault.html"><abbr title="\Ryssbowh\CraftThemes\models\fieldDisplayers\WeightDefault">WeightDefault</abbr></a></dt>
+        <dd>Renders a variant dimensions</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-AllowedQty.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\AllowedQty">AllowedQty</abbr></a></dt>
+        <dd>Handles the min and max quantity of a variant</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-Author.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\Author">Author</abbr></a></dt>
         <dd>The field Author is added to all channels and structures</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-CraftField.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\CraftField">CraftField</abbr></a></dt>
@@ -538,16 +604,28 @@ of the page elements when they are rendered.</dd>
         <dd>Handles the dateUpdated value of elements</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-DateUpdated.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\DateUpdated">DateUpdated</abbr></a></dt>
         <dd>Handles the dateCreated value of elements</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-Dimensions.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\Dimensions">Dimensions</abbr></a></dt>
+        <dd>Handles the stock of variants</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-ElementUrl.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\ElementUrl">ElementUrl</abbr></a></dt>
         <dd>Handles the element url for entries and categories</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-ExpiryDate.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\ExpiryDate">ExpiryDate</abbr></a></dt>
+        <dd>Handles the dateCreated value of elements</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-File.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\File">File</abbr></a></dt>
         <dd>The field File is added to all assets automatically</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-Matrix.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\Matrix">Matrix</abbr></a></dt>
         <dd>Handles a Craft matrix field</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-MatrixField.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\MatrixField">MatrixField</abbr></a></dt>
-        <dd>Handles a field inside a matrix block</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-Missing.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\Missing">Missing</abbr></a></dt>
+        <dd>Handles a missing field</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-PostDate.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\PostDate">PostDate</abbr></a></dt>
         <dd>Handles the postDate value of entry elements</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-Price.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\Price">Price</abbr></a></dt>
+        <dd>Handles the price of variants or products</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-Sku.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\Sku">Sku</abbr></a></dt>
+        <dd>Handles the SKU of variants or products</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-Stock.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\Stock">Stock</abbr></a></dt>
+        <dd>Handles the stock of variants or products</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-SuperTable.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\SuperTable">SuperTable</abbr></a></dt>
+        <dd>Handles a Super table field</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-Table.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\Table">Table</abbr></a></dt>
         <dd>Handles a Craft table field</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-TableField.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\TableField">TableField</abbr></a></dt>
@@ -568,6 +646,10 @@ of the page elements when they are rendered.</dd>
         <dd>Handles the username of user layouts</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-UserUsername.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\UserUsername">UserUsername</abbr></a></dt>
         <dd>Handles the username of user layouts</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-Variants.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\Variants">Variants</abbr></a></dt>
+        <dd>Handles the stock of variants</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fields-Weight.html"><abbr title="\Ryssbowh\CraftThemes\models\fields\Weight">Weight</abbr></a></dt>
+        <dd>Handles the weight of a variant</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-FileDisplayer.html"><abbr title="\Ryssbowh\CraftThemes\models\FileDisplayer">FileDisplayer</abbr></a></dt>
         <dd>Base class for all file displayers</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-fileDisplayerOptions-CodeOptions.html"><abbr title="\Ryssbowh\CraftThemes\models\fileDisplayerOptions\CodeOptions">CodeOptions</abbr></a></dt>
@@ -616,10 +698,14 @@ of the page elements when they are rendered.</dd>
         <dd>A layout associated to a global set and a theme</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html"><abbr title="\Ryssbowh\CraftThemes\models\layouts\Layout">Layout</abbr></a></dt>
         <dd>The default layout</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-layouts-ProductLayout.html"><abbr title="\Ryssbowh\CraftThemes\models\layouts\ProductLayout">ProductLayout</abbr></a></dt>
+        <dd>A layout associated to a volume and a theme</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-layouts-TagLayout.html"><abbr title="\Ryssbowh\CraftThemes\models\layouts\TagLayout">TagLayout</abbr></a></dt>
         <dd>A layout associated to a tag group and a theme</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-layouts-UserLayout.html"><abbr title="\Ryssbowh\CraftThemes\models\layouts\UserLayout">UserLayout</abbr></a></dt>
         <dd>A layout associated to the user layout and a theme</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-layouts-VariantLayout.html"><abbr title="\Ryssbowh\CraftThemes\models\layouts\VariantLayout">VariantLayout</abbr></a></dt>
+        <dd>A layout associated to a volume and a theme</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-layouts-VolumeLayout.html"><abbr title="\Ryssbowh\CraftThemes\models\layouts\VolumeLayout">VolumeLayout</abbr></a></dt>
         <dd>A layout associated to a volume and a theme</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-models-Region.html"><abbr title="\Ryssbowh\CraftThemes\models\Region">Region</abbr></a></dt>
@@ -638,7 +724,7 @@ of the page elements when they are rendered.</dd>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-records-LayoutRecord.html"><abbr title="\Ryssbowh\CraftThemes\records\LayoutRecord">LayoutRecord</abbr></a></dt>
         <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-records-MatrixPivotRecord.html"><abbr title="\Ryssbowh\CraftThemes\records\MatrixPivotRecord">MatrixPivotRecord</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-records-ParentPivotRecord.html"><abbr title="\Ryssbowh\CraftThemes\records\ParentPivotRecord">ParentPivotRecord</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-records-TablePivotRecord.html"><abbr title="\Ryssbowh\CraftThemes\records\TablePivotRecord">TablePivotRecord</abbr></a></dt>
         <dd></dd>
@@ -673,8 +759,6 @@ of the page elements when they are rendered.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-services-GroupsService.html"><abbr title="\Ryssbowh\CraftThemes\services\GroupsService">GroupsService</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-services-LayoutService.html"><abbr title="\Ryssbowh\CraftThemes\services\LayoutService">LayoutService</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-services-MatrixService.html"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Ryssbowh-CraftThemes-services-RulesService.html"><abbr title="\Ryssbowh\CraftThemes\services\RulesService">RulesService</abbr></a></dt>
         <dd></dd>
@@ -739,6 +823,8 @@ of the page elements when they are rendered.</dd>
     
             <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Ryssbowh-CraftThemes-traits-DateOptions.html"><abbr title="\Ryssbowh\CraftThemes\traits\DateOptions">DateOptions</abbr></a></dt>
         <dd>Trait to be used for configurable options that handle dates</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Ryssbowh-CraftThemes-traits-Ecommerce.html"><abbr title="\Ryssbowh\CraftThemes\traits\Ecommerce">Ecommerce</abbr></a></dt>
+        <dd>Integrates with commerce plugin</dd>
             <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Ryssbowh-CraftThemes-traits-ElementLayout.html"><abbr title="\Ryssbowh\CraftThemes\traits\ElementLayout">ElementLayout</abbr></a></dt>
         <dd>Common methods for layouts that are attached to elements (not customs or defaults layouts)</dd>
             <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Ryssbowh-CraftThemes-traits-HasDisplays.html"><abbr title="\Ryssbowh\CraftThemes\traits\HasDisplays">HasDisplays</abbr></a></dt>
@@ -747,6 +833,8 @@ of the page elements when they are rendered.</dd>
         <dd>Trait to be used for configurable options that handle a slick carousel</dd>
             <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Ryssbowh-CraftThemes-traits-SlickRenderer.html"><abbr title="\Ryssbowh\CraftThemes\traits\SlickRenderer">SlickRenderer</abbr></a></dt>
         <dd>Trait for displayers that display a slick carousel</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Ryssbowh-CraftThemes-traits-SuperTable.html"><abbr title="\Ryssbowh\CraftThemes\traits\SuperTable">SuperTable</abbr></a></dt>
+        <dd>Integrates with super table plugin</dd>
             <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Ryssbowh-CraftThemes-traits-ViewModeOptions.html"><abbr title="\Ryssbowh\CraftThemes\traits\ViewModeOptions">ViewModeOptions</abbr></a></dt>
         <dd>Trait for displayer options that needs a view mode</dd>
             <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Ryssbowh-CraftThemes-traits-ViewModesOptions.html"><abbr title="\Ryssbowh\CraftThemes\traits\ViewModesOptions">ViewModesOptions</abbr></a></dt>

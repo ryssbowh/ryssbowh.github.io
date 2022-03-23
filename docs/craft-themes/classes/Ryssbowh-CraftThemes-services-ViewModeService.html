@@ -201,13 +201,6 @@
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_all">all()</a>
-    <span>
-                        &nbsp;: <abbr title="\Ryssbowh\CraftThemes\services\Collection">Collection</abbr>    </span>
-</dt>
-<dd>Get all view modes</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_cleanUp">cleanUp()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -234,6 +227,13 @@
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>|null    </span>
 </dt>
 <dd>Get a view mode</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_getAll">getAll()</a>
+    <span>
+                        &nbsp;: <abbr title="\Ryssbowh\CraftThemes\services\Collection">Collection</abbr>    </span>
+</dt>
+<dd>Get all view modes</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_getById">getById()</a>
@@ -285,11 +285,11 @@
 <dd>Handles a deletion in view mode config</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_populateFromPost">populateFromPost()</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_populateFromData">populateFromData()</a>
     <span>
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>    </span>
 </dt>
-<dd>Populates a view mode from posted data</dd>
+<dd>Populates a view mode from an array of data</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_rebuildConfig">rebuildConfig()</a>
@@ -392,7 +392,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_matrixService">matrixService()</a>
     <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-services-MatrixService.html"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></a>    </span>
+                        &nbsp;: <abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr>    </span>
 </dt>
 <dd>Get the matrix service</dd>
 
@@ -751,39 +751,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_all">
-        all()
-        <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_all" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/ViewModeService.php"><a href="files/services-viewmodeservice.html"><abbr title="services/ViewModeService.php">ViewModeService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">45</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get all view modes</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\services\Collection">Collection</abbr></span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\services\Collection">Collection</abbr></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_cleanUp">
         cleanUp()
         <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_cleanUp" class="headerlink"><i class="fas fa-link"></i></a>
@@ -791,7 +758,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ViewModeService.php"><a href="files/services-viewmodeservice.html"><abbr title="services/ViewModeService.php">ViewModeService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">290</span>
+    <span class="phpdocumentor-element-found-in__line">292</span>
 
     </aside>
 
@@ -948,7 +915,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ViewModeService.php"><a href="files/services-viewmodeservice.html"><abbr title="services/ViewModeService.php">ViewModeService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">371</span>
+    <span class="phpdocumentor-element-found-in__line">373</span>
 
     </aside>
 
@@ -991,6 +958,39 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getAll">
+        getAll()
+        <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_getAll" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/ViewModeService.php"><a href="files/services-viewmodeservice.html"><abbr title="services/ViewModeService.php">ViewModeService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get all view modes</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getAll</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\services\Collection">Collection</abbr></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\services\Collection">Collection</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getById">
         getById()
         <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_getById" class="headerlink"><i class="fas fa-link"></i></a>
@@ -998,7 +998,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ViewModeService.php"><a href="files/services-viewmodeservice.html"><abbr title="services/ViewModeService.php">ViewModeService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">311</span>
+    <span class="phpdocumentor-element-found-in__line">313</span>
 
     </aside>
 
@@ -1055,7 +1055,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ViewModeService.php"><a href="files/services-viewmodeservice.html"><abbr title="services/ViewModeService.php">ViewModeService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">327</span>
+    <span class="phpdocumentor-element-found-in__line">329</span>
 
     </aside>
 
@@ -1113,7 +1113,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ViewModeService.php"><a href="files/services-viewmodeservice.html"><abbr title="services/ViewModeService.php">ViewModeService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">359</span>
+    <span class="phpdocumentor-element-found-in__line">361</span>
 
     </aside>
 
@@ -1156,7 +1156,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ViewModeService.php"><a href="files/services-viewmodeservice.html"><abbr title="services/ViewModeService.php">ViewModeService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">342</span>
+    <span class="phpdocumentor-element-found-in__line">344</span>
 
     </aside>
 
@@ -1199,7 +1199,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ViewModeService.php"><a href="files/services-viewmodeservice.html"><abbr title="services/ViewModeService.php">ViewModeService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">391</span>
+    <span class="phpdocumentor-element-found-in__line">393</span>
 
     </aside>
 
@@ -1321,9 +1321,9 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_populateFromPost">
-        populateFromPost()
-        <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_populateFromPost" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_populateFromData">
+        populateFromData()
+        <a href="classes/Ryssbowh-CraftThemes-services-ViewModeService.html#method_populateFromData" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ViewModeService.php"><a href="files/services-viewmodeservice.html"><abbr title="services/ViewModeService.php">ViewModeService.php</abbr></a></abbr>
@@ -1332,11 +1332,11 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">Populates a view mode from posted data</p>
+        <p class="phpdocumentor-summary">Populates a view mode from an array of data</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">populateFromPost</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">populateFromData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1478,7 +1478,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ViewModeService.php"><a href="files/services-viewmodeservice.html"><abbr title="services/ViewModeService.php">ViewModeService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">401</span>
+    <span class="phpdocumentor-element-found-in__line">403</span>
 
     </aside>
 
@@ -1621,7 +1621,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/ViewModeService.php"><a href="files/services-viewmodeservice.html"><abbr title="services/ViewModeService.php">ViewModeService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">412</span>
+    <span class="phpdocumentor-element-found-in__line">414</span>
 
     </aside>
 
@@ -1903,14 +1903,14 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">matrixService</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-MatrixService.html"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">matrixService</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-MatrixService.html"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></span>
             &mdash;
         
     

@@ -132,6 +132,20 @@
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property_dateCreated">$dateCreated</a>
+    <span>
+                &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property_dateUpdated">$dateUpdated</a>
+    <span>
+                &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property_elementUid">$elementUid</a>
     <span>
                 &nbsp;: string            </span>
@@ -160,6 +174,13 @@
 <dd>Only used for custom layouts</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property_parent_id">$parent_id</a>
+    <span>
+                &nbsp;: int            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property_themeHandle">$themeHandle</a>
     <span>
                 &nbsp;: int            </span>
@@ -181,16 +202,16 @@
 <dd>Element associated with this layout (entry type, user, category group etc)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property__regions">$_regions</a>
+    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property__parent">$_parent</a>
     <span>
-                &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-RegionInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionInterface">RegionInterface</abbr></a>&gt;            </span>
+                &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>|null            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Ryssbowh-CraftThemes-models-layouts-CustomLayout.html#property__type">$_type</a>
+    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property__regions">$_regions</a>
     <span>
-                &nbsp;: string            </span>
+                &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-RegionInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionInterface">RegionInterface</abbr></a>&gt;            </span>
 </dt>
 <dd></dd>
 
@@ -200,6 +221,13 @@
                 &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>&gt;            </span>
 </dt>
 <dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property_fieldLayoutIdAttribute">$fieldLayoutIdAttribute</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>Attribute that stores the field layout id</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_addBlock">addBlock()</a>
@@ -349,6 +377,13 @@
 <dd>Is custom getter</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getParent">getParent()</a>
+    <span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>|null    </span>
+</dt>
+<dd>Parent getter</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getRegion">getRegion()</a>
     <span>
                         &nbsp;: <abbr title="\Ryssbowh\CraftThemes\interfaces\Region">Region</abbr>    </span>
@@ -468,6 +503,13 @@
 <dd>Set element associated to that layout</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_setParent">setParent()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Parent setter</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_setViewModes">setViewModes()</a>
     <span>
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>    </span>
@@ -507,6 +549,70 @@
             Properties
             <a href="classes/Ryssbowh-CraftThemes-models-layouts-CustomLayout.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_dateCreated">
+        $dateCreated
+        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property_dateCreated" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
+    <span class="phpdocumentor-signature__name">$dateCreated</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_dateUpdated">
+        $dateUpdated
+        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property_dateUpdated" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">76</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
+    <span class="phpdocumentor-signature__name">$dateUpdated</span>
+    </code>
+
+    
+    
+    
+
+</article>
                     <article
         class="
             phpdocumentor-element
@@ -643,6 +749,38 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_parent_id">
+        $parent_id
+        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property_parent_id" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$parent_id</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_themeHandle">
         $themeHandle
         <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property_themeHandle" class="headerlink"><i class="fas fa-link"></i></a>
@@ -716,7 +854,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -740,6 +878,38 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property__parent">
+        $_parent
+        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property__parent" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">97</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$_parent</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property__regions">
         $_regions
         <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property__regions" class="headerlink"><i class="fas fa-link"></i></a>
@@ -749,7 +919,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -772,25 +942,25 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__type">
-        $_type
-        <a href="classes/Ryssbowh-CraftThemes-models-layouts-CustomLayout.html#property__type" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property__viewModes">
+        $_viewModes
+        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property__viewModes" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/CustomLayout.php"><a href="files/models-layouts-customlayout.html"><abbr title="models/layouts/CustomLayout.php">CustomLayout.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_type</span>
-     = <span class="phpdocumentor-signature__default-value">RyssbowhCraftThemesservicesLayoutService::CUSTOM_HANDLE</span></code>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__name">$_viewModes</span>
+    </code>
 
     
     
@@ -804,25 +974,26 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__viewModes">
-        $_viewModes
-        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property__viewModes" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_fieldLayoutIdAttribute">
+        $fieldLayoutIdAttribute
+        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#property_fieldLayoutIdAttribute" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Attribute that stores the field layout id</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-ViewModeInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\ViewModeInterface">ViewModeInterface</abbr></a>&gt;</span>
-    <span class="phpdocumentor-signature__name">$_viewModes</span>
-    </code>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$fieldLayoutIdAttribute</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;fieldLayoutId&#039;</span></code>
 
     
     
@@ -849,7 +1020,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">390</span>
+    <span class="phpdocumentor-element-found-in__line">435</span>
 
     </aside>
 
@@ -912,7 +1083,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">328</span>
+    <span class="phpdocumentor-element-found-in__line">373</span>
 
     </aside>
 
@@ -968,7 +1139,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -1013,7 +1184,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">195</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
     </aside>
 
@@ -1059,7 +1230,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/CustomLayout.php"><a href="files/models-layouts-customlayout.html"><abbr title="models/layouts/CustomLayout.php">CustomLayout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -1104,7 +1275,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">356</span>
+    <span class="phpdocumentor-element-found-in__line">401</span>
 
     </aside>
 
@@ -1149,7 +1320,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">364</span>
+    <span class="phpdocumentor-element-found-in__line">409</span>
 
     </aside>
 
@@ -1195,7 +1366,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">457</span>
+    <span class="phpdocumentor-element-found-in__line">502</span>
 
     </aside>
 
@@ -1251,7 +1422,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">237</span>
+    <span class="phpdocumentor-element-found-in__line">281</span>
 
     </aside>
 
@@ -1297,7 +1468,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">418</span>
+    <span class="phpdocumentor-element-found-in__line">463</span>
 
     </aside>
 
@@ -1343,7 +1514,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">289</span>
+    <span class="phpdocumentor-element-found-in__line">334</span>
 
     </aside>
 
@@ -1389,7 +1560,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/CustomLayout.php"><a href="files/models-layouts-customlayout.html"><abbr title="models/layouts/CustomLayout.php">CustomLayout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -1435,7 +1606,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">581</span>
+    <span class="phpdocumentor-element-found-in__line">626</span>
 
     </aside>
 
@@ -1481,7 +1652,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">565</span>
+    <span class="phpdocumentor-element-found-in__line">610</span>
 
     </aside>
 
@@ -1537,7 +1708,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">259</span>
+    <span class="phpdocumentor-element-found-in__line">304</span>
 
     </aside>
 
@@ -1583,7 +1754,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
     </aside>
 
@@ -1639,7 +1810,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">557</span>
+    <span class="phpdocumentor-element-found-in__line">602</span>
 
     </aside>
 
@@ -1685,7 +1856,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">492</span>
+    <span class="phpdocumentor-element-found-in__line">537</span>
 
     </aside>
 
@@ -1741,7 +1912,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">514</span>
+    <span class="phpdocumentor-element-found-in__line">559</span>
 
     </aside>
 
@@ -1804,7 +1975,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">536</span>
+    <span class="phpdocumentor-element-found-in__line">581</span>
 
     </aside>
 
@@ -1860,7 +2031,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/CustomLayout.php"><a href="files/models-layouts-customlayout.html"><abbr title="models/layouts/CustomLayout.php">CustomLayout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -1899,6 +2070,52 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getParent">
+        getParent()
+        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getParent" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">199</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Parent getter</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getParent</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>|null</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getRegion">
         getRegion()
         <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_getRegion" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1906,7 +2123,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">399</span>
+    <span class="phpdocumentor-element-found-in__line">444</span>
 
     </aside>
 
@@ -1962,7 +2179,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">255</span>
 
     </aside>
 
@@ -2008,7 +2225,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">474</span>
+    <span class="phpdocumentor-element-found-in__line">519</span>
 
     </aside>
 
@@ -2064,7 +2281,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">442</span>
+    <span class="phpdocumentor-element-found-in__line">487</span>
 
     </aside>
 
@@ -2120,7 +2337,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/CustomLayout.php"><a href="files/models-layouts-customlayout.html"><abbr title="models/layouts/CustomLayout.php">CustomLayout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -2166,7 +2383,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">270</span>
 
     </aside>
 
@@ -2212,7 +2429,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 
     </aside>
 
@@ -2258,7 +2475,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">301</span>
+    <span class="phpdocumentor-element-found-in__line">346</span>
 
     </aside>
 
@@ -2314,7 +2531,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">278</span>
+    <span class="phpdocumentor-element-found-in__line">323</span>
 
     </aside>
 
@@ -2360,7 +2577,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">203</span>
+    <span class="phpdocumentor-element-found-in__line">247</span>
 
     </aside>
 
@@ -2406,7 +2623,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -2462,7 +2679,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">410</span>
+    <span class="phpdocumentor-element-found-in__line">455</span>
 
     </aside>
 
@@ -2518,7 +2735,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">340</span>
+    <span class="phpdocumentor-element-found-in__line">385</span>
 
     </aside>
 
@@ -2574,7 +2791,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">426</span>
+    <span class="phpdocumentor-element-found-in__line">471</span>
 
     </aside>
 
@@ -2637,7 +2854,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">434</span>
+    <span class="phpdocumentor-element-found-in__line">479</span>
 
     </aside>
 
@@ -2683,7 +2900,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">376</span>
+    <span class="phpdocumentor-element-found-in__line">421</span>
 
     </aside>
 
@@ -2739,7 +2956,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">270</span>
+    <span class="phpdocumentor-element-found-in__line">315</span>
 
     </aside>
 
@@ -2789,6 +3006,62 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setParent">
+        setParent()
+        <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_setParent" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">213</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Parent setter</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setParent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$layout</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$layout</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-LayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\LayoutInterface">LayoutInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setViewModes">
         setViewModes()
         <a href="classes/Ryssbowh-CraftThemes-models-layouts-Layout.html#method_setViewModes" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2796,7 +3069,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">314</span>
+    <span class="phpdocumentor-element-found-in__line">359</span>
 
     </aside>
 
@@ -2852,7 +3125,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -2885,7 +3158,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -2918,7 +3191,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/layouts/Layout.php"><a href="files/models-layouts-layout.html"><abbr title="models/layouts/Layout.php">Layout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">594</span>
+    <span class="phpdocumentor-element-found-in__line">639</span>
 
     </aside>
 

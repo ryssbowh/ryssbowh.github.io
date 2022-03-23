@@ -104,12 +104,15 @@
         </div>
     
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/Ryssbowh-CraftThemes-traits-Ecommerce.html"><abbr title="\Ryssbowh\CraftThemes\traits\Ecommerce">Ecommerce</abbr></a>,                             <a href="classes/Ryssbowh-CraftThemes-traits-SuperTable.html"><abbr title="\Ryssbowh\CraftThemes\traits\SuperTable">SuperTable</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -143,6 +146,13 @@
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Ryssbowh-CraftThemes-Themes.html#constant_EVENT_RELATED_PLUGINS">EVENT_RELATED_PLUGINS</a>
+    <span>
+        &nbsp;= &#039;related_plugins&#039;                    </span>
+</dt>
+<dd></dd>
+
                 <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#property_hasCpSection">$hasCpSection</a>
     <span>
@@ -171,6 +181,14 @@
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Ryssbowh-CraftThemes-Themes.html#property__relatedPlugins">$_relatedPlugins</a>
+    <span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+<dd>Plugins related to themes (which define displayers/fields etc)
+This is used to rebuild layouts/displays when such a plugin is installed/uninstalled</dd>
+
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_editions">editions()</a>
     <span>
@@ -186,23 +204,44 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_getRelatedPlugins">getRelatedPlugins()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get all plugins handles that are related to themes.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_init">init()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>inheritDoc</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_isPluginRelated">isPluginRelated()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Is a plugin related to themes</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_afterUninstall">afterUninstall()</a>
+    <a href="classes/Ryssbowh-CraftThemes-traits-Ecommerce.html#method__initEcommerce">_initEcommerce()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_beforeUninstall">beforeUninstall()</a>
+    <a href="classes/Ryssbowh-CraftThemes-traits-SuperTable.html#method__initSuperTable">_initSuperTable()</a>
     <span>
-                        &nbsp;: bool    </span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_afterUninstall">afterUninstall()</a>
+    <span>
+                        &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
@@ -214,11 +253,18 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_initPro">initPro()</a>
+    <a href="classes/Ryssbowh-CraftThemes-traits-Ecommerce.html#method_initEcommerce">initEcommerce()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>Initialise for pro edition</dd>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-CraftThemes-traits-SuperTable.html#method_initSuperTable">initSuperTable()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_registerBehaviors">registerBehaviors()</a>
@@ -249,11 +295,11 @@
 <dd>Register cp routes</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_registerCraftEvents">registerCraftEvents()</a>
+    <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_registerElementsEvents">registerElementsEvents()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>Registers to Entry types, Category groups, Volumes, Tag sets, Global sets, User layouts and Fields deletions/additions events</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_registerPermissions">registerPermissions()</a>
@@ -267,7 +313,7 @@
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>Registers to plugins related events</dd>
+<dd>Register to events related to plugins</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_registerProjectConfig">registerProjectConfig()</a>
@@ -289,13 +335,6 @@
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Register front end shortcuts</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_registerSwitchEdition">registerSwitchEdition()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Registers to edition change event. Installs all themes data if edition is pro</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_registerTwig">registerTwig()</a>
@@ -330,23 +369,21 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">EDITION_LITE</span>
     = <span class="phpdocumentor-signature__default-value">&#039;lite&#039;</span>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -359,24 +396,63 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">EDITION_PRO</span>
     = <span class="phpdocumentor-signature__default-value">&#039;pro&#039;</span>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
+    
+    
+    
 
-        <section class="phpdocumentor-description"></section>
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EVENT_RELATED_PLUGINS">
+        EVENT_RELATED_PLUGINS
+        <a href="classes/Ryssbowh-CraftThemes-Themes.html#constant_EVENT_RELATED_PLUGINS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+
+    </aside>
 
     
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">EVENT_RELATED_PLUGINS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;related_plugins&#039;</span>
+</code>
+
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">3.1.0</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
 
 </article>
             </section>
@@ -403,7 +479,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -449,7 +525,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -495,7 +571,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -527,7 +603,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -536,7 +612,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$schemaVersion</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;3.0.0&#039;</span></code>
+     = <span class="phpdocumentor-signature__default-value">&#039;3.1.0&#039;</span></code>
 
     
         <section class="phpdocumentor-description"></section>
@@ -551,6 +627,54 @@
                     <span class="phpdocumentor-tag__name">inheritdoc</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__relatedPlugins">
+        $_relatedPlugins
+        <a href="classes/Ryssbowh-CraftThemes-Themes.html#property__relatedPlugins" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">91</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Plugins related to themes (which define displayers/fields etc)
+This is used to rebuild layouts/displays when such a plugin is installed/uninstalled</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$_relatedPlugins</span>
+    </code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">3.1.0</span>
                                                                                 
                                              
                                     </dd>
@@ -577,7 +701,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -622,7 +746,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">194</span>
 
     </aside>
 
@@ -660,6 +784,55 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getRelatedPlugins">
+        getRelatedPlugins()
+        <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_getRelatedPlugins" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">169</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get all plugins handles that are related to themes.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRelatedPlugins</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"><p>This list will keep track of plugins for which (un)installation will trigger layouts to be rebuilt</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">3.1.0</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_init">
         init()
         <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_init" class="headerlink"><i class="fas fa-link"></i></a>
@@ -667,7 +840,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -690,6 +863,129 @@
                     <article
         class="phpdocumentor-element
             -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isPluginRelated">
+        isPluginRelated()
+        <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_isPluginRelated" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">186</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Is a plugin related to themes</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">isPluginRelated</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$handle</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">3.1.0</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__initEcommerce">
+        _initEcommerce()
+        <a href="classes/Ryssbowh-CraftThemes-traits-Ecommerce.html#method__initEcommerce" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="traits/Ecommerce.php"><a href="files/traits-ecommerce.html"><abbr title="traits/Ecommerce.php">Ecommerce.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">_initEcommerce</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__initSuperTable">
+        _initSuperTable()
+        <a href="classes/Ryssbowh-CraftThemes-traits-SuperTable.html#method__initSuperTable" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="traits/SuperTable.php"><a href="files/traits-supertable.html"><abbr title="traits/SuperTable.php">SuperTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">26</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">_initSuperTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
             -protected
                                                         "
 >
@@ -700,7 +996,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">683</span>
+    <span class="phpdocumentor-element-found-in__line">681</span>
 
     </aside>
 
@@ -738,51 +1034,6 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_beforeUninstall">
-        beforeUninstall()
-        <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_beforeUninstall" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">672</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">beforeUninstall</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_createSettingsModel">
         createSettingsModel()
         <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_createSettingsModel" class="headerlink"><i class="fas fa-link"></i></a>
@@ -790,7 +1041,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">664</span>
+    <span class="phpdocumentor-element-found-in__line">673</span>
 
     </aside>
 
@@ -828,24 +1079,57 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_initPro">
-        initPro()
-        <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_initPro" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_initEcommerce">
+        initEcommerce()
+        <a href="classes/Ryssbowh-CraftThemes-traits-Ecommerce.html#method_initEcommerce" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="traits/Ecommerce.php"><a href="files/traits-ecommerce.html"><abbr title="traits/Ecommerce.php">Ecommerce.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Initialise for pro edition</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">initPro</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">initEcommerce</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
 
     
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_initSuperTable">
+        initSuperTable()
+        <a href="classes/Ryssbowh-CraftThemes-traits-SuperTable.html#method_initSuperTable" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="traits/SuperTable.php"><a href="files/traits-supertable.html"><abbr title="traits/SuperTable.php">SuperTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">initSuperTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
     
     
 
@@ -868,7 +1152,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">244</span>
+    <span class="phpdocumentor-element-found-in__line">301</span>
 
     </aside>
 
@@ -901,7 +1185,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">428</span>
+    <span class="phpdocumentor-element-found-in__line">470</span>
 
     </aside>
 
@@ -934,7 +1218,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">493</span>
+    <span class="phpdocumentor-element-found-in__line">510</span>
 
     </aside>
 
@@ -967,7 +1251,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">322</span>
+    <span class="phpdocumentor-element-found-in__line">365</span>
 
     </aside>
 
@@ -993,24 +1277,24 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_registerCraftEvents">
-        registerCraftEvents()
-        <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_registerCraftEvents" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_registerElementsEvents">
+        registerElementsEvents()
+        <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_registerElementsEvents" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">523</span>
+    <span class="phpdocumentor-element-found-in__line">544</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Registers to Entry types, Category groups, Volumes, Tag sets, Global sets, User layouts and Fields deletions/additions events</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">registerCraftEvents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">registerElementsEvents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
     
     
 
@@ -1033,7 +1317,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">630</span>
+    <span class="phpdocumentor-element-found-in__line">639</span>
 
     </aside>
 
@@ -1066,11 +1350,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">326</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Registers to plugins related events</p>
+        <p class="phpdocumentor-summary">Register to events related to plugins</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -1099,7 +1383,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">595</span>
+    <span class="phpdocumentor-element-found-in__line">604</span>
 
     </aside>
 
@@ -1132,7 +1416,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">366</span>
+    <span class="phpdocumentor-element-found-in__line">409</span>
 
     </aside>
 
@@ -1165,7 +1449,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">190</span>
+    <span class="phpdocumentor-element-found-in__line">237</span>
 
     </aside>
 
@@ -1191,39 +1475,6 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_registerSwitchEdition">
-        registerSwitchEdition()
-        <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_registerSwitchEdition" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">468</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Registers to edition change event. Installs all themes data if edition is pro</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">registerSwitchEdition</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_registerTwig">
         registerTwig()
         <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_registerTwig" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1231,7 +1482,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">206</span>
+    <span class="phpdocumentor-element-found-in__line">253</span>
 
     </aside>
 
@@ -1264,7 +1515,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">286</span>
 
     </aside>
 

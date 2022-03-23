@@ -225,13 +225,6 @@ They define preferences for rendering page elements.</p>
 <dd>Folder where the templates are stored for this theme</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_hasDataInstalled">hasDataInstalled()</a>
-    <span>
-                        &nbsp;: bool    </span>
-</dt>
-<dd>Does this theme have project config driven data (layouts etc) installed.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_isPartial">isPartial()</a>
     <span>
                         &nbsp;: bool    </span>
@@ -302,7 +295,7 @@ They define preferences for rendering page elements.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -312,10 +305,7 @@ They define preferences for rendering page elements.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">afterThemeInstall</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>At this point the theme data (layouts etc) is installed.
-This will be called even when installing themes through project config.
-If you add project config driven data in here, you might want to check that the
-theme's data is not already installed to avoid project config syncing issues.</p>
+        <section class="phpdocumentor-description"><p>At this point the theme data (layouts etc) is installed.</p>
 </section>
 
     
@@ -651,7 +641,7 @@ theme's data is not already installed to avoid project config syncing issues.</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -748,42 +738,6 @@ The compiler defined here will be used for asset bundle scss, inline scss and fi
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_hasDataInstalled">
-        hasDataInstalled()
-        <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_hasDataInstalled" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">118</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Does this theme have project config driven data (layouts etc) installed.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">hasDataInstalled</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-        <section class="phpdocumentor-description"><p>This is known with the parameter <code class="prettyprint">dataInstalled</code> saved on each theme's
-project config, set to true after the data is installed for the first time.</p>
-</section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     

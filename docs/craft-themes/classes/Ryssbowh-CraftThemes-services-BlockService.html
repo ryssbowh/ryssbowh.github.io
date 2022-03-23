@@ -180,13 +180,6 @@
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-BlockService.html#method_all">all()</a>
-    <span>
-                        &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
-</dt>
-<dd>Get all blocks</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-BlockService.html#method_cleanUp">cleanUp()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -206,6 +199,13 @@
                         &nbsp;: bool    </span>
 </dt>
 <dd>Deletes a block</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-services-BlockService.html#method_getAll">getAll()</a>
+    <span>
+                        &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
+</dt>
+<dd>Get all blocks</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-BlockService.html#method_getById">getById()</a>
@@ -343,7 +343,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_matrixService">matrixService()</a>
     <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-services-MatrixService.html"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></a>    </span>
+                        &nbsp;: <abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr>    </span>
 </dt>
 <dd>Get the matrix service</dd>
 
@@ -612,39 +612,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_all">
-        all()
-        <a href="classes/Ryssbowh-CraftThemes-services-BlockService.html#method_all" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/BlockService.php"><a href="files/services-blockservice.html"><abbr title="services/BlockService.php">BlockService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">43</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get all blocks</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_cleanUp">
         cleanUp()
         <a href="classes/Ryssbowh-CraftThemes-services-BlockService.html#method_cleanUp" class="headerlink"><i class="fas fa-link"></i></a>
@@ -785,6 +752,39 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getAll">
+        getAll()
+        <a href="classes/Ryssbowh-CraftThemes-services-BlockService.html#method_getAll" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="services/BlockService.php"><a href="files/services-blockservice.html"><abbr title="services/BlockService.php">BlockService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get all blocks</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getAll</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span>
             &mdash;
         
     
@@ -1535,14 +1535,14 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">matrixService</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-MatrixService.html"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">matrixService</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-MatrixService.html"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></span>
             &mdash;
         
     

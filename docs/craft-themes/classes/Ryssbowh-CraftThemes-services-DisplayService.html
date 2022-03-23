@@ -110,7 +110,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -201,13 +201,6 @@
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_all">all()</a>
-    <span>
-                        &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
-</dt>
-<dd>Get all displays</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_cleanUp">cleanUp()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -226,7 +219,7 @@
     <span>
                         &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayInterface">DisplayInterface</abbr></a>&gt;    </span>
 </dt>
-<dd>Create all displays for a view mode</dd>
+<dd>Create all displays for a view mode, will rebuild the existing ones</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_delete">delete()</a>
@@ -236,11 +229,11 @@
 <dd>Deletes a display</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_getAllForCraftField">getAllForCraftField()</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_getAll">getAll()</a>
     <span>
-                        &nbsp;: array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayInterface">DisplayInterface</abbr></a>&gt;    </span>
+                        &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
 </dt>
-<dd>Get all displays for a craft field id</dd>
+<dd>Get all displays</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_getById">getById()</a>
@@ -306,19 +299,11 @@
 <dd>Handles a deletion in display config</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_onCraftFieldSaved">onCraftFieldSaved()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Handles a craft field save: If the type of field has changed
-replaces the item in each display associated to the field.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_populateFromPost">populateFromPost()</a>
+    <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_populateFromData">populateFromData()</a>
     <span>
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayInterface">DisplayInterface</abbr></a>    </span>
 </dt>
-<dd>Populate a display from post</dd>
+<dd>Populate a display from an array of data</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_rebuildConfig">rebuildConfig()</a>
@@ -428,7 +413,7 @@ replaces the item in each display associated to the field.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-services-Service.html#method_matrixService">matrixService()</a>
     <span>
-                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-services-MatrixService.html"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></a>    </span>
+                        &nbsp;: <abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr>    </span>
 </dt>
 <dd>Get the matrix service</dd>
 
@@ -479,7 +464,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -508,7 +493,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -537,7 +522,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -566,7 +551,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -595,7 +580,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -624,7 +609,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -653,7 +638,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -682,7 +667,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -711,7 +696,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -755,7 +740,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -784,39 +769,6 @@ replaces the item in each display associated to the field.</dd>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_all">
-        all()
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_all" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">45</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get all displays</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_cleanUp">
         cleanUp()
         <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_cleanUp" class="headerlink"><i class="fas fa-link"></i></a>
@@ -824,7 +776,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">488</span>
+    <span class="phpdocumentor-element-found-in__line">435</span>
 
     </aside>
 
@@ -874,7 +826,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -917,11 +869,11 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">417</span>
+    <span class="phpdocumentor-element-found-in__line">358</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create all displays for a view mode</p>
+        <p class="phpdocumentor-summary">Create all displays for a view mode, will rebuild the existing ones</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -960,7 +912,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -996,39 +948,29 @@ replaces the item in each display associated to the field.</dd>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getAllForCraftField">
-        getAllForCraftField()
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_getAllForCraftField" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getAll">
+        getAll()
+        <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_getAll" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">336</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get all displays for a craft field id</p>
+        <p class="phpdocumentor-summary">Get all displays</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getAllForCraftField</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayInterface">DisplayInterface</abbr></a>&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getAll</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span></code>
 
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$fieldId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayInterface">DisplayInterface</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span>
             &mdash;
         
     
@@ -1046,7 +988,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">314</span>
+    <span class="phpdocumentor-element-found-in__line">270</span>
 
     </aside>
 
@@ -1089,7 +1031,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">325</span>
+    <span class="phpdocumentor-element-found-in__line">281</span>
 
     </aside>
 
@@ -1132,7 +1074,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">352</span>
+    <span class="phpdocumentor-element-found-in__line">293</span>
 
     </aside>
 
@@ -1182,7 +1124,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">386</span>
+    <span class="phpdocumentor-element-found-in__line">327</span>
 
     </aside>
 
@@ -1225,7 +1167,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">366</span>
+    <span class="phpdocumentor-element-found-in__line">307</span>
 
     </aside>
 
@@ -1268,7 +1210,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">401</span>
+    <span class="phpdocumentor-element-found-in__line">342</span>
 
     </aside>
 
@@ -1320,7 +1262,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">551</span>
+    <span class="phpdocumentor-element-found-in__line">498</span>
 
     </aside>
 
@@ -1363,7 +1305,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">166</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -1406,7 +1348,7 @@ replaces the item in each display associated to the field.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">203</span>
 
     </aside>
 
@@ -1442,68 +1384,22 @@ replaces the item in each display associated to the field.</dd>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_onCraftFieldSaved">
-        onCraftFieldSaved()
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_onCraftFieldSaved" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_populateFromData">
+        populateFromData()
+        <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_populateFromData" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">245</span>
+    <span class="phpdocumentor-element-found-in__line">240</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Handles a craft field save: If the type of field has changed
-replaces the item in each display associated to the field.</p>
+        <p class="phpdocumentor-summary">Populate a display from an array of data</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">onCraftFieldSaved</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\events\FieldEvent">FieldEvent</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"><p>Otherwise let the item handle the change.</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$event</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\events\FieldEvent">FieldEvent</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_populateFromPost">
-        populateFromPost()
-        <a href="classes/Ryssbowh-CraftThemes-services-DisplayService.html#method_populateFromPost" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">284</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Populate a display from post</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">populateFromPost</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayInterface">DisplayInterface</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">populateFromData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-DisplayInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\DisplayInterface">DisplayInterface</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1538,7 +1434,7 @@ replaces the item in each display associated to the field.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">230</span>
+    <span class="phpdocumentor-element-found-in__line">226</span>
 
     </aside>
 
@@ -1581,7 +1477,7 @@ replaces the item in each display associated to the field.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -1631,7 +1527,7 @@ replaces the item in each display associated to the field.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">508</span>
+    <span class="phpdocumentor-element-found-in__line">455</span>
 
     </aside>
 
@@ -1939,7 +1835,7 @@ replaces the item in each display associated to the field.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">522</span>
+    <span class="phpdocumentor-element-found-in__line">469</span>
 
     </aside>
 
@@ -1989,7 +1885,7 @@ replaces the item in each display associated to the field.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/DisplayService.php"><a href="files/services-displayservice.html"><abbr title="services/DisplayService.php">DisplayService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">536</span>
+    <span class="phpdocumentor-element-found-in__line">483</span>
 
     </aside>
 
@@ -2106,14 +2002,14 @@ replaces the item in each display associated to the field.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">matrixService</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-MatrixService.html"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">matrixService</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-services-MatrixService.html"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Ryssbowh\CraftThemes\services\MatrixService">MatrixService</abbr></span>
             &mdash;
         
     
