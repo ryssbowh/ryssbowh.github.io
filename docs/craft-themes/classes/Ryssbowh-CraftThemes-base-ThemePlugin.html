@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Craft Themes v3 Class Reference</title>
+    <title>Craft Themes (4.x)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
@@ -23,7 +23,7 @@
     </head>
 <body id="top">
     <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Craft Themes v3 Class Reference</a></h1>
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Craft Themes (4.x)</a></h1>
     <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
     <label class="phpdocumentor-header__menu-icon" for="menu-button">
         <i class="fas fa-bars"></i>
@@ -116,7 +116,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -180,10 +180,13 @@
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>Bundle assets defined by this theme, keyed by the url path. &#039;*&#039; for all paths :
+<dd>Bundle assets defined by this theme, keyed by the url path. &#039;*&#039; for all paths, &#039;&#039; for homepage. Wrap key with // for regular expression :
 [
      &#039;*&#039; =&gt; [
          CommonAssets::class
+     ],
+     &#039;&#039; =&gt; [
+         HomeAssets::class
      ],
      &#039;blog&#039; =&gt; [
          BlogAsset::class
@@ -235,7 +238,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_fields">fields()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -331,13 +334,6 @@
 <dd>Register this theme&#039;s assets in view for a specific path</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_beforeInstall">beforeInstall()</a>
-    <span>
-                        &nbsp;: bool    </span>
-</dt>
-<dd>Make sure themes plugin is installed before installing</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_defineRegions">defineRegions()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;|null    </span>
@@ -398,7 +394,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -442,7 +438,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -474,7 +470,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -506,7 +502,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -538,14 +534,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Bundle assets defined by this theme, keyed by the url path. &#039;*&#039; for all paths :
+        <p class="phpdocumentor-summary">Bundle assets defined by this theme, keyed by the url path. &#039;*&#039; for all paths, &#039;&#039; for homepage. Wrap key with // for regular expression :
 [
      &#039;*&#039; =&gt; [
          CommonAssets::class
+     ],
+     &#039;&#039; =&gt; [
+         HomeAssets::class
      ],
      &#039;blog&#039; =&gt; [
          BlogAsset::class
@@ -579,7 +578,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -612,7 +611,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -645,7 +644,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -682,7 +681,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">227</span>
 
     </aside>
 
@@ -728,7 +727,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">216</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -774,7 +773,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">213</span>
 
     </aside>
 
@@ -820,14 +819,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">fields</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">fields</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
     
@@ -847,7 +846,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
         
     
@@ -865,7 +864,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -921,7 +920,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -967,7 +966,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">240</span>
+    <span class="phpdocumentor-element-found-in__line">234</span>
 
     </aside>
 
@@ -1013,7 +1012,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -1059,7 +1058,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">160</span>
 
     </aside>
 
@@ -1105,7 +1104,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">248</span>
+    <span class="phpdocumentor-element-found-in__line">242</span>
 
     </aside>
 
@@ -1151,7 +1150,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
     </aside>
 
@@ -1197,7 +1196,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">260</span>
+    <span class="phpdocumentor-element-found-in__line">254</span>
 
     </aside>
 
@@ -1243,7 +1242,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">268</span>
+    <span class="phpdocumentor-element-found-in__line">262</span>
 
     </aside>
 
@@ -1301,7 +1300,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -1347,7 +1346,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -1393,7 +1392,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -1439,7 +1438,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -1488,53 +1487,6 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_beforeInstall">
-        beforeInstall()
-        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_beforeInstall" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">232</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Make sure themes plugin is installed before installing</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">beforeInstall</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">since</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                            <span class="phpdocumentor-tag-link">3.1.0</span>
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_defineRegions">
         defineRegions()
         <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_defineRegions" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1542,7 +1494,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">410</span>
+    <span class="phpdocumentor-element-found-in__line">404</span>
 
     </aside>
 
@@ -1584,7 +1536,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">382</span>
+    <span class="phpdocumentor-element-found-in__line">376</span>
 
     </aside>
 
@@ -1627,7 +1579,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">361</span>
+    <span class="phpdocumentor-element-found-in__line">355</span>
 
     </aside>
 
@@ -1660,7 +1612,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">371</span>
+    <span class="phpdocumentor-element-found-in__line">365</span>
 
     </aside>
 
@@ -1693,7 +1645,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">305</span>
+    <span class="phpdocumentor-element-found-in__line">299</span>
 
     </aside>
 
@@ -1726,7 +1678,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">321</span>
+    <span class="phpdocumentor-element-found-in__line">315</span>
 
     </aside>
 

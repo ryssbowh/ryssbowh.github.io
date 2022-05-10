@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Craft Themes v3 Class Reference</title>
+    <title>Craft Themes (4.x)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
@@ -23,7 +23,7 @@
     </head>
 <body id="top">
     <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Craft Themes v3 Class Reference</a></h1>
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Craft Themes (4.x)</a></h1>
     <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
     <label class="phpdocumentor-header__menu-icon" for="menu-button">
         <i class="fas fa-bars"></i>
@@ -156,14 +156,14 @@
                 <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#property_hasCpSection">$hasCpSection</a>
     <span>
-                &nbsp;: mixed            </span>
+                &nbsp;: bool            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#property_hasCpSettings">$hasCpSettings</a>
     <span>
-                &nbsp;: mixed            </span>
+                &nbsp;: bool            </span>
 </dt>
 <dd></dd>
 
@@ -177,7 +177,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#property_schemaVersion">$schemaVersion</a>
     <span>
-                &nbsp;: mixed            </span>
+                &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
@@ -199,7 +199,7 @@ This is used to rebuild layouts/displays when such a plugin is installed/uninsta
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_getCpNavItem">getCpNavItem()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;|null    </span>
 </dt>
 <dd></dd>
 
@@ -213,7 +213,7 @@ This is used to rebuild layouts/displays when such a plugin is installed/uninsta
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_init">init()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd>inheritDoc</dd>
 
@@ -241,7 +241,7 @@ This is used to rebuild layouts/displays when such a plugin is installed/uninsta
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-Themes.html#method_afterUninstall">afterUninstall()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
@@ -486,7 +486,7 @@ This is used to rebuild layouts/displays when such a plugin is installed/uninsta
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$hasCpSection</span>
      = <span class="phpdocumentor-signature__default-value">true</span></code>
 
@@ -532,7 +532,7 @@ This is used to rebuild layouts/displays when such a plugin is installed/uninsta
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$hasCpSettings</span>
      = <span class="phpdocumentor-signature__default-value">true</span></code>
 
@@ -610,7 +610,7 @@ This is used to rebuild layouts/displays when such a plugin is installed/uninsta
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$schemaVersion</span>
      = <span class="phpdocumentor-signature__default-value">&#039;3.1.0&#039;</span></code>
 
@@ -753,7 +753,7 @@ This is used to rebuild layouts/displays when such a plugin is installed/uninsta
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getCpNavItem</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">getCpNavItem</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span></code>
 
     
     
@@ -773,7 +773,7 @@ This is used to rebuild layouts/displays when such a plugin is installed/uninsta
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span>
             &mdash;
         
     
@@ -848,14 +848,14 @@ This is used to rebuild layouts/displays when such a plugin is installed/uninsta
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">init</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">init</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -996,14 +996,14 @@ This is used to rebuild layouts/displays when such a plugin is installed/uninsta
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">681</span>
+    <span class="phpdocumentor-element-found-in__line">684</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">afterUninstall</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">afterUninstall</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
     
@@ -1023,7 +1023,7 @@ This is used to rebuild layouts/displays when such a plugin is installed/uninsta
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -1041,7 +1041,7 @@ This is used to rebuild layouts/displays when such a plugin is installed/uninsta
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Themes.php"><a href="files/themes.html"><abbr title="Themes.php">Themes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">673</span>
+    <span class="phpdocumentor-element-found-in__line">676</span>
 
     </aside>
 

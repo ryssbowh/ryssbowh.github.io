@@ -1,6 +1,21 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\Install",
+            "name": "Install",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-migrations-Install.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\Install\u003A\u003AsafeUp\u0028\u0029",
+            "name": "safeUp",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-migrations-Install.html#method_safeUp"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\Install\u003A\u003AsafeDown\u0028\u0029",
+            "name": "safeDown",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-migrations-Install.html#method_safeDown"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\BlocksAssets",
             "name": "BlocksAssets",
             "summary": "",
@@ -421,11 +436,6 @@ Search.appendIndex(
             "summary": "Callback\u0020after\u0020the\u0020theme\u0020has\u0020been\u0020set\u0020for\u0020a\u0020request",
             "url": "classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_afterSet"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\base\\ThemePlugin\u003A\u003AbeforeInstall\u0028\u0029",
-            "name": "beforeInstall",
-            "summary": "Make\u0020sure\u0020themes\u0020plugin\u0020is\u0020installed\u0020before\u0020installing",
-            "url": "classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_beforeInstall"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\base\\ThemePlugin\u003A\u003AgetHasPreview\u0028\u0029",
             "name": "getHasPreview",
             "summary": "Does\u0020this\u0020theme\u0020have\u0020a\u0020preview\u0020image",
@@ -503,7 +513,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\base\\ThemePlugin\u003A\u003A\u0024assetBundles",
             "name": "assetBundles",
-            "summary": "Bundle\u0020assets\u0020defined\u0020by\u0020this\u0020theme,\u0020keyed\u0020by\u0020the\u0020url\u0020path.\u0020\u0027\u002A\u0027\u0020for\u0020all\u0020paths\u0020\u003A\n\u005B\n\u0020\u0020\u0020\u0020\u0020\u0027\u002A\u0027\u0020\u003D\u003E\u0020\u005B\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020CommonAssets\u003A\u003Aclass\n\u0020\u0020\u0020\u0020\u0020\u005D,\n\u0020\u0020\u0020\u0020\u0020\u0027blog\u0027\u0020\u003D\u003E\u0020\u005B\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020BlogAsset\u003A\u003Aclass\n\u0020\u0020\u0020\u0020\u0020\u005D\n\u005D",
+            "summary": "Bundle\u0020assets\u0020defined\u0020by\u0020this\u0020theme,\u0020keyed\u0020by\u0020the\u0020url\u0020path.\u0020\u0027\u002A\u0027\u0020for\u0020all\u0020paths,\u0020\u0027\u0027\u0020for\u0020homepage.\u0020Wrap\u0020key\u0020with\u0020\/\/\u0020for\u0020regular\u0020expression\u0020\u003A\n\u005B\n\u0020\u0020\u0020\u0020\u0020\u0027\u002A\u0027\u0020\u003D\u003E\u0020\u005B\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020CommonAssets\u003A\u003Aclass\n\u0020\u0020\u0020\u0020\u0020\u005D,\n\u0020\u0020\u0020\u0020\u0020\u0027\u0027\u0020\u003D\u003E\u0020\u005B\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020HomeAssets\u003A\u003Aclass\n\u0020\u0020\u0020\u0020\u0020\u005D,\n\u0020\u0020\u0020\u0020\u0020\u0027blog\u0027\u0020\u003D\u003E\u0020\u005B\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020BlogAsset\u003A\u003Aclass\n\u0020\u0020\u0020\u0020\u0020\u005D\n\u005D",
             "url": "classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#property_assetBundles"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\base\\ThemePlugin\u003A\u003A\u0024inheritsAssets",
@@ -2001,6 +2011,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-exceptions-ThemeException.html#method_handleInvalid"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\exceptions\\ThemeException\u003A\u003AthemesNotInstalled\u0028\u0029",
+            "name": "themesNotInstalled",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-exceptions-ThemeException.html#method_themesNotInstalled"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\exceptions\\ViewModeException",
             "name": "ViewModeException",
             "summary": "",
@@ -2188,18 +2203,28 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\PluginsHelper\u003A\u003AinstallTheme\u0028\u0029",
             "name": "installTheme",
-            "summary": "",
+            "summary": "Install\u0020a\u0020theme\u0027s\u0020data",
             "url": "classes/Ryssbowh-CraftThemes-helpers-PluginsHelper.html#method_installTheme"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\PluginsHelper\u003A\u003AuninstallTheme\u0028\u0029",
             "name": "uninstallTheme",
-            "summary": "",
+            "summary": "Uninstall\u0020a\u0020theme\u0027s\u0020data",
             "url": "classes/Ryssbowh-CraftThemes-helpers-PluginsHelper.html#method_uninstallTheme"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\PluginsHelper\u003A\u003A\u0024readFromYaml",
+            "name": "readFromYaml",
+            "summary": "This\u0020is\u0020needed\u0020to\u0020know\u0020where\u0020we\u0020should\u0020look\u0020for\u0020project\u0020config,\u0020either\u0020in\u0020yaml\u0020or\u0020in\u0020internal\u0020config.",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-PluginsHelper.html#property_readFromYaml"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\PluginsHelper\u003A\u003A\u0024reinstallQueued",
             "name": "reinstallQueued",
-            "summary": "",
+            "summary": "Has\u0020a\u0020reinstall\u0020job\u0020been\u0020queued",
             "url": "classes/Ryssbowh-CraftThemes-helpers-PluginsHelper.html#property_reinstallQueued"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\PluginsHelper\u003A\u003A\u0024installed",
+            "name": "installed",
+            "summary": "Copy\u0020of\u0020the\u0020config\u0020plugins.themes.themesInstalled\u0020to\u0020track\u0020it\u0020internally",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-PluginsHelper.html#property_installed"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\ProjectConfigHelper",
             "name": "ProjectConfigHelper",
@@ -3505,21 +3530,6 @@ Search.appendIndex(
             "name": "getDescription",
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-jobs-ReinstallLayoutsJob.html#method_getDescription"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\Install",
-            "name": "Install",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-migrations-Install.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\Install\u003A\u003AsafeUp\u0028\u0029",
-            "name": "safeUp",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-migrations-Install.html#method_safeUp"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\Install\u003A\u003AsafeDown\u0028\u0029",
-            "name": "safeDown",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-migrations-Install.html#method_safeDown"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\m211129_192847_InstallV3",
             "name": "m211129_192847_InstallV3",
