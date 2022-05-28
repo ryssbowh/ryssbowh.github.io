@@ -219,7 +219,7 @@
     <span>
                         &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a>|null    </span>
 </dt>
-<dd>Get the child of a field related to a Craft field</dd>
+<dd>Get the child of a field related to a Craft field.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-services-FieldsService.html#method_getChildren">getChildren()</a>
@@ -660,7 +660,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">310</span>
+    <span class="phpdocumentor-element-found-in__line">312</span>
 
     </aside>
 
@@ -704,7 +704,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">284</span>
 
     </aside>
 
@@ -761,7 +761,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">299</span>
+    <span class="phpdocumentor-element-found-in__line">301</span>
 
     </aside>
 
@@ -805,7 +805,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">359</span>
+    <span class="phpdocumentor-element-found-in__line">361</span>
 
     </aside>
 
@@ -881,7 +881,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -924,7 +924,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">270</span>
+    <span class="phpdocumentor-element-found-in__line">272</span>
 
     </aside>
 
@@ -967,17 +967,20 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get the child of a field related to a Craft field</p>
+        <p class="phpdocumentor-summary">Get the child of a field related to a Craft field.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getChild</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Field">Field</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$craftField</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-FieldInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\FieldInterface">FieldInterface</abbr></a>|null</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>Warning, if the parent could contain the same Craft field more than once
+you may get a wrong result here.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1017,7 +1020,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -1060,7 +1063,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -1103,7 +1106,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
@@ -1146,7 +1149,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">443</span>
+    <span class="phpdocumentor-element-found-in__line">445</span>
 
     </aside>
 
@@ -1189,7 +1192,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -1232,7 +1235,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -1315,7 +1318,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">454</span>
+    <span class="phpdocumentor-element-found-in__line">456</span>
 
     </aside>
 
@@ -1358,7 +1361,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 
     </aside>
 
@@ -1391,7 +1394,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">181</span>
+    <span class="phpdocumentor-element-found-in__line">183</span>
 
     </aside>
 
@@ -1434,7 +1437,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">259</span>
+    <span class="phpdocumentor-element-found-in__line">261</span>
 
     </aside>
 
@@ -1467,7 +1470,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">374</span>
+    <span class="phpdocumentor-element-found-in__line">376</span>
 
     </aside>
 
@@ -1510,7 +1513,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">404</span>
+    <span class="phpdocumentor-element-found-in__line">406</span>
 
     </aside>
 
@@ -1553,7 +1556,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">214</span>
 
     </aside>
 
@@ -1597,7 +1600,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">430</span>
+    <span class="phpdocumentor-element-found-in__line">432</span>
 
     </aside>
 
@@ -1640,7 +1643,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">416</span>
+    <span class="phpdocumentor-element-found-in__line">418</span>
 
     </aside>
 
@@ -1683,7 +1686,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">327</span>
+    <span class="phpdocumentor-element-found-in__line">329</span>
 
     </aside>
 
@@ -1733,7 +1736,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">464</span>
+    <span class="phpdocumentor-element-found-in__line">466</span>
 
     </aside>
 
@@ -2140,7 +2143,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">474</span>
+    <span class="phpdocumentor-element-found-in__line">476</span>
 
     </aside>
 
@@ -2173,7 +2176,7 @@ Otherwise we&#039;ll rebuild it in case changes are to be made by the field</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="services/FieldsService.php"><a href="files/services-fieldsservice.html"><abbr title="services/FieldsService.php">FieldsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">487</span>
+    <span class="phpdocumentor-element-found-in__line">489</span>
 
     </aside>
 

@@ -171,6 +171,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftTriggers-events-RegisterActionsEvent.html"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\events\\RegisterActionsEvent\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-events-RegisterActionsEvent.html#method_init"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftTriggers\\events\\RegisterActionsEvent\u003A\u003AgetActions\u0028\u0029",
             "name": "getActions",
             "summary": "Actions\u0020getter",
@@ -586,6 +591,21 @@ Search.appendIndex(
             "summary": "Apply\u0020trigger\u0020conditions",
             "url": "classes/Ryssbowh-CraftTriggers-interfaces-TriggerInterface.html#method_applyActions"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\migrations\\m220512_055442_ChangeConditionsHandles",
+            "name": "m220512_055442_ChangeConditionsHandles",
+            "summary": "m220512_055442_ChangeConditionsHandles\u0020migration.",
+            "url": "classes/Ryssbowh-CraftTriggers-migrations-m220512-055442-ChangeConditionsHandles.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\migrations\\m220512_055442_ChangeConditionsHandles\u003A\u003AsafeUp\u0028\u0029",
+            "name": "safeUp",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-migrations-m220512-055442-ChangeConditionsHandles.html#method_safeUp"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\migrations\\m220512_055442_ChangeConditionsHandles\u003A\u003AsafeDown\u0028\u0029",
+            "name": "safeDown",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-migrations-m220512-055442-ChangeConditionsHandles.html#method_safeDown"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\Action",
             "name": "Action",
             "summary": "",
@@ -670,6 +690,41 @@ Search.appendIndex(
             "name": "_trigger",
             "summary": "",
             "url": "classes/Ryssbowh-CraftTriggers-models-Action.html#property__trigger"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\actions\\Log",
+            "name": "Log",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-actions-Log.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\actions\\Log\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-actions-Log.html#method_getName"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\actions\\Log\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-actions-Log.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\actions\\Log\u003A\u003AhasConfig\u0028\u0029",
+            "name": "hasConfig",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-actions-Log.html#method_hasConfig"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\actions\\Log\u003A\u003AconfigTemplate\u0028\u0029",
+            "name": "configTemplate",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-actions-Log.html#method_configTemplate"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\actions\\Log\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-actions-Log.html#method_getDescription"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\actions\\Log\u003A\u003Aapply\u0028\u0029",
+            "name": "apply",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-actions-Log.html#method_apply"
         },                {
             "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\Condition",
             "name": "Condition",
@@ -1016,105 +1071,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftTriggers-models-conditions-CategoryStatus.html#property_statuses"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryDraft",
-            "name": "EntryDraft",
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Draft",
+            "name": "Draft",
             "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryDraft.html"
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Draft.html"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryDraft\u003A\u003AdefineRules\u0028\u0029",
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Draft\u003A\u003AdefineRules\u0028\u0029",
             "name": "defineRules",
             "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryDraft.html#method_defineRules"
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Draft.html#method_defineRules"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryDraft\u003A\u003AgetName\u0028\u0029",
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Draft\u003A\u003AgetName\u0028\u0029",
             "name": "getName",
             "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryDraft.html#method_getName"
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Draft.html#method_getName"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryDraft\u003A\u003AgetDescription\u0028\u0029",
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Draft\u003A\u003AgetDescription\u0028\u0029",
             "name": "getDescription",
             "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryDraft.html#method_getDescription"
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Draft.html#method_getDescription"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryDraft\u003A\u003AgetHandle\u0028\u0029",
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Draft\u003A\u003AgetHandle\u0028\u0029",
             "name": "getHandle",
             "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryDraft.html#method_getHandle"
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Draft.html#method_getHandle"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryDraft\u003A\u003AhasConfig\u0028\u0029",
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Draft\u003A\u003AhasConfig\u0028\u0029",
             "name": "hasConfig",
             "summary": "Does\u0020this\u0020condition\u0020have\u0020configuration",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryDraft.html#method_hasConfig"
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Draft.html#method_hasConfig"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryDraft\u003A\u003AconfigTemplate\u0028\u0029",
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Draft\u003A\u003AconfigTemplate\u0028\u0029",
             "name": "configTemplate",
             "summary": "Get\u0020configuration\u0020template",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryDraft.html#method_configTemplate"
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Draft.html#method_configTemplate"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryDraft\u003A\u003Acheck\u0028\u0029",
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Draft\u003A\u003Acheck\u0028\u0029",
             "name": "check",
             "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryDraft.html#method_check"
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Draft.html#method_check"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryDraft\u003A\u003AdefineForTriggers\u0028\u0029",
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Draft\u003A\u003AdefineForTriggers\u0028\u0029",
             "name": "defineForTriggers",
             "summary": "Triggers\u0020for\u0020which\u0020this\u0020condition\u0020applies.\u0020null\u0020means\u0020all",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryDraft.html#method_defineForTriggers"
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Draft.html#method_defineForTriggers"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryDraft\u003A\u003A\u0024isDraft",
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Draft\u003A\u003A\u0024isDraft",
             "name": "isDraft",
             "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryDraft.html#property_isDraft"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryRevision",
-            "name": "EntryRevision",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryRevision.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryRevision\u003A\u003AdefineRules\u0028\u0029",
-            "name": "defineRules",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryRevision.html#method_defineRules"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryRevision\u003A\u003AgetName\u0028\u0029",
-            "name": "getName",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryRevision.html#method_getName"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryRevision\u003A\u003AgetDescription\u0028\u0029",
-            "name": "getDescription",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryRevision.html#method_getDescription"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryRevision\u003A\u003AgetHandle\u0028\u0029",
-            "name": "getHandle",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryRevision.html#method_getHandle"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryRevision\u003A\u003AhasConfig\u0028\u0029",
-            "name": "hasConfig",
-            "summary": "Does\u0020this\u0020condition\u0020have\u0020configuration",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryRevision.html#method_hasConfig"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryRevision\u003A\u003AconfigTemplate\u0028\u0029",
-            "name": "configTemplate",
-            "summary": "Get\u0020configuration\u0020template",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryRevision.html#method_configTemplate"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryRevision\u003A\u003Acheck\u0028\u0029",
-            "name": "check",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryRevision.html#method_check"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryRevision\u003A\u003AdefineForTriggers\u0028\u0029",
-            "name": "defineForTriggers",
-            "summary": "Triggers\u0020for\u0020which\u0020this\u0020condition\u0020applies.\u0020null\u0020means\u0020all",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryRevision.html#method_defineForTriggers"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryRevision\u003A\u003A\u0024isRevision",
-            "name": "isRevision",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntryRevision.html#property_isRevision"
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Draft.html#property_isDraft"
         },                {
             "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntrySection",
             "name": "EntrySection",
@@ -1170,56 +1175,6 @@ Search.appendIndex(
             "name": "sections",
             "summary": "",
             "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntrySection.html#property_sections"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntrySlug",
-            "name": "EntrySlug",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntrySlug.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntrySlug\u003A\u003AdefineRules\u0028\u0029",
-            "name": "defineRules",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntrySlug.html#method_defineRules"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntrySlug\u003A\u003AgetName\u0028\u0029",
-            "name": "getName",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntrySlug.html#method_getName"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntrySlug\u003A\u003AgetDescription\u0028\u0029",
-            "name": "getDescription",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntrySlug.html#method_getDescription"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntrySlug\u003A\u003AgetHandle\u0028\u0029",
-            "name": "getHandle",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntrySlug.html#method_getHandle"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntrySlug\u003A\u003AhasConfig\u0028\u0029",
-            "name": "hasConfig",
-            "summary": "Does\u0020this\u0020condition\u0020have\u0020configuration",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntrySlug.html#method_hasConfig"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntrySlug\u003A\u003AconfigTemplate\u0028\u0029",
-            "name": "configTemplate",
-            "summary": "Get\u0020configuration\u0020template",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntrySlug.html#method_configTemplate"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntrySlug\u003A\u003Acheck\u0028\u0029",
-            "name": "check",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntrySlug.html#method_check"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntrySlug\u003A\u003AdefineForTriggers\u0028\u0029",
-            "name": "defineForTriggers",
-            "summary": "Triggers\u0020for\u0020which\u0020this\u0020condition\u0020applies.\u0020null\u0020means\u0020all",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntrySlug.html#method_defineForTriggers"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntrySlug\u003A\u003A\u0024slug",
-            "name": "slug",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-EntrySlug.html#property_slug"
         },                {
             "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntryStatus",
             "name": "EntryStatus",
@@ -1501,6 +1456,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Request.html#property_types"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Revision",
+            "name": "Revision",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Revision.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Revision\u003A\u003AdefineRules\u0028\u0029",
+            "name": "defineRules",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Revision.html#method_defineRules"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Revision\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Revision.html#method_getName"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Revision\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Revision.html#method_getDescription"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Revision\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Revision.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Revision\u003A\u003AhasConfig\u0028\u0029",
+            "name": "hasConfig",
+            "summary": "Does\u0020this\u0020condition\u0020have\u0020configuration",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Revision.html#method_hasConfig"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Revision\u003A\u003AconfigTemplate\u0028\u0029",
+            "name": "configTemplate",
+            "summary": "Get\u0020configuration\u0020template",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Revision.html#method_configTemplate"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Revision\u003A\u003Acheck\u0028\u0029",
+            "name": "check",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Revision.html#method_check"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Revision\u003A\u003AdefineForTriggers\u0028\u0029",
+            "name": "defineForTriggers",
+            "summary": "Triggers\u0020for\u0020which\u0020this\u0020condition\u0020applies.\u0020null\u0020means\u0020all",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Revision.html#method_defineForTriggers"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Revision\u003A\u003A\u0024isRevision",
+            "name": "isRevision",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Revision.html#property_isRevision"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Site",
             "name": "Site",
             "summary": "",
@@ -1550,6 +1555,56 @@ Search.appendIndex(
             "name": "sites",
             "summary": "",
             "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Site.html#property_sites"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Slug",
+            "name": "Slug",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Slug.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Slug\u003A\u003AdefineRules\u0028\u0029",
+            "name": "defineRules",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Slug.html#method_defineRules"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Slug\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Slug.html#method_getName"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Slug\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Slug.html#method_getDescription"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Slug\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Slug.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Slug\u003A\u003AhasConfig\u0028\u0029",
+            "name": "hasConfig",
+            "summary": "Does\u0020this\u0020condition\u0020have\u0020configuration",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Slug.html#method_hasConfig"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Slug\u003A\u003AconfigTemplate\u0028\u0029",
+            "name": "configTemplate",
+            "summary": "Get\u0020configuration\u0020template",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Slug.html#method_configTemplate"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Slug\u003A\u003Acheck\u0028\u0029",
+            "name": "check",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Slug.html#method_check"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Slug\u003A\u003AdefineForTriggers\u0028\u0029",
+            "name": "defineForTriggers",
+            "summary": "Triggers\u0020for\u0020which\u0020this\u0020condition\u0020applies.\u0020null\u0020means\u0020all",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Slug.html#method_defineForTriggers"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\Slug\u003A\u003A\u0024slug",
+            "name": "slug",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Slug.html#property_slug"
         },                {
             "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\UserGroup",
             "name": "UserGroup",
@@ -2000,6 +2055,226 @@ Search.appendIndex(
             "name": "initialize",
             "summary": "Initialize\u0020trigger",
             "url": "classes/Ryssbowh-CraftTriggers-models-triggers-EntrySaved.html#method_initialize"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderAuthorized",
+            "name": "OrderAuthorized",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderAuthorized.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderAuthorized\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Type\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderAuthorized.html#method_getType"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderAuthorized\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Handle\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderAuthorized.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderAuthorized\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020trigger",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderAuthorized.html#method_initialize"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderCompleted",
+            "name": "OrderCompleted",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderCompleted.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderCompleted\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Type\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderCompleted.html#method_getType"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderCompleted\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Handle\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderCompleted.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderCompleted\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020trigger",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderCompleted.html#method_initialize"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderDeleted",
+            "name": "OrderDeleted",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderDeleted.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderDeleted\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Type\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderDeleted.html#method_getType"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderDeleted\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Handle\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderDeleted.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderDeleted\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020trigger",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderDeleted.html#method_initialize"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderPaid",
+            "name": "OrderPaid",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderPaid.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderPaid\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Type\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderPaid.html#method_getType"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderPaid\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Handle\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderPaid.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderPaid\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020trigger",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderPaid.html#method_initialize"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderSaved",
+            "name": "OrderSaved",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderSaved.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderSaved\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Type\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderSaved.html#method_getType"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderSaved\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Handle\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderSaved.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\OrderSaved\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020trigger",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-OrderSaved.html#method_initialize"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentCaptured",
+            "name": "PaymentCaptured",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentCaptured.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentCaptured\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Type\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentCaptured.html#method_getType"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentCaptured\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Handle\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentCaptured.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentCaptured\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020trigger",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentCaptured.html#method_initialize"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentComplete",
+            "name": "PaymentComplete",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentComplete.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentComplete\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Type\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentComplete.html#method_getType"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentComplete\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Handle\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentComplete.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentComplete\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020trigger",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentComplete.html#method_initialize"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentProcessed",
+            "name": "PaymentProcessed",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentProcessed.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentProcessed\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Type\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentProcessed.html#method_getType"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentProcessed\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Handle\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentProcessed.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentProcessed\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020trigger",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentProcessed.html#method_initialize"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentRefunded",
+            "name": "PaymentRefunded",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentRefunded.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentRefunded\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Type\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentRefunded.html#method_getType"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentRefunded\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Handle\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentRefunded.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\PaymentRefunded\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020trigger",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-PaymentRefunded.html#method_initialize"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\ProductDeleted",
+            "name": "ProductDeleted",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-ProductDeleted.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\ProductDeleted\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Type\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-ProductDeleted.html#method_getType"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\ProductDeleted\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Handle\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-ProductDeleted.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\ProductDeleted\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020trigger",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-ProductDeleted.html#method_initialize"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\ProductSaved",
+            "name": "ProductSaved",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-ProductSaved.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\ProductSaved\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Type\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-ProductSaved.html#method_getType"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\ProductSaved\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Handle\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-ProductSaved.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\ProductSaved\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020trigger",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-ProductSaved.html#method_initialize"
         },                {
             "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\UserActivated",
             "name": "UserActivated",
@@ -2635,6 +2910,11 @@ Search.appendIndex(
             "name": "models",
             "summary": "",
             "url": "namespaces/ryssbowh-crafttriggers-models.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\actions",
+            "name": "actions",
+            "summary": "",
+            "url": "namespaces/ryssbowh-crafttriggers-models-actions.html"
         },                {
             "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions",
             "name": "conditions",
