@@ -1,6 +1,51 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\Install",
+            "name": "Install",
+            "summary": "Install\u0020migration.",
+            "url": "classes/Ryssbowh-CraftEmails-migrations-Install.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\Install\u003A\u003AsafeUp\u0028\u0029",
+            "name": "safeUp",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-migrations-Install.html#method_safeUp"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\Install\u003A\u003AsafeDown\u0028\u0029",
+            "name": "safeDown",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-migrations-Install.html#method_safeDown"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings",
+            "name": "Settings",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003AgetRedactorConfigOptions\u0028\u0029",
+            "name": "getRedactorConfigOptions",
+            "summary": "Get\u0020all\u0020defined\u0020redactor\u0020configuration\u0020files",
+            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#method_getRedactorConfigOptions"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003A\u0024menuItemName",
+            "name": "menuItemName",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#property_menuItemName"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003A\u0024compressLogs",
+            "name": "compressLogs",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#property_compressLogs"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003A\u0024mailchimpApiKey",
+            "name": "mailchimpApiKey",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#property_mailchimpApiKey"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003A\u0024mailchimpCacheDuration",
+            "name": "mailchimpCacheDuration",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#property_mailchimpCacheDuration"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\assets\\BaseAssetBundle",
             "name": "BaseAssetBundle",
             "summary": "",
@@ -801,21 +846,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-jobs-EmailShotJob.html#property_isConsole"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\Install",
-            "name": "Install",
-            "summary": "Install\u0020migration.",
-            "url": "classes/Ryssbowh-CraftEmails-migrations-Install.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\Install\u003A\u003AsafeUp\u0028\u0029",
-            "name": "safeUp",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftEmails-migrations-Install.html#method_safeUp"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\Install\u003A\u003AsafeDown\u0028\u0029",
-            "name": "safeDown",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftEmails-migrations-Install.html#method_safeDown"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\m220109_090357_Version11Changes",
             "name": "m220109_090357_Version11Changes",
             "summary": "m220109_090357_Version11Changes\u0020migration.",
@@ -845,21 +875,6 @@ Search.appendIndex(
             "name": "safeDown",
             "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-migrations-m220131-093120-RemoveTestEmail.html#method_safeDown"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\m220406_030612_ChangeInstructionsField",
-            "name": "m220406_030612_ChangeInstructionsField",
-            "summary": "m220406_030612_ChangeInstructionsField\u0020migration.",
-            "url": "classes/Ryssbowh-CraftEmails-migrations-m220406-030612-ChangeInstructionsField.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\m220406_030612_ChangeInstructionsField\u003A\u003AsafeUp\u0028\u0029",
-            "name": "safeUp",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftEmails-migrations-m220406-030612-ChangeInstructionsField.html#method_safeUp"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\m220406_030612_ChangeInstructionsField\u003A\u003AsafeDown\u0028\u0029",
-            "name": "safeDown",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftEmails-migrations-m220406-030612-ChangeInstructionsField.html#method_safeDown"
         },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\models\\actions\\SendEmail",
             "name": "SendEmail",
@@ -1481,36 +1496,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-models-MailchimpMember.html"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings",
-            "name": "Settings",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003AgetRedactorConfigOptions\u0028\u0029",
-            "name": "getRedactorConfigOptions",
-            "summary": "Get\u0020all\u0020defined\u0020redactor\u0020configuration\u0020files",
-            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#method_getRedactorConfigOptions"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003A\u0024menuItemName",
-            "name": "menuItemName",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#property_menuItemName"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003A\u0024compressLogs",
-            "name": "compressLogs",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#property_compressLogs"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003A\u0024mailchimpApiKey",
-            "name": "mailchimpApiKey",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#property_mailchimpApiKey"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003A\u0024mailchimpCacheDuration",
-            "name": "mailchimpCacheDuration",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#property_mailchimpCacheDuration"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\records\\Email",
             "name": "Email",
             "summary": "",
@@ -2055,6 +2040,21 @@ Search.appendIndex(
             "name": "messages",
             "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-variables-EmailsVariable.html#method_messages"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\m220406_030612_ChangeInstructionsField",
+            "name": "m220406_030612_ChangeInstructionsField",
+            "summary": "m220406_030612_ChangeInstructionsField\u0020migration.",
+            "url": "classes/Ryssbowh-CraftEmails-migrations-m220406-030612-ChangeInstructionsField.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\m220406_030612_ChangeInstructionsField\u003A\u003AsafeUp\u0028\u0029",
+            "name": "safeUp",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-migrations-m220406-030612-ChangeInstructionsField.html#method_safeUp"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\m220406_030612_ChangeInstructionsField\u003A\u003AsafeDown\u0028\u0029",
+            "name": "safeDown",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-migrations-m220406-030612-ChangeInstructionsField.html#method_safeDown"
         },                {
             "fqsen": "\\",
             "name": "\\",

@@ -1,21 +1,6 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\Install",
-            "name": "Install",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-migrations-Install.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\Install\u003A\u003AsafeUp\u0028\u0029",
-            "name": "safeUp",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-migrations-Install.html#method_safeUp"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\Install\u003A\u003AsafeDown\u0028\u0029",
-            "name": "safeDown",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-migrations-Install.html#method_safeDown"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\BlocksAssets",
             "name": "BlocksAssets",
             "summary": "",
@@ -3501,6 +3486,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-jobs-ReinstallLayoutsJob.html#method_getDescription"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\Install",
+            "name": "Install",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-migrations-Install.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\Install\u003A\u003AsafeUp\u0028\u0029",
+            "name": "safeUp",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-migrations-Install.html#method_safeUp"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\Install\u003A\u003AsafeDown\u0028\u0029",
+            "name": "safeDown",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-migrations-Install.html#method_safeDown"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\migrations\\m211129_192847_InstallV3",
             "name": "m211129_192847_InstallV3",
             "summary": "m211129_192847_InstallV3\u0020migration.",
@@ -5876,26 +5876,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-MatrixSlickOptions.html#method_defineDefaultValues"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayerOptions\\MoneyDefaultOptions",
-            "name": "MoneyDefaultOptions",
-            "summary": "Base\u0020class\u0020for\u0020all\u0020field\u0020displayer\u0020options",
-            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-MoneyDefaultOptions.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayerOptions\\MoneyDefaultOptions\u003A\u003AdefineOptions\u0028\u0029",
-            "name": "defineOptions",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-MoneyDefaultOptions.html#method_defineOptions"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayerOptions\\MoneyDefaultOptions\u003A\u003AdefineDefaultValues\u0028\u0029",
-            "name": "defineDefaultValues",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-MoneyDefaultOptions.html#method_defineDefaultValues"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayerOptions\\MoneyDefaultOptions\u003A\u003AdefineRules\u0028\u0029",
-            "name": "defineRules",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-MoneyDefaultOptions.html#method_defineRules"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayerOptions\\MultiSelectLabelOptions",
             "name": "MultiSelectLabelOptions",
             "summary": "Base\u0020class\u0020for\u0020all\u0020field\u0020displayer\u0020options",
@@ -7120,36 +7100,6 @@ Search.appendIndex(
             "name": "handle",
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MatrixSlick.html#property_handle"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MoneyDefault",
-            "name": "MoneyDefault",
-            "summary": "Renders\u0020a\u0020colour\u0020field",
-            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MoneyDefault.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MoneyDefault\u003A\u003AisDefault\u0028\u0029",
-            "name": "isDefault",
-            "summary": "Is\u0020this\u0020displayer\u0020the\u0020default\u0020for\u0020a\u0020field\u0020class",
-            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MoneyDefault.html#method_isDefault"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MoneyDefault\u003A\u003AgetName\u0028\u0029",
-            "name": "getName",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MoneyDefault.html#method_getName"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MoneyDefault\u003A\u003AgetFieldTargets\u0028\u0029",
-            "name": "getFieldTargets",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MoneyDefault.html#method_getFieldTargets"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MoneyDefault\u003A\u003AgetOptionsModel\u0028\u0029",
-            "name": "getOptionsModel",
-            "summary": "Get\u0020options\u0020model\u0020class",
-            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MoneyDefault.html#method_getOptionsModel"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MoneyDefault\u003A\u003A\u0024handle",
-            "name": "handle",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MoneyDefault.html#property_handle"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MultiSelectLabel",
             "name": "MultiSelectLabel",
@@ -13845,6 +13795,56 @@ Search.appendIndex(
             "name": "themeUrl",
             "summary": "inheritDoc",
             "url": "classes/Ryssbowh-CraftThemes-twig-TwigTheme.html#method_themeUrl"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayerOptions\\MoneyDefaultOptions",
+            "name": "MoneyDefaultOptions",
+            "summary": "Base\u0020class\u0020for\u0020all\u0020field\u0020displayer\u0020options",
+            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-MoneyDefaultOptions.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayerOptions\\MoneyDefaultOptions\u003A\u003AdefineOptions\u0028\u0029",
+            "name": "defineOptions",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-MoneyDefaultOptions.html#method_defineOptions"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayerOptions\\MoneyDefaultOptions\u003A\u003AdefineDefaultValues\u0028\u0029",
+            "name": "defineDefaultValues",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-MoneyDefaultOptions.html#method_defineDefaultValues"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayerOptions\\MoneyDefaultOptions\u003A\u003AdefineRules\u0028\u0029",
+            "name": "defineRules",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayerOptions-MoneyDefaultOptions.html#method_defineRules"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MoneyDefault",
+            "name": "MoneyDefault",
+            "summary": "Renders\u0020a\u0020colour\u0020field",
+            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MoneyDefault.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MoneyDefault\u003A\u003AisDefault\u0028\u0029",
+            "name": "isDefault",
+            "summary": "Is\u0020this\u0020displayer\u0020the\u0020default\u0020for\u0020a\u0020field\u0020class",
+            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MoneyDefault.html#method_isDefault"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MoneyDefault\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MoneyDefault.html#method_getName"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MoneyDefault\u003A\u003AgetFieldTargets\u0028\u0029",
+            "name": "getFieldTargets",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MoneyDefault.html#method_getFieldTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MoneyDefault\u003A\u003AgetOptionsModel\u0028\u0029",
+            "name": "getOptionsModel",
+            "summary": "Get\u0020options\u0020model\u0020class",
+            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MoneyDefault.html#method_getOptionsModel"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\MoneyDefault\u003A\u003A\u0024handle",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-MoneyDefault.html#property_handle"
         },                {
             "fqsen": "\\",
             "name": "\\",
