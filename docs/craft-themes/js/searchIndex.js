@@ -246,6 +246,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-assets-ThemesBaseAssets.html#method__registerTranslations"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\UtilitiesAssets",
+            "name": "UtilitiesAssets",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-assets-UtilitiesAssets.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\UtilitiesAssets\u003A\u003A\u0024sourcePath",
+            "name": "sourcePath",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-assets-UtilitiesAssets.html#property_sourcePath"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\UtilitiesAssets\u003A\u003A\u0024js",
+            "name": "js",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-assets-UtilitiesAssets.html#property_js"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\UtilitiesAssets\u003A\u003A\u0024css",
+            "name": "css",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-assets-UtilitiesAssets.html#property_css"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\UtilitiesAssets\u003A\u003A\u0024depends",
+            "name": "depends",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-assets-UtilitiesAssets.html#property_depends"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\assets\\VueAssets",
             "name": "VueAssets",
             "summary": "",
@@ -350,6 +375,31 @@ Search.appendIndex(
             "name": "_allDefinedBlocks",
             "summary": "block\u0020classes\u0020defined\u0020by\u0020this\u0020provider,\u0020indexed\u0020by\u0020blocks\u0020handles",
             "url": "classes/Ryssbowh-CraftThemes-base-BlockProvider.html#property__allDefinedBlocks"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\base\\TemplatesUtility",
+            "name": "TemplatesUtility",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-base-TemplatesUtility.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\base\\TemplatesUtility\u003A\u003AdisplayName\u0028\u0029",
+            "name": "displayName",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-base-TemplatesUtility.html#method_displayName"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\base\\TemplatesUtility\u003A\u003Aid\u0028\u0029",
+            "name": "id",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-base-TemplatesUtility.html#method_id"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\base\\TemplatesUtility\u003A\u003AiconPath\u0028\u0029",
+            "name": "iconPath",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-base-TemplatesUtility.html#method_iconPath"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\base\\TemplatesUtility\u003A\u003AcontentHtml\u0028\u0029",
+            "name": "contentHtml",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-base-TemplatesUtility.html#method_contentHtml"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\base\\ThemePlugin",
             "name": "ThemePlugin",
@@ -1230,6 +1280,11 @@ Search.appendIndex(
             "name": "actionList",
             "summary": "Themes\u0020list",
             "url": "classes/Ryssbowh-CraftThemes-controllers-CpThemesController.html#method_actionList"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\controllers\\CpThemesController\u003A\u003AactionOverriddenTemplates\u0028\u0029",
+            "name": "actionOverriddenTemplates",
+            "summary": "Returns\u0020which\u0020templates\u0020are\u0020overriden\u0020for\u0020a\u0020theme",
+            "url": "classes/Ryssbowh-CraftThemes-controllers-CpThemesController.html#method_actionOverriddenTemplates"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\controllers\\CpViewModesAjaxController",
             "name": "CpViewModesAjaxController",
@@ -2286,6 +2341,81 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-helpers-ProjectConfigHelper.html#property__processedGroups"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates",
+            "name": "Templates",
+            "summary": "Helper\u0020related\u0020to\u0020themes\u0020templating",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AgetOverriddenForTheme\u0028\u0029",
+            "name": "getOverriddenForTheme",
+            "summary": "Get\u0020all\u0020the\u0020templates\u0020that\u0020a\u0020theme\u0020overriddes",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_getOverriddenForTheme"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AisTemplateOverridden\u0028\u0029",
+            "name": "isTemplateOverridden",
+            "summary": "Is\u0020a\u0020template\u0020overridden\u0020by\u0020a\u0020theme.",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_isTemplateOverridden"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AgetAvailableProTemplates\u0028\u0029",
+            "name": "getAvailableProTemplates",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_getAvailableProTemplates"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AgetThemeTemplates\u0028\u0029",
+            "name": "getThemeTemplates",
+            "summary": "Get\u0020all\u0020possible\u0020templates\u0020for\u0020a\u0020theme",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_getThemeTemplates"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AsortTemplates\u0028\u0029",
+            "name": "sortTemplates",
+            "summary": "Sort\u0020an\u0020array\u0020of\u0020templates\u0020by\u0020name\u0020ascendant",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_sortTemplates"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AcheckBaseTemplates\u0028\u0029",
+            "name": "checkBaseTemplates",
+            "summary": "For\u0020an\u0020array\u0020of\u0020base\u0020templates,\u0020check\u0020if\u0020a\u0020theme\u0020overrides\u0020them,\u0020add\u0020it\u0020to\u0020\u0026\u0024templates\u0020if\u0020so.",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_checkBaseTemplates"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AgetBlocksBaseTemplates\u0028\u0029",
+            "name": "getBlocksBaseTemplates",
+            "summary": "Get\u0020all\u0020possible\u0020block\u0020templates",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_getBlocksBaseTemplates"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AgetGroupsBaseTemplates\u0028\u0029",
+            "name": "getGroupsBaseTemplates",
+            "summary": "Get\u0020all\u0020possible\u0020group\u0020templates",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_getGroupsBaseTemplates"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AgetLayoutsBaseTemplates\u0028\u0029",
+            "name": "getLayoutsBaseTemplates",
+            "summary": "Get\u0020all\u0020possible\u0020layout\u0020templates",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_getLayoutsBaseTemplates"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AgetRegionsBaseTemplates\u0028\u0029",
+            "name": "getRegionsBaseTemplates",
+            "summary": "Get\u0020all\u0020possible\u0020region\u0020templates",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_getRegionsBaseTemplates"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AgetFieldDisplayersBaseTemplates\u0028\u0029",
+            "name": "getFieldDisplayersBaseTemplates",
+            "summary": "Get\u0020all\u0020possible\u0020field\u0020templates",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_getFieldDisplayersBaseTemplates"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AgetFileDisplayersBaseTemplates\u0028\u0029",
+            "name": "getFileDisplayersBaseTemplates",
+            "summary": "Get\u0020all\u0020possible\u0020file\u0020templates",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_getFileDisplayersBaseTemplates"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AgetFieldBaseTemplates\u0028\u0029",
+            "name": "getFieldBaseTemplates",
+            "summary": "Get\u0020all\u0020possible\u0020templates\u0020for\u0020a\u0020field\u0020displayer",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_getFieldBaseTemplates"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\Templates\u003A\u003AgetFileBaseTemplates\u0028\u0029",
+            "name": "getFileBaseTemplates",
+            "summary": "Get\u0020all\u0020possible\u0020templates\u0020for\u0020a\u0020file\u0020displayer",
+            "url": "classes/Ryssbowh-CraftThemes-helpers-Templates.html#method_getFileBaseTemplates"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\helpers\\ViewModesHelper",
             "name": "ViewModesHelper",
             "summary": "",
@@ -2940,6 +3070,16 @@ Search.appendIndex(
             "name": "CACHE_PREFIX",
             "summary": "Prefix\u0020used\u0020when\u0020caching\u0020this\u0020type\u0020of\u0020displayers",
             "url": "classes/Ryssbowh-CraftThemes-interfaces-FileDisplayerInterface.html#constant_CACHE_PREFIX"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\FileFieldDisplayerInterface",
+            "name": "FileFieldDisplayerInterface",
+            "summary": "Interface\u0020for\u0020field\u0020displayers\u0020that\u0020render\u0020files\u0020\u0028Assets,\u0020user\u0020photo\u0020etc\u0029",
+            "url": "classes/Ryssbowh-CraftThemes-interfaces-FileFieldDisplayerInterface.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\FileFieldDisplayerInterface\u003A\u003AgetDisplayerForKind\u0028\u0029",
+            "name": "getDisplayerForKind",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-interfaces-FileFieldDisplayerInterface.html#method_getDisplayerForKind"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\interfaces\\GroupInterface",
             "name": "GroupInterface",
@@ -3930,6 +4070,21 @@ Search.appendIndex(
             "name": "RegisterFormBlockOptions",
             "summary": "Options\u0020for\u0020the\u0020block\u0020register\u0020form",
             "url": "classes/Ryssbowh-CraftThemes-models-blockOptions-RegisterFormBlockOptions.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\blockOptions\\RegisterFormBlockOptions\u003A\u003AdefineOptions\u0028\u0029",
+            "name": "defineOptions",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-models-blockOptions-RegisterFormBlockOptions.html#method_defineOptions"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\blockOptions\\RegisterFormBlockOptions\u003A\u003AdefineDefaultValues\u0028\u0029",
+            "name": "defineDefaultValues",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-models-blockOptions-RegisterFormBlockOptions.html#method_defineDefaultValues"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\blockOptions\\RegisterFormBlockOptions\u003A\u003AdefineRules\u0028\u0029",
+            "name": "defineRules",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-models-blockOptions-RegisterFormBlockOptions.html#method_defineRules"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\blockOptions\\ResetPasswordFormBlockOptions",
             "name": "ResetPasswordFormBlockOptions",
@@ -6456,6 +6611,11 @@ Search.appendIndex(
             "summary": "Is\u0020this\u0020displayer\u0020the\u0020default\u0020for\u0020a\u0020field\u0020class",
             "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRenderFile.html#method_isDefault"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\AssetRenderFile\u003A\u003AgetDisplayerForKind\u0028\u0029",
+            "name": "getDisplayerForKind",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-AssetRenderFile.html#method_getDisplayerForKind"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\AssetRenderFile\u003A\u003AeagerLoad\u0028\u0029",
             "name": "eagerLoad",
             "summary": "",
@@ -6950,6 +7110,11 @@ Search.appendIndex(
             "name": "getFieldTargets",
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-FileFile.html#method_getFieldTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\FileFile\u003A\u003AgetDisplayerForKind\u0028\u0029",
+            "name": "getDisplayerForKind",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-models-fieldDisplayers-FileFile.html#method_getDisplayerForKind"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\fieldDisplayers\\FileFile\u003A\u003AeagerLoad\u0028\u0029",
             "name": "eagerLoad",
@@ -10431,11 +10596,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#method_defineRules"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Settings\u003A\u003AvalidateFolder\u0028\u0029",
-            "name": "validateFolder",
-            "summary": "Validate\u0020the\u0020folder\u0020setting",
-            "url": "classes/Ryssbowh-CraftThemes-models-Settings.html#method_validateFolder"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\models\\Settings\u003A\u003AgetRedirectToOptions\u0028\u0029",
             "name": "getRedirectToOptions",
             "summary": "Redirect\u0020to\u0020options\u0020getter",
@@ -13250,6 +13410,11 @@ Search.appendIndex(
             "name": "getCpNavItem",
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-Themes.html#method_getCpNavItem"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\Themes\u003A\u003AregisterUtility\u0028\u0029",
+            "name": "registerUtility",
+            "summary": "Register\u0020templates\u0020utility",
+            "url": "classes/Ryssbowh-CraftThemes-Themes.html#method_registerUtility"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\Themes\u003A\u003AregisterShortcuts\u0028\u0029",
             "name": "registerShortcuts",
