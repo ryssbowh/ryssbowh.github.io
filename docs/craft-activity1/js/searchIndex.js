@@ -491,16 +491,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-base-logs-ConfigModelLog.html#property__model"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\base\\logs\\DraftLog",
-            "name": "DraftLog",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-base-logs-DraftLog.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\base\\logs\\DraftLog\u003A\u003AloadElement\u0028\u0029",
-            "name": "loadElement",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-base-logs-DraftLog.html#method_loadElement"
-        },                {
             "fqsen": "\\Ryssbowh\\Activity\\base\\logs\\ElementLog",
             "name": "ElementLog",
             "summary": "",
@@ -636,11 +626,6 @@ Search.appendIndex(
             "summary": "Plugin\u0020getter",
             "url": "classes/Ryssbowh-Activity-base-logs-PluginLog.html#method_getPlugin"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\base\\logs\\PluginLog\u003A\u003AsetPlugin\u0028\u0029",
-            "name": "setPlugin",
-            "summary": "Plugin\u0020setter",
-            "url": "classes/Ryssbowh-Activity-base-logs-PluginLog.html#method_setPlugin"
-        },                {
             "fqsen": "\\Ryssbowh\\Activity\\base\\logs\\PluginLog\u003A\u003AgetPluginName\u0028\u0029",
             "name": "getPluginName",
             "summary": "Get\u0020the\u0020plugin\u0020name",
@@ -746,6 +731,11 @@ Search.appendIndex(
             "summary": "Before\u0020an\u0020element\u0020is\u0020saved,\u0020saves\u0020old\u0020field\u0020values",
             "url": "classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_beforeSaved"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\ElementsRecorder\u003A\u003AbeforeReverted\u0028\u0029",
+            "name": "beforeReverted",
+            "summary": "Before\u0020an\u0020element\u0020is\u0020reverted\u0020to\u0020a\u0020revision,\u0020saves\u0020old\u0020field\u0020values",
+            "url": "classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_beforeReverted"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\ElementsRecorder\u003A\u003AonSaved\u0028\u0029",
             "name": "onSaved",
             "summary": "Saves\u0020a\u0020log\u0020when\u0020an\u0020element\u0020is\u0020saved",
@@ -766,10 +756,10 @@ Search.appendIndex(
             "summary": "Saves\u0020a\u0020log\u0020when\u0020an\u0020element\u0020is\u0020moved",
             "url": "classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_onMoved"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\ElementsRecorder\u003A\u003AfindOldElement\u0028\u0029",
-            "name": "findOldElement",
-            "summary": "Find\u0020the\u0020olkd\u0020version\u0020of\u0020an\u0020element",
-            "url": "classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_findOldElement"
+            "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\ElementsRecorder\u003A\u003AonReverted\u0028\u0029",
+            "name": "onReverted",
+            "summary": "Save\u0020a\u0020log\u0020when\u0020an\u0020element\u0020is\u0020reverted\u0020to\u0020a\u0020revision",
+            "url": "classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_onReverted"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\ElementsRecorder\u003A\u003AshouldSaveElementLog\u0028\u0029",
             "name": "shouldSaveElementLog",
@@ -1181,6 +1171,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Author.html#method_hasFancyValue"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Author\u003A\u003AgetTemplate\u0028\u0029",
+            "name": "getTemplate",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Author.html#method_getTemplate"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Categories",
             "name": "Categories",
             "summary": "",
@@ -1406,6 +1401,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Plain.html#method_getTargets"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\PlainText",
+            "name": "PlainText",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-PlainText.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\PlainText\u003A\u003AgetTargets\u0028\u0029",
+            "name": "getTargets",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-PlainText.html#method_getTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\PlainText\u003A\u003AgetTemplate\u0028\u0029",
+            "name": "getTemplate",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-PlainText.html#method_getTemplate"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Redactor",
             "name": "Redactor",
             "summary": "",
@@ -1525,6 +1535,101 @@ Search.appendIndex(
             "name": "_dirty",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-SuperTable.html#property__dirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Table",
+            "name": "Table",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Table.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Table\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Table.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Table\u003A\u003AgetDirty\u0028\u0029",
+            "name": "getDirty",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Table.html#method_getDirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Table\u003A\u003AisDirty\u0028\u0029",
+            "name": "isDirty",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Table.html#method_isDirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Table\u003A\u003AgetTargets\u0028\u0029",
+            "name": "getTargets",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Table.html#method_getTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Table\u003A\u003AgetTemplate\u0028\u0029",
+            "name": "getTemplate",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Table.html#method_getTemplate"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Table\u003A\u003AgetDbValue\u0028\u0029",
+            "name": "getDbValue",
+            "summary": "Get\u0020the\u0020value\u0020to\u0020be\u0020stored\u0020in\u0020database.",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Table.html#method_getDbValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Table\u003A\u003AbuildDirty\u0028\u0029",
+            "name": "buildDirty",
+            "summary": "Build\u0020dirty\u0020values",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Table.html#method_buildDirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Table\u003A\u003AbuildValues\u0028\u0029",
+            "name": "buildValues",
+            "summary": "Build\u0020each\u0020rows\u0020as\u0020field\u0020handlers",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Table.html#method_buildValues"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Table\u003A\u003AgetHandler\u0028\u0029",
+            "name": "getHandler",
+            "summary": "Get\u0020the\u0020handler\u0020for\u0020a\u0020column",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Table.html#method_getHandler"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Table\u003A\u003A\u0024_dirty",
+            "name": "_dirty",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Table.html#property__dirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\TableDate",
+            "name": "TableDate",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-TableDate.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\TableDate\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-TableDate.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\TableDropdown",
+            "name": "TableDropdown",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-TableDropdown.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\TableDropdown\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-TableDropdown.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\TableDropdown\u003A\u003AhasFancyValue\u0028\u0029",
+            "name": "hasFancyValue",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-TableDropdown.html#method_hasFancyValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\TableDropdown\u003A\u003A\u0024options",
+            "name": "options",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-TableDropdown.html#property_options"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\TableTime",
+            "name": "TableTime",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-TableTime.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\TableTime\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-TableTime.html#method_init"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Tags",
             "name": "Tags",
@@ -1856,6 +1961,31 @@ Search.appendIndex(
             "summary": "get\u0020types\u0020fancy\u0020labels",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-SectionType.html#method_getTypes"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\Site",
+            "name": "Site",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-Site.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\Site\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-Site.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\Site\u003A\u003AhasFancyValue\u0028\u0029",
+            "name": "hasFancyValue",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-Site.html#method_hasFancyValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\Site\u003A\u003AgetTargets\u0028\u0029",
+            "name": "getTargets",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-Site.html#method_getTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\Site\u003A\u003AgetSiteName\u0028\u0029",
+            "name": "getSiteName",
+            "summary": "Get\u0020a\u0020site\u0020name\u0020by\u0020uid",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-Site.html#method_getSiteName"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\SiteGroup",
             "name": "SiteGroup",
             "summary": "",
@@ -1980,6 +2110,31 @@ Search.appendIndex(
             "name": "getTypes",
             "summary": "Get\u0020types\u0020fancy\u0020labels",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-TransportType.html#method_getTypes"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\UriParts",
+            "name": "UriParts",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-UriParts.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\UriParts\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-UriParts.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\UriParts\u003A\u003AhasFancyValue\u0028\u0029",
+            "name": "hasFancyValue",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-UriParts.html#method_hasFancyValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\UriParts\u003A\u003AgetTargets\u0028\u0029",
+            "name": "getTargets",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-UriParts.html#method_getTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\UriParts\u003A\u003AgetSiteName\u0028\u0029",
+            "name": "getSiteName",
+            "summary": "Get\u0020a\u0020site\u0020name\u0020by\u0020uid",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-UriParts.html#method_getSiteName"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\UserGroup",
             "name": "UserGroup",
@@ -2256,21 +2411,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-emails-EmailSent.html#method_getTitle"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\entries\\DraftCreated",
-            "name": "DraftCreated",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-models-logs-entries-DraftCreated.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\entries\\DraftDeleted",
-            "name": "DraftDeleted",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-models-logs-entries-DraftDeleted.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\entries\\DraftSaved",
-            "name": "DraftSaved",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-models-logs-entries-DraftSaved.html"
-        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\entries\\EntryCreated",
             "name": "EntryCreated",
             "summary": "",
@@ -2290,6 +2430,21 @@ Search.appendIndex(
             "name": "EntryRestored",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-entries-EntryRestored.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\entries\\EntryReverted",
+            "name": "EntryReverted",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-entries-EntryReverted.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\entries\\EntryReverted\u003A\u003AsetRevisionNum\u0028\u0029",
+            "name": "setRevisionNum",
+            "summary": "Revision\u0020num\u0020setter",
+            "url": "classes/Ryssbowh-Activity-models-logs-entries-EntryReverted.html#method_setRevisionNum"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\entries\\EntryReverted\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-entries-EntryReverted.html#method_getTitle"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\entries\\EntrySaved",
             "name": "EntrySaved",
@@ -2576,6 +2731,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-plugins-PluginDisabled.html#method_getTitle"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\plugins\\PluginEditionChanged",
+            "name": "PluginEditionChanged",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-plugins-PluginEditionChanged.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\plugins\\PluginEditionChanged\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-plugins-PluginEditionChanged.html#method_getTitle"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\plugins\\PluginEnabled",
             "name": "PluginEnabled",
             "summary": "",
@@ -2621,6 +2786,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-plugins-PluginUninstalled.html#method_getTitle"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\routes\\RouteCreated",
+            "name": "RouteCreated",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-routes-RouteCreated.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\routes\\RouteCreated\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-routes-RouteCreated.html#method_getTitle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\routes\\RouteCreated\u003A\u003AgetSettingLabels\u0028\u0029",
+            "name": "getSettingLabels",
+            "summary": "Get\u0020the\u0020labels\u0020for\u0020the\u0020settings",
+            "url": "classes/Ryssbowh-Activity-models-logs-routes-RouteCreated.html#method_getSettingLabels"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\routes\\RouteDeleted",
             "name": "RouteDeleted",
             "summary": "",
@@ -2628,7 +2808,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\routes\\RouteDeleted\u003A\u003AgetTitle\u0028\u0029",
             "name": "getTitle",
-            "summary": "Title\u0020getter",
+            "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-routes-RouteDeleted.html#method_getTitle"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\routes\\RouteSaved",
@@ -2636,10 +2816,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-routes-RouteSaved.html"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\routes\\RouteSaved\u003A\u003AgetDescription\u0028\u0029",
-            "name": "getDescription",
-            "summary": "Description\u0020getter",
-            "url": "classes/Ryssbowh-Activity-models-logs-routes-RouteSaved.html#method_getDescription"
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\routes\\RouteSaved\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-routes-RouteSaved.html#method_getTitle"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\settings\\AssetSettingsChanged",
             "name": "AssetSettingsChanged",
@@ -3316,31 +3496,6 @@ Search.appendIndex(
             "summary": "Record\u0020log\u0020when\u0020a\u0020widget\u0020is\u0020deleted",
             "url": "classes/Ryssbowh-Activity-recorders-Dashboard.html#method_onWidgetDeleted"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Drafts",
-            "name": "Drafts",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-recorders-Drafts.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Drafts\u003A\u003Ainit\u0028\u0029",
-            "name": "init",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-recorders-Drafts.html#method_init"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Drafts\u003A\u003AfindOldElement\u0028\u0029",
-            "name": "findOldElement",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-recorders-Drafts.html#method_findOldElement"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Drafts\u003A\u003AshouldSaveElementLog\u0028\u0029",
-            "name": "shouldSaveElementLog",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-recorders-Drafts.html#method_shouldSaveElementLog"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Drafts\u003A\u003AgetActivityHandle\u0028\u0029",
-            "name": "getActivityHandle",
-            "summary": "Get\u0020the\u0020activity\u0020handle,\u0020used\u0020to\u0020build\u0020the\u0020log\u0020type",
-            "url": "classes/Ryssbowh-Activity-recorders-Drafts.html#method_getActivityHandle"
-        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\EmailSettings",
             "name": "EmailSettings",
             "summary": "",
@@ -3566,6 +3721,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-recorders-Plugins.html#method_init"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Plugins\u003A\u003AonChanged\u0028\u0029",
+            "name": "onChanged",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Plugins.html#method_onChanged"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Plugins\u003A\u003AonInstalled\u0028\u0029",
             "name": "onInstalled",
             "summary": "Save\u0020a\u0020log\u0020when\u0020a\u0020plugin\u0020is\u0020installed",
@@ -3586,15 +3746,15 @@ Search.appendIndex(
             "summary": "Save\u0020a\u0020log\u0020when\u0020a\u0020plugin\u0020is\u0020disabled",
             "url": "classes/Ryssbowh-Activity-recorders-Plugins.html#method_onDisabled"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Plugins\u003A\u003AonSettingsSaved\u0028\u0029",
-            "name": "onSettingsSaved",
-            "summary": "Save\u0020a\u0020log\u0020when\u0020a\u0020plugin\u0020settings\u0020are\u0020saved",
-            "url": "classes/Ryssbowh-Activity-recorders-Plugins.html#method_onSettingsSaved"
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Plugins\u003A\u003AonEditionChanged\u0028\u0029",
+            "name": "onEditionChanged",
+            "summary": "Save\u0020a\u0020log\u0020when\u0020a\u0020plugin\u0020edition\u0020is\u0020changed",
+            "url": "classes/Ryssbowh-Activity-recorders-Plugins.html#method_onEditionChanged"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Plugins\u003A\u003AbeforeSettingsSaved\u0028\u0029",
-            "name": "beforeSettingsSaved",
-            "summary": "Save\u0020a\u0020old\u0020plugin\u0020settings\u0020before\u0020they\u0027re\u0020saved",
-            "url": "classes/Ryssbowh-Activity-recorders-Plugins.html#method_beforeSettingsSaved"
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Plugins\u003A\u003AonSettingsChanged\u0028\u0029",
+            "name": "onSettingsChanged",
+            "summary": "Save\u0020a\u0020log\u0020when\u0020a\u0020plugin\u0020settings\u0020are\u0020saved",
+            "url": "classes/Ryssbowh-Activity-recorders-Plugins.html#method_onSettingsChanged"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Plugins\u003A\u003AgetTrackedFieldNames\u0028\u0029",
             "name": "getTrackedFieldNames",
@@ -3616,15 +3776,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-recorders-Routes.html#method_init"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Routes\u003A\u003AonSaved\u0028\u0029",
-            "name": "onSaved",
-            "summary": "Save\u0020a\u0020log\u0020when\u0020a\u0020route\u0020is\u0020saved",
-            "url": "classes/Ryssbowh-Activity-recorders-Routes.html#method_onSaved"
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Routes\u003A\u003AgetActivityHandle\u0028\u0029",
+            "name": "getActivityHandle",
+            "summary": "Get\u0020the\u0020activity\u0020handle,\u0020used\u0020to\u0020build\u0020the\u0020log\u0020type",
+            "url": "classes/Ryssbowh-Activity-recorders-Routes.html#method_getActivityHandle"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Routes\u003A\u003AonDeleted\u0028\u0029",
-            "name": "onDeleted",
-            "summary": "Save\u0020a\u0020log\u0020when\u0020a\u0020route\u0020is\u0020deleted",
-            "url": "classes/Ryssbowh-Activity-recorders-Routes.html#method_onDeleted"
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Routes\u003A\u003AgetTrackedFieldNames\u0028\u0029",
+            "name": "getTrackedFieldNames",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Routes.html#method_getTrackedFieldNames"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Sections",
             "name": "Sections",

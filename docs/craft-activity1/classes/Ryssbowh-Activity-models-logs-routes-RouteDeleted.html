@@ -96,7 +96,7 @@
     RouteDeleted
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/Ryssbowh-Activity-base-logs-ActivityLog.html"><abbr title="\Ryssbowh\Activity\base\logs\ActivityLog">ActivityLog</abbr></a>
+        extends <a href="classes/Ryssbowh-Activity-models-logs-routes-RouteCreated.html"><abbr title="\Ryssbowh\Activity\models\logs\routes\RouteCreated">RouteCreated</abbr></a>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -112,7 +112,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/logs/routes/RouteDeleted.php"><a href="files/models-logs-routes-routedeleted.html"><abbr title="models/logs/routes/RouteDeleted.php">RouteDeleted.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">5</span>
 
     </aside>
 
@@ -252,6 +252,20 @@
 <dd>Name getter</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-Activity-base-logs-SettingsLog.html#method_getSettingLabel">getSettingLabel()</a>
+    <span>
+                        &nbsp;: string|null    </span>
+</dt>
+<dd>Get the labels for one setting</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-Activity-base-logs-SettingsLog.html#method_getSettingLabels">getSettingLabels()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get the labels for the settings</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-Activity-base-logs-ActivityLog.html#method_getSite">getSite()</a>
     <span>
                         &nbsp;: <abbr title="\craft\models\Site">Site</abbr>|null    </span>
@@ -270,7 +284,7 @@
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd>Title getter</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-Activity-base-logs-ActivityLog.html#method_getUser">getUser()</a>
@@ -886,6 +900,83 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getSettingLabel">
+        getSettingLabel()
+        <a href="classes/Ryssbowh-Activity-base-logs-SettingsLog.html#method_getSettingLabel" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/logs/SettingsLog.php"><a href="files/base-logs-settingslog.html"><abbr title="base/logs/SettingsLog.php">SettingsLog.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the labels for one setting</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getSettingLabel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getSettingLabels">
+        getSettingLabels()
+        <a href="classes/Ryssbowh-Activity-base-logs-SettingsLog.html#method_getSettingLabels" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/logs/SettingsLog.php"><a href="files/base-logs-settingslog.html"><abbr title="base/logs/SettingsLog.php">SettingsLog.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">12</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the labels for the settings</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getSettingLabels</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getSite">
         getSite()
         <a href="classes/Ryssbowh-Activity-base-logs-ActivityLog.html#method_getSite" class="headerlink"><i class="fas fa-link"></i></a>
@@ -959,12 +1050,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="models/logs/routes/RouteDeleted.php"><a href="files/models-logs-routes-routedeleted.html"><abbr title="models/logs/routes/RouteDeleted.php">RouteDeleted.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Title getter</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>

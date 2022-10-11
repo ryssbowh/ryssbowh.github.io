@@ -94,7 +94,7 @@
     Routes
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/Ryssbowh-Activity-base-recorders-Recorder.html"><abbr title="\Ryssbowh\Activity\base\recorders\Recorder">Recorder</abbr></a>
+        extends <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html"><abbr title="\Ryssbowh\Activity\base\recorders\ConfigModelRecorder">ConfigModelRecorder</abbr></a>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -152,6 +152,20 @@
 <dd>Empty the commited log queue, causing all the logs in the queue to be lost</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-Activity-traits-ProjectConfigFields.html#method_getConfigValues">getConfigValues()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get config values for a path</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-Activity-traits-ProjectConfigFields.html#method_getDirtyConfig">getDirtyConfig()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Calculate dirty config, $newSettigns and $oldSettings are arrays of field handlers</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-Activity-base-recorders-Recorder.html#method_getIsRecording">getIsRecording()</a>
     <span>
                         &nbsp;: bool    </span>
@@ -173,18 +187,25 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-Activity-recorders-Routes.html#method_onDeleted">onDeleted()</a>
+    <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#method_onAdd">onAdd()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>Save a log when a route is deleted</dd>
+<dd>Saved a log on add</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-Activity-recorders-Routes.html#method_onSaved">onSaved()</a>
+    <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#method_onRemove">onRemove()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>Save a log when a route is saved</dd>
+<dd>Saved a log on remove</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#method_onUpdate">onUpdate()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Saved a log on update</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-Activity-base-recorders-Recorder.html#method_saveLogs">saveLogs()</a>
@@ -215,11 +236,46 @@
 <dd>Commit a log to be saved, log will be added in the queue if $saveNow is false</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-Activity-recorders-Routes.html#method_getActivityHandle">getActivityHandle()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Get the activity handle, used to build the log type</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#method_getDescriptiveFieldName">getDescriptiveFieldName()</a>
+    <span>
+                        &nbsp;: string|null    </span>
+</dt>
+<dd>Get the config field name that describes what&#039;s being changed</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-Activity-recorders-Routes.html#method_getTrackedFieldNames">getTrackedFieldNames()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-Activity-base-recorders-Recorder.html#method_isTypeIgnored">isTypeIgnored()</a>
     <span>
                         &nbsp;: bool    </span>
 </dt>
 <dd>is a type ignored by the settings</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#method_modifyParams">modifyParams()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Modify log param before it&#039;s saved</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#method_onChanged">onChanged()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Saves a log when config is changed</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-Activity-base-recorders-Recorder.html#method_shouldSaveLog">shouldSaveLog()</a>
@@ -324,7 +380,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -350,6 +406,113 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getConfigValues">
+        getConfigValues()
+        <a href="classes/Ryssbowh-Activity-traits-ProjectConfigFields.html#method_getConfigValues" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="traits/ProjectConfigFields.php"><a href="files/traits-projectconfigfields.html"><abbr title="traits/ProjectConfigFields.php">ProjectConfigFields.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get config values for a path</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getConfigValues</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$basePath</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$basePath</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDirtyConfig">
+        getDirtyConfig()
+        <a href="classes/Ryssbowh-Activity-traits-ProjectConfigFields.html#method_getDirtyConfig" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="traits/ProjectConfigFields.php"><a href="files/traits-projectconfigfields.html"><abbr title="traits/ProjectConfigFields.php">ProjectConfigFields.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Calculate dirty config, $newSettigns and $oldSettings are arrays of field handlers</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getDirtyConfig</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$basePath</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$newSettings</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$oldSettings</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$basePath</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$newSettings</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$oldSettings</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getIsRecording">
         getIsRecording()
         <a href="classes/Ryssbowh-Activity-base-recorders-Recorder.html#method_getIsRecording" class="headerlink"><i class="fas fa-link"></i></a>
@@ -357,7 +520,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -390,7 +553,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -461,25 +624,35 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_onDeleted">
-        onDeleted()
-        <a href="classes/Ryssbowh-Activity-recorders-Routes.html#method_onDeleted" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_onAdd">
+        onAdd()
+        <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#method_onAdd" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="recorders/Routes.php"><a href="files/recorders-routes.html"><abbr title="recorders/Routes.php">Routes.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ConfigModelRecorder.php"><a href="files/base-recorders-configmodelrecorder.html"><abbr title="base/recorders/ConfigModelRecorder.php">ConfigModelRecorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Save a log when a route is deleted</p>
+        <p class="phpdocumentor-summary">Saved a log on add</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">onDeleted</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">onAdd</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\events\ConfigEvent">ConfigEvent</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$event</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\events\ConfigEvent">ConfigEvent</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -494,43 +667,72 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_onSaved">
-        onSaved()
-        <a href="classes/Ryssbowh-Activity-recorders-Routes.html#method_onSaved" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_onRemove">
+        onRemove()
+        <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#method_onRemove" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="recorders/Routes.php"><a href="files/recorders-routes.html"><abbr title="recorders/Routes.php">Routes.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ConfigModelRecorder.php"><a href="files/base-recorders-configmodelrecorder.html"><abbr title="base/recorders/ConfigModelRecorder.php">ConfigModelRecorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Save a log when a route is saved</p>
+        <p class="phpdocumentor-summary">Saved a log on remove</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">onSaved</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uriParts</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$template</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$siteUid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">onRemove</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\events\ConfigEvent">ConfigEvent</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uriParts</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                <span class="phpdocumentor-signature__argument__name">$event</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\events\ConfigEvent">ConfigEvent</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_onUpdate">
+        onUpdate()
+        <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#method_onUpdate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ConfigModelRecorder.php"><a href="files/base-recorders-configmodelrecorder.html"><abbr title="base/recorders/ConfigModelRecorder.php">ConfigModelRecorder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">18</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Saved a log on update</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">onUpdate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\events\ConfigEvent">ConfigEvent</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$template</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$siteUid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$event</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\events\ConfigEvent">ConfigEvent</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -591,7 +793,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -624,7 +826,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -657,7 +859,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -665,7 +867,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">commitLog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$saveNow</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">commitLog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$saveNow</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -680,7 +882,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$params</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -707,6 +909,130 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getActivityHandle">
+        getActivityHandle()
+        <a href="classes/Ryssbowh-Activity-recorders-Routes.html#method_getActivityHandle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="recorders/Routes.php"><a href="files/recorders-routes.html"><abbr title="recorders/Routes.php">Routes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the activity handle, used to build the log type</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">getActivityHandle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDescriptiveFieldName">
+        getDescriptiveFieldName()
+        <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#method_getDescriptiveFieldName" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ConfigModelRecorder.php"><a href="files/base-recorders-configmodelrecorder.html"><abbr title="base/recorders/ConfigModelRecorder.php">ConfigModelRecorder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the config field name that describes what&#039;s being changed</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">getDescriptiveFieldName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTrackedFieldNames">
+        getTrackedFieldNames()
+        <a href="classes/Ryssbowh-Activity-recorders-Routes.html#method_getTrackedFieldNames" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="recorders/Routes.php"><a href="files/recorders-routes.html"><abbr title="recorders/Routes.php">Routes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">getTrackedFieldNames</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_isTypeIgnored">
         isTypeIgnored()
         <a href="classes/Ryssbowh-Activity-base-recorders-Recorder.html#method_isTypeIgnored" class="headerlink"><i class="fas fa-link"></i></a>
@@ -714,7 +1040,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -750,6 +1076,106 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_modifyParams">
+        modifyParams()
+        <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#method_modifyParams" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ConfigModelRecorder.php"><a href="files/base-recorders-configmodelrecorder.html"><abbr title="base/recorders/ConfigModelRecorder.php">ConfigModelRecorder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">95</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Modify log param before it&#039;s saved</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">modifyParams</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\events\ConfigEvent">ConfigEvent</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$params</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$event</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\events\ConfigEvent">ConfigEvent</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_onChanged">
+        onChanged()
+        <a href="classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#method_onChanged" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ConfigModelRecorder.php"><a href="files/base-recorders-configmodelrecorder.html"><abbr title="base/recorders/ConfigModelRecorder.php">ConfigModelRecorder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Saves a log when config is changed</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">onChanged</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\events\ConfigEvent">ConfigEvent</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$event</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\events\ConfigEvent">ConfigEvent</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_shouldSaveLog">
         shouldSaveLog()
         <a href="classes/Ryssbowh-Activity-base-recorders-Recorder.html#method_shouldSaveLog" class="headerlink"><i class="fas fa-link"></i></a>
@@ -757,7 +1183,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 

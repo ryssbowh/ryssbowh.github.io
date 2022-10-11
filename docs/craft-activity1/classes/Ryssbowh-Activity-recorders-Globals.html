@@ -152,6 +152,13 @@
 <dd>Keep track of old fields values</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_beforeReverted">beforeReverted()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Before an element is reverted to a revision, saves old field values</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_beforeSaved">beforeSaved()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -208,6 +215,13 @@
 <dd>Saves a log when an element is restored</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_onReverted">onReverted()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Save a log when an element is reverted to a revision</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_onSaved">onSaved()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -241,13 +255,6 @@
                         &nbsp;: bool    </span>
 </dt>
 <dd>Commit a log to be saved, log will be added in the queue if $saveNow is false</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_findOldElement">findOldElement()</a>
-    <span>
-                        &nbsp;: <abbr title="\craft\base\Element">Element</abbr>|null    </span>
-</dt>
-<dd>Find the olkd version of an element</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-Activity-recorders-Globals.html#method_getActivityHandle">getActivityHandle()</a>
@@ -434,6 +441,56 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_beforeReverted">
+        beforeReverted()
+        <a href="classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_beforeReverted" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ElementsRecorder.php"><a href="files/base-recorders-elementsrecorder.html"><abbr title="base/recorders/ElementsRecorder.php">ElementsRecorder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Before an element is reverted to a revision, saves old field values</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">beforeReverted</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Element">Element</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$revision</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Element">Element</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$element</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$revision</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Element">Element</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$element</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Element">Element</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_beforeSaved">
         beforeSaved()
         <a href="classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_beforeSaved" class="headerlink"><i class="fas fa-link"></i></a>
@@ -484,7 +541,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -517,7 +574,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -550,7 +607,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -628,7 +685,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ElementsRecorder.php"><a href="files/base-recorders-elementsrecorder.html"><abbr title="base/recorders/ElementsRecorder.php">ElementsRecorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -671,7 +728,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ElementsRecorder.php"><a href="files/base-recorders-elementsrecorder.html"><abbr title="base/recorders/ElementsRecorder.php">ElementsRecorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -714,7 +771,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ElementsRecorder.php"><a href="files/base-recorders-elementsrecorder.html"><abbr title="base/recorders/ElementsRecorder.php">ElementsRecorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -750,6 +807,56 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_onReverted">
+        onReverted()
+        <a href="classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_onReverted" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ElementsRecorder.php"><a href="files/base-recorders-elementsrecorder.html"><abbr title="base/recorders/ElementsRecorder.php">ElementsRecorder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">129</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Save a log when an element is reverted to a revision</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">onReverted</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Element">Element</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$element</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$revisionNum</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$element</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Element">Element</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$revisionNum</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_onSaved">
         onSaved()
         <a href="classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_onSaved" class="headerlink"><i class="fas fa-link"></i></a>
@@ -757,7 +864,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ElementsRecorder.php"><a href="files/base-recorders-elementsrecorder.html"><abbr title="base/recorders/ElementsRecorder.php">ElementsRecorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -833,7 +940,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -866,7 +973,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -899,7 +1006,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -907,7 +1014,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">commitLog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$saveNow</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">commitLog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$saveNow</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -922,7 +1029,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$params</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -939,49 +1046,6 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_findOldElement">
-        findOldElement()
-        <a href="classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#method_findOldElement" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ElementsRecorder.php"><a href="files/base-recorders-elementsrecorder.html"><abbr title="base/recorders/ElementsRecorder.php">ElementsRecorder.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">123</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Find the olkd version of an element</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">findOldElement</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Element">Element</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$element</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\craft\base\Element">Element</abbr>|null</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$element</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\craft\base\Element">Element</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\craft\base\Element">Element</abbr>|null</span>
             &mdash;
         
     
@@ -1241,7 +1305,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ElementsRecorder.php"><a href="files/base-recorders-elementsrecorder.html"><abbr title="base/recorders/ElementsRecorder.php">ElementsRecorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">175</span>
 
     </aside>
 
@@ -1284,7 +1348,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -1327,7 +1391,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/ElementsRecorder.php"><a href="files/base-recorders-elementsrecorder.html"><abbr title="base/recorders/ElementsRecorder.php">ElementsRecorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -1377,7 +1441,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/recorders/Recorder.php"><a href="files/base-recorders-recorder.html"><abbr title="base/recorders/Recorder.php">Recorder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
