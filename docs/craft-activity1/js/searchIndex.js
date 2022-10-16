@@ -471,11 +471,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020labels\u0020for\u0020the\u0020fields",
             "url": "classes/Ryssbowh-Activity-base-logs-ConfigModelLog.html#method_getFieldLabels"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\base\\logs\\ConfigModelLog\u003A\u003AgetFieldTypings\u0028\u0029",
-            "name": "getFieldTypings",
-            "summary": "Get\u0020the\u0020typings\u0020for\u0020the\u0020fields",
-            "url": "classes/Ryssbowh-Activity-base-logs-ConfigModelLog.html#method_getFieldTypings"
-        },                {
             "fqsen": "\\Ryssbowh\\Activity\\base\\logs\\ConfigModelLog\u003A\u003AloadModel\u0028\u0029",
             "name": "loadModel",
             "summary": "Load\u0020the\u0020model",
@@ -820,6 +815,21 @@ Search.appendIndex(
             "name": "saveLogs",
             "summary": "Save\u0020all\u0020queued\u0020logs",
             "url": "classes/Ryssbowh-Activity-base-recorders-Recorder.html#method_saveLogs"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\Recorder\u003A\u003AqueueHasLogForUid\u0028\u0029",
+            "name": "queueHasLogForUid",
+            "summary": "Does\u0020a\u0020log\u0020related\u0020to\u0020an\u0020uid\u0020and\u0020type\u0020exists\u0020in\u0020the\u0020queue",
+            "url": "classes/Ryssbowh-Activity-base-recorders-Recorder.html#method_queueHasLogForUid"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\Recorder\u003A\u003AgetQueuedLogByUid\u0028\u0029",
+            "name": "getQueuedLogByUid",
+            "summary": "Get\u0020a\u0020queued\u0020log\u0020for\u0020an\u0020uid\u0020and\u0020type",
+            "url": "classes/Ryssbowh-Activity-base-recorders-Recorder.html#method_getQueuedLogByUid"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\Recorder\u003A\u003AremoveQueuedLogsByUid\u0028\u0029",
+            "name": "removeQueuedLogsByUid",
+            "summary": "Remove\u0020a\u0020queued\u0020log\u0020by\u0020uid\u0020and\u0020type",
+            "url": "classes/Ryssbowh-Activity-base-recorders-Recorder.html#method_removeQueuedLogsByUid"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\Recorder\u003A\u003AcommitLog\u0028\u0029",
             "name": "commitLog",
@@ -2186,6 +2196,26 @@ Search.appendIndex(
             "summary": "Get\u0020a\u0020volume\u0020name\u0020by\u0020uid",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-Volume.html#method_getVolumeName"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VolumeType",
+            "name": "VolumeType",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VolumeType.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VolumeType\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VolumeType.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VolumeType\u003A\u003AhasFancyValue\u0028\u0029",
+            "name": "hasFancyValue",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VolumeType.html#method_hasFancyValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VolumeType\u003A\u003AgetTargets\u0028\u0029",
+            "name": "getTargets",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VolumeType.html#method_getTargets"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\assets\\AssetCreated",
             "name": "AssetCreated",
             "summary": "",
@@ -3081,6 +3111,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-users-UserGroupDeleted.html#method_getTitle"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserGroupPermissionsSaved",
+            "name": "UserGroupPermissionsSaved",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserGroupPermissionsSaved.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserGroupPermissionsSaved\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserGroupPermissionsSaved.html#method_getTitle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserGroupPermissionsSaved\u003A\u003AgetModelLink\u0028\u0029",
+            "name": "getModelLink",
+            "summary": "Get\u0020a\u0020link\u0020to\u0020the\u0020model\u0020edit\u0020page",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserGroupPermissionsSaved.html#method_getModelLink"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserGroupPermissionsSaved\u003A\u003AloadModel\u0028\u0029",
+            "name": "loadModel",
+            "summary": "Load\u0020the\u0020model",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserGroupPermissionsSaved.html#method_loadModel"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserGroupPermissionsSaved\u003A\u003AgetFieldLabels\u0028\u0029",
+            "name": "getFieldLabels",
+            "summary": "Get\u0020the\u0020labels\u0020for\u0020the\u0020fields",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserGroupPermissionsSaved.html#method_getFieldLabels"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserGroupSaved",
             "name": "UserGroupSaved",
             "summary": "",
@@ -3150,6 +3205,16 @@ Search.appendIndex(
             "name": "getTitle",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-users-UserLoginFailed.html#method_getTitle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserPermissionsSaved",
+            "name": "UserPermissionsSaved",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserPermissionsSaved.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserPermissionsSaved\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserPermissionsSaved.html#method_getTitle"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserRegistered",
             "name": "UserRegistered",
@@ -3906,20 +3971,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#method_init"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003AonGroupsChanged\u0028\u0029",
-            "name": "onGroupsChanged",
-            "summary": "Little\u0020fiddling\u0020with\u0020the\u0020data\u0020\u003A\nIf\u0020we\u0027re\u0020applying\u0020project\u0020config\u0020need\u0020to\u0020save\u0020the\u0020event\u0020for\u0020the\u0020specific\u0020events\u0020\u0028onAdd,\u0020onUpdate\u0029\u0020to\u0020use\u0020it\u0020later.",
-            "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#method_onGroupsChanged"
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003AonAdd\u0028\u0029",
+            "name": "onAdd",
+            "summary": "Saved\u0020a\u0020log\u0020on\u0020add",
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#method_onAdd"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003AonUpdate\u0028\u0029",
             "name": "onUpdate",
             "summary": "Saved\u0020a\u0020log\u0020on\u0020update",
             "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#method_onUpdate"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003AonAdd\u0028\u0029",
-            "name": "onAdd",
-            "summary": "Saved\u0020a\u0020log\u0020on\u0020add",
-            "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#method_onAdd"
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003AonRemove\u0028\u0029",
+            "name": "onRemove",
+            "summary": "Saved\u0020a\u0020log\u0020on\u0020remove",
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#method_onRemove"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003AgetActivityHandle\u0028\u0029",
             "name": "getActivityHandle",
@@ -3936,20 +4001,60 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#method_getDescriptiveFieldName"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003A\u0024triggered",
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003A\u0024inited",
+            "name": "inited",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#property_inited"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroupsPermissions",
+            "name": "UserGroupsPermissions",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroupsPermissions.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroupsPermissions\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroupsPermissions.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroupsPermissions\u003A\u003AonUpdateGroupPerms\u0028\u0029",
+            "name": "onUpdateGroupPerms",
+            "summary": "Special\u0020case\u0020for\u0020cp\u0020requests,\u0020the\u0020new\u0020permissions\u0020weren\u0027t\u0020included\u0020in\u0020the\u0020original\u0020event,\u0020adding\u0020them\u0020now",
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroupsPermissions.html#method_onUpdateGroupPerms"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroupsPermissions\u003A\u003AonTriggered\u0028\u0029",
+            "name": "onTriggered",
+            "summary": "Change\u0020the\u0020event\u0027s\u0020data,\u0020add\u0020the\u0020old\u0020value\u0020from\u0020the\u0020originally\u0020triggered\u0020event",
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroupsPermissions.html#method_onTriggered"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroupsPermissions\u003A\u003AonUpdateGroupsPerms\u0028\u0029",
+            "name": "onUpdateGroupsPerms",
+            "summary": "Save\u0020the\u0020specific\u0020group\u0020event,\u0020to\u0020retrieve\u0020the\u0020old\u0020data\u0020from\u0020it\u0020later",
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroupsPermissions.html#method_onUpdateGroupsPerms"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroupsPermissions\u003A\u003AgetActivityHandle\u0028\u0029",
+            "name": "getActivityHandle",
+            "summary": "Get\u0020the\u0020activity\u0020handle,\u0020used\u0020to\u0020build\u0020the\u0020log\u0020type",
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroupsPermissions.html#method_getActivityHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroupsPermissions\u003A\u003AgetTrackedFieldNames\u0028\u0029",
+            "name": "getTrackedFieldNames",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroupsPermissions.html#method_getTrackedFieldNames"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroupsPermissions\u003A\u003AgetDescriptiveFieldName\u0028\u0029",
+            "name": "getDescriptiveFieldName",
+            "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroupsPermissions.html#method_getDescriptiveFieldName"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroupsPermissions\u003A\u003A\u0024triggered",
             "name": "triggered",
             "summary": "",
-            "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#property_triggered"
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroupsPermissions.html#property_triggered"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003A\u0024mode",
-            "name": "mode",
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroupsPermissions\u003A\u003A\u0024savedLogs",
+            "name": "savedLogs",
             "summary": "",
-            "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#property_mode"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003A\u0024added",
-            "name": "added",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#property_added"
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroupsPermissions.html#property_savedLogs"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserLayout",
             "name": "UserLayout",
@@ -3985,6 +4090,11 @@ Search.appendIndex(
             "name": "init",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AonSaved\u0028\u0029",
+            "name": "onSaved",
+            "summary": "Saves\u0020a\u0020log\u0020when\u0020an\u0020element\u0020is\u0020saved",
+            "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_onSaved"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AonDeleted\u0028\u0029",
             "name": "onDeleted",
@@ -4041,6 +4151,16 @@ Search.appendIndex(
             "summary": "Save\u0020a\u0020log\u0020when\u0020a\u0020user\u0020is\u0020assigned\u0020to\u0020the\u0020default\u0020group",
             "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_onAssignDefaultGroup"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AsaveNewPermissions\u0028\u0029",
+            "name": "saveNewPermissions",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_saveNewPermissions"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AsaveOldPermissions\u0028\u0029",
+            "name": "saveOldPermissions",
+            "summary": "Save\u0020the\u0020old\u0020permissions\u0020and\u0020listen\u0020to\u0020end\u0020of\u0020request\u0020event\u0020so\u0020the\u0020new\u0020permissions\u0020can\u0020be\u0020tracked",
+            "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_saveOldPermissions"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AgetElementType\u0028\u0029",
             "name": "getElementType",
             "summary": "Get\u0020the\u0020element\u0020type\u0020this\u0020recorder\u0020handles",
@@ -4066,6 +4186,16 @@ Search.appendIndex(
             "summary": "Get\u0020an\u0020element\u0020field\u0020values,\u0020returns\u0020an\u0020array\u0020of\u0020field\u0020handlers",
             "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_getFieldsValues"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003A\u0024permissions",
+            "name": "permissions",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Users.html#property_permissions"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003A\u0024endRequestInitiated",
+            "name": "endRequestInitiated",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Users.html#property_endRequestInitiated"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserSettings",
             "name": "UserSettings",
             "summary": "",
@@ -4080,6 +4210,11 @@ Search.appendIndex(
             "name": "getTrackedFieldNames",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-recorders-UserSettings.html#method_getTrackedFieldNames"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserSettings\u003A\u003AgetTrackedFieldTypings\u0028\u0029",
+            "name": "getTrackedFieldTypings",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-UserSettings.html#method_getTrackedFieldTypings"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Volumes",
             "name": "Volumes",
@@ -4390,6 +4525,16 @@ Search.appendIndex(
             "name": "getDirtyConfig",
             "summary": "Calculate\u0020dirty\u0020config,\u0020\u0024newSettigns\u0020and\u0020\u0024oldSettings\u0020are\u0020arrays\u0020of\u0020field\u0020handlers",
             "url": "classes/Ryssbowh-Activity-traits-ProjectConfigFields.html#method_getDirtyConfig"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\traits\\ProjectConfigFields\u003A\u003AtypeValue\u0028\u0029",
+            "name": "typeValue",
+            "summary": "Type\u0020a\u0020value\u0020by\u0020path",
+            "url": "classes/Ryssbowh-Activity-traits-ProjectConfigFields.html#method_typeValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\traits\\ProjectConfigFields\u003A\u003AgetTrackedFieldTypings\u0028\u0029",
+            "name": "getTrackedFieldTypings",
+            "summary": "Get\u0020fields\u0020typing,\u0020must\u0020return\u0020an\u0020array\u0020\u003A",
+            "url": "classes/Ryssbowh-Activity-traits-ProjectConfigFields.html#method_getTrackedFieldTypings"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\ProjectConfigFields\u003A\u003AgetTrackedFieldNames\u0028\u0029",
             "name": "getTrackedFieldNames",

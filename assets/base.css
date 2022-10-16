@@ -64,7 +64,9 @@ body {
 }
 
 .reference-wrapper .image {
-    width: 25px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
     margin-right: 5px;
 }
 
