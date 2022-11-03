@@ -81,6 +81,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-Activity.html#property_plugin"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\Activity\u003A\u003A\u0024schemaVersion",
+            "name": "schemaVersion",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-Activity.html#property_schemaVersion"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\Activity\u003A\u003A\u0024hasCpSettings",
             "name": "hasCpSettings",
             "summary": "",
@@ -1121,6 +1126,21 @@ Search.appendIndex(
             "summary": "Get\u0020a\u0020pertty\u0020print\u0020for\u0020an\u0020array",
             "url": "classes/Ryssbowh-Activity-helpers-PrettyPrint.html#method_array"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\migrations\\m221026_053038_ChangedRedactorHandler",
+            "name": "m221026_053038_ChangedRedactorHandler",
+            "summary": "m221026_053038_ChangedRedactorHandler\u0020migration.",
+            "url": "classes/Ryssbowh-Activity-migrations-m221026-053038-ChangedRedactorHandler.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\migrations\\m221026_053038_ChangedRedactorHandler\u003A\u003AsafeUp\u0028\u0029",
+            "name": "safeUp",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-migrations-m221026-053038-ChangedRedactorHandler.html#method_safeUp"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\migrations\\m221026_053038_ChangedRedactorHandler\u003A\u003AsafeDown\u0028\u0029",
+            "name": "safeDown",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-migrations-m221026-053038-ChangedRedactorHandler.html#method_safeDown"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\ChangedField",
             "name": "ChangedField",
             "summary": "",
@@ -1351,6 +1371,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-ListsField.html#method_getTemplate"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\LongText",
+            "name": "LongText",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-LongText.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\LongText\u003A\u003AgetTargets\u0028\u0029",
+            "name": "getTargets",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-LongText.html#method_getTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\LongText\u003A\u003AgetTemplate\u0028\u0029",
+            "name": "getTemplate",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-LongText.html#method_getTemplate"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Matrix",
             "name": "Matrix",
             "summary": "",
@@ -1425,21 +1460,6 @@ Search.appendIndex(
             "name": "getTemplate",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-PlainText.html#method_getTemplate"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Redactor",
-            "name": "Redactor",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Redactor.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Redactor\u003A\u003AgetTargets\u0028\u0029",
-            "name": "getTargets",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Redactor.html#method_getTargets"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Redactor\u003A\u003AgetTemplate\u0028\u0029",
-            "name": "getTemplate",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Redactor.html#method_getTemplate"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Seo",
             "name": "Seo",
@@ -3191,6 +3211,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-users-UserLocked.html#method_getTitle"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserLoggedIn",
+            "name": "UserLoggedIn",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserLoggedIn.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserLoggedIn\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserLoggedIn.html#method_getTitle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserLoggedOut",
+            "name": "UserLoggedOut",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserLoggedOut.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserLoggedOut\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserLoggedOut.html#method_getTitle"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserLoginFailed",
             "name": "UserLoginFailed",
             "summary": "",
@@ -4151,9 +4191,19 @@ Search.appendIndex(
             "summary": "Save\u0020a\u0020log\u0020when\u0020a\u0020user\u0020is\u0020assigned\u0020to\u0020the\u0020default\u0020group",
             "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_onAssignDefaultGroup"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AonLoggedIn\u0028\u0029",
+            "name": "onLoggedIn",
+            "summary": "Save\u0020a\u0020log\u0020when\u0020a\u0020user\u0020logs\u0020in",
+            "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_onLoggedIn"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AonLoggedOut\u0028\u0029",
+            "name": "onLoggedOut",
+            "summary": "Save\u0020a\u0020log\u0020when\u0020a\u0020user\u0020logs\u0020out",
+            "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_onLoggedOut"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AsaveNewPermissions\u0028\u0029",
             "name": "saveNewPermissions",
-            "summary": "",
+            "summary": "Save\u0020new\u0020permissions\u0020at\u0020the\u0020end\u0020of\u0020request",
             "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_saveNewPermissions"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AsaveOldPermissions\u0028\u0029",
