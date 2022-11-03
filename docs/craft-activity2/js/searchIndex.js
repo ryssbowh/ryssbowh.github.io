@@ -5528,7 +5528,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\RedactorField\u003A\u003AinitRedactorField\u0028\u0029",
             "name": "initRedactorField",
-            "summary": "",
+            "summary": "Register\u0020everything\u0020needed\u0020for\u0020Redactor\u0020fields\u0020tracking",
             "url": "classes/Ryssbowh-Activity-traits-RedactorField.html#method_initRedactorField"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\SeoField",
@@ -5538,7 +5538,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\SeoField\u003A\u003AinitSeoField\u0028\u0029",
             "name": "initSeoField",
-            "summary": "",
+            "summary": "Register\u0020everything\u0020needed\u0020for\u0020SEO\u0020fields\u0020tracking",
             "url": "classes/Ryssbowh-Activity-traits-SeoField.html#method_initSeoField"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\SuperTableField",
@@ -5548,7 +5548,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\SuperTableField\u003A\u003AinitSuperTableField\u0028\u0029",
             "name": "initSuperTableField",
-            "summary": "",
+            "summary": "Register\u0020everything\u0020needed\u0020for\u0020Super\u0020table\u0020fields\u0020tracking",
             "url": "classes/Ryssbowh-Activity-traits-SuperTableField.html#method_initSuperTableField"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\TinyMceField",
@@ -5558,7 +5558,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\TinyMceField\u003A\u003AinitTinyMceField\u0028\u0029",
             "name": "initTinyMceField",
-            "summary": "",
+            "summary": "Register\u0020everything\u0020needed\u0020for\u0020Tiny\u0020MCE\u0020fields\u0020tracking",
             "url": "classes/Ryssbowh-Activity-traits-TinyMceField.html#method_initTinyMceField"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\TypedLinkField",
@@ -5568,7 +5568,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\TypedLinkField\u003A\u003AinitTypedLinkField\u0028\u0029",
             "name": "initTypedLinkField",
-            "summary": "",
+            "summary": "Register\u0020everything\u0020needed\u0020for\u0020Typed\u0020link\u0020fields\u0020tracking",
             "url": "classes/Ryssbowh-Activity-traits-TypedLinkField.html#method_initTypedLinkField"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\twig\\TwigActivity",
