@@ -155,6 +155,20 @@ They define preferences for rendering page elements.</p>
 <dd>Get an url for an theme asset.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getDefaultRegionLayout">getDefaultRegionLayout()</a>
+    <span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-RegionLayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionLayoutInterface">RegionLayoutInterface</abbr></a>    </span>
+</dt>
+<dd>Get the default region layout</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getDefaultRegionLayoutHandle">getDefaultRegionLayoutHandle()</a>
+    <span>
+                        &nbsp;: string|null    </span>
+</dt>
+<dd>Get the default region layout handle. Returning null will take the handle from the parent theme.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getExtends">getExtends()</a>
     <span>
                         &nbsp;: string|null    </span>
@@ -190,11 +204,18 @@ They define preferences for rendering page elements.</p>
 <dd>Preview image for the theme, returns a web url</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getRegions">getRegions()</a>
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getRegionLayout">getRegionLayout()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Get theme&#039;s regions definitions</dd>
+<dd>Get a region layout by handle. Will return the default region layout if $handle is null</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getRegionLayouts">getRegionLayouts()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get theme&#039;s region layouts definitions</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getRegionsTemplate">getRegionsTemplate()</a>
@@ -262,7 +283,7 @@ They define preferences for rendering page elements.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -295,7 +316,7 @@ They define preferences for rendering page elements.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -330,7 +351,7 @@ They define preferences for rendering page elements.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -401,6 +422,100 @@ They define preferences for rendering page elements.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getDefaultRegionLayout">
+        getDefaultRegionLayout()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getDefaultRegionLayout" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">88</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the default region layout</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getDefaultRegionLayout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-RegionLayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionLayoutInterface">RegionLayoutInterface</abbr></a></span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">5.0.0</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-RegionLayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionLayoutInterface">RegionLayoutInterface</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDefaultRegionLayoutHandle">
+        getDefaultRegionLayoutHandle()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getDefaultRegionLayoutHandle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">96</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the default region layout handle. Returning null will take the handle from the parent theme.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getDefaultRegionLayoutHandle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">5.0.0</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getExtends">
         getExtends()
         <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getExtends" class="headerlink"><i class="fas fa-link"></i></a>
@@ -443,7 +558,7 @@ They define preferences for rendering page elements.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -509,7 +624,7 @@ They define preferences for rendering page elements.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -542,7 +657,7 @@ They define preferences for rendering page elements.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -568,26 +683,97 @@ They define preferences for rendering page elements.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getRegions">
-        getRegions()
-        <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getRegions" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getRegionLayout">
+        getRegionLayout()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getRegionLayout" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get theme&#039;s regions definitions</p>
+        <p class="phpdocumentor-summary">Get a region layout by handle. Will return the default region layout if $handle is null</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getRegions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getRegionLayout</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$handle</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">5.0.0</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRegionLayouts">
+        getRegionLayouts()
+        <a href="classes/Ryssbowh-CraftThemes-interfaces-ThemeInterface.html#method_getRegionLayouts" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get theme&#039;s region layouts definitions</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRegionLayouts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">5.0.0</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -608,7 +794,7 @@ They define preferences for rendering page elements.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -616,10 +802,20 @@ They define preferences for rendering page elements.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getRegionsTemplate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">getRegionsTemplate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionLayout">RegionLayout</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$layout</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$layout</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionLayout">RegionLayout</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -641,7 +837,7 @@ They define preferences for rendering page elements.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="interfaces/ThemeInterface.php"><a href="files/interfaces-themeinterface.html"><abbr title="interfaces/ThemeInterface.php">ThemeInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 

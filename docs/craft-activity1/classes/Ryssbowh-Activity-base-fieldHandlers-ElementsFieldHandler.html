@@ -131,7 +131,21 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Ryssbowh-Activity-base-fieldHandlers-FieldHandler.html#constant_EVENT_REGISTER_TARGETS">EVENT_REGISTER_TARGETS</a>
+    <span>
+        &nbsp;= &#039;register-targets&#039;                    </span>
+</dt>
+<dd></dd>
+
                 <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Ryssbowh-Activity-base-fieldHandlers-FieldHandler.html#property_data">$data</a>
+    <span>
+                &nbsp;: mixed            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Ryssbowh-Activity-base-fieldHandlers-ElementFieldHandler.html#property_element">$element</a>
     <span>
                 &nbsp;: <abbr title="\craft\base\Element">Element</abbr>            </span>
@@ -192,7 +206,7 @@
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Get the targets this field handler applies to</dd>
+<dd>Get the targets this field handler applies to, can be modified through an event</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-Activity-base-fieldHandlers-FieldHandler.html#method_getTemplate">getTemplate()</a>
@@ -222,11 +236,53 @@
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Ryssbowh-Activity-base-fieldHandlers-FieldHandler.html#method__getTargets">_getTargets()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get the targets this field handler applies to</dd>
+
         </dl>
 
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Ryssbowh-Activity-base-fieldHandlers-ElementsFieldHandler.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EVENT_REGISTER_TARGETS">
+        EVENT_REGISTER_TARGETS
+        <a href="classes/Ryssbowh-Activity-base-fieldHandlers-FieldHandler.html#constant_EVENT_REGISTER_TARGETS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/fieldHandlers/FieldHandler.php"><a href="files/base-fieldhandlers-fieldhandler.html"><abbr title="base/fieldHandlers/FieldHandler.php">FieldHandler.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">10</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EVENT_REGISTER_TARGETS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;register-targets&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
@@ -234,6 +290,52 @@
             Properties
             <a href="classes/Ryssbowh-Activity-base-fieldHandlers-ElementsFieldHandler.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_data">
+        $data
+        <a href="classes/Ryssbowh-Activity-base-fieldHandlers-FieldHandler.html#property_data" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/fieldHandlers/FieldHandler.php"><a href="files/base-fieldhandlers-fieldhandler.html"><abbr title="base/fieldHandlers/FieldHandler.php">FieldHandler.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">26</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$data</span>
+    </code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">1.2.0</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+</article>
                     <article
         class="
             phpdocumentor-element
@@ -282,7 +384,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/fieldHandlers/FieldHandler.php"><a href="files/base-fieldhandlers-fieldhandler.html"><abbr title="base/fieldHandlers/FieldHandler.php">FieldHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -410,7 +512,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/fieldHandlers/FieldHandler.php"><a href="files/base-fieldhandlers-fieldhandler.html"><abbr title="base/fieldHandlers/FieldHandler.php">FieldHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
@@ -446,7 +548,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/fieldHandlers/FieldHandler.php"><a href="files/base-fieldhandlers-fieldhandler.html"><abbr title="base/fieldHandlers/FieldHandler.php">FieldHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -492,7 +594,7 @@ If this handler has a fancy value, the db value will also contain 'ff' or 'tf'</
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/fieldHandlers/FieldHandler.php"><a href="files/base-fieldhandlers-fieldhandler.html"><abbr title="base/fieldHandlers/FieldHandler.php">FieldHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -535,11 +637,11 @@ If this handler has a fancy value, the db value will also contain 'ff' or 'tf'</
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/fieldHandlers/FieldHandler.php"><a href="files/base-fieldhandlers-fieldhandler.html"><abbr title="base/fieldHandlers/FieldHandler.php">FieldHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get the targets this field handler applies to</p>
+        <p class="phpdocumentor-summary">Get the targets this field handler applies to, can be modified through an event</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -568,7 +670,7 @@ If this handler has a fancy value, the db value will also contain 'ff' or 'tf'</
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/fieldHandlers/FieldHandler.php"><a href="files/base-fieldhandlers-fieldhandler.html"><abbr title="base/fieldHandlers/FieldHandler.php">FieldHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -730,6 +832,53 @@ If this handler has a fancy value, the db value will also contain 'ff' or 'tf'</
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method__getTargets">
+        _getTargets()
+        <a href="classes/Ryssbowh-Activity-base-fieldHandlers-FieldHandler.html#method__getTargets" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/fieldHandlers/FieldHandler.php"><a href="files/base-fieldhandlers-fieldhandler.html"><abbr title="base/fieldHandlers/FieldHandler.php">FieldHandler.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the targets this field handler applies to</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">_getTargets</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">1.2.0</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
         
     

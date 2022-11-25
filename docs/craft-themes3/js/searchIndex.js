@@ -12476,6 +12476,11 @@ Search.appendIndex(
             "summary": "Initialize\u0020the\u0020shortcuts",
             "url": "classes/Ryssbowh-CraftThemes-services-ShortcutsService.html#method_initShortcuts"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ShortcutsService\u003A\u003AgetShowShortcuts\u0028\u0029",
+            "name": "getShowShortcuts",
+            "summary": "Should\u0020the\u0020shortcuts\u0020be\u0020shown\u0020\u003F",
+            "url": "classes/Ryssbowh-CraftThemes-services-ShortcutsService.html#method_getShowShortcuts"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ShortcutsService\u003A\u003A\u0024js",
             "name": "js",
             "summary": "",
@@ -12486,10 +12491,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-services-ShortcutsService.html#property_inited"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ShortcutsService\u003A\u003A\u0024showShortcuts",
-            "name": "showShortcuts",
+            "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ShortcutsService\u003A\u003A\u0024_showShortcuts",
+            "name": "_showShortcuts",
             "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-services-ShortcutsService.html#property_showShortcuts"
+            "url": "classes/Ryssbowh-CraftThemes-services-ShortcutsService.html#property__showShortcuts"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\TablesService",
             "name": "TablesService",
@@ -12861,6 +12866,11 @@ Search.appendIndex(
             "summary": "Add\u0020the\u0020page\u0020variables\u0020and\u0020the\u0020themes\u0020variables\u0020to\u0020an\u0020array",
             "url": "classes/Ryssbowh-CraftThemes-services-ViewService.html#method_getPageVariables"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ViewService\u003A\u003AgetDevMode\u0028\u0029",
+            "name": "getDevMode",
+            "summary": "Are\u0020we\u0020in\u0020dev\u0020mode\u0020\u003F",
+            "url": "classes/Ryssbowh-CraftThemes-services-ViewService.html#method_getDevMode"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ViewService\u003A\u003ATEMPLATE_CACHE_TAG",
             "name": "TEMPLATE_CACHE_TAG",
             "summary": "",
@@ -12895,11 +12905,6 @@ Search.appendIndex(
             "name": "BEFORE_RENDERING_GROUP",
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-services-ViewService.html#constant_BEFORE_RENDERING_GROUP"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ViewService\u003A\u003A\u0024devMode",
-            "name": "devMode",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftThemes-services-ViewService.html#property_devMode"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ViewService\u003A\u003A\u0024templateCacheEnabled",
             "name": "templateCacheEnabled",
@@ -12950,6 +12955,11 @@ Search.appendIndex(
             "name": "pageVariables",
             "summary": "Variables\u0020originally\u0020passed\u0020to\u0020the\u0020page",
             "url": "classes/Ryssbowh-CraftThemes-services-ViewService.html#property_pageVariables"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\services\\ViewService\u003A\u003A\u0024_devMode",
+            "name": "_devMode",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-services-ViewService.html#property__devMode"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\stubs\\BlockOptionsStub",
             "name": "BlockOptionsStub",
@@ -13940,6 +13950,11 @@ Search.appendIndex(
             "name": "getTokenParsers",
             "summary": "",
             "url": "classes/Ryssbowh-CraftThemes-twig-TwigTheme.html#method_getTokenParsers"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftThemes\\twig\\TwigTheme\u003A\u003AgetTests\u0028\u0029",
+            "name": "getTests",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftThemes-twig-TwigTheme.html#method_getTests"
         },                {
             "fqsen": "\\Ryssbowh\\CraftThemes\\twig\\TwigTheme\u003A\u003AgetFunctions\u0028\u0029",
             "name": "getFunctions",

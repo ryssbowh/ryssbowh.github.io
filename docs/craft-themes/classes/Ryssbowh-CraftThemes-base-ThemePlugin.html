@@ -116,7 +116,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -148,7 +148,14 @@
 
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#constant_DEFINE_SCSS_COMPILER">DEFINE_SCSS_COMPILER</a>
+    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#constant_EVENT_DEFINE_REGION_LAYOUTS">EVENT_DEFINE_REGION_LAYOUTS</a>
+    <span>
+        &nbsp;= &#039;define_region_layout&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#constant_EVENT_DEFINE_SCSS_COMPILER">EVENT_DEFINE_SCSS_COMPILER</a>
     <span>
         &nbsp;= &#039;define_scss_compiler&#039;                    </span>
 </dt>
@@ -169,7 +176,7 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#property__regions">$_regions</a>
+    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#property__regionLayouts">$_regionLayouts</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
@@ -250,6 +257,20 @@
 <dd>Get an url for an theme asset.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getDefaultRegionLayout">getDefaultRegionLayout()</a>
+    <span>
+                        &nbsp;: <a href="classes/Ryssbowh-CraftThemes-interfaces-RegionLayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionLayoutInterface">RegionLayoutInterface</abbr></a>    </span>
+</dt>
+<dd>Get the default region layout</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getDefaultRegionLayoutHandle">getDefaultRegionLayoutHandle()</a>
+    <span>
+                        &nbsp;: string|null    </span>
+</dt>
+<dd>Get the default region layout handle. Returning null will take the handle from the parent theme.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getExtends">getExtends()</a>
     <span>
                         &nbsp;: string|null    </span>
@@ -285,11 +306,18 @@
 <dd>Preview image for the theme, returns a web url</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getRegions">getRegions()</a>
+    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getRegionLayout">getRegionLayout()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Get theme&#039;s regions definitions</dd>
+<dd>Get a region layout by handle. Will return the default region layout if $handle is null</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getRegionLayouts">getRegionLayouts()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get theme&#039;s region layouts definitions</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getRegionsTemplate">getRegionsTemplate()</a>
@@ -334,11 +362,11 @@
 <dd>Register this theme&#039;s assets in view for a specific path</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_defineRegions">defineRegions()</a>
+    <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_defineRegionLayouts">defineRegionLayouts()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;|null    </span>
 </dt>
-<dd>Define regions as array</dd>
+<dd>Define region layouts as array</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getAssetBundles">getAssetBundles()</a>
@@ -386,15 +414,15 @@
             <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_DEFINE_SCSS_COMPILER">
-        DEFINE_SCSS_COMPILER
-        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#constant_DEFINE_SCSS_COMPILER" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="constant_EVENT_DEFINE_REGION_LAYOUTS">
+        EVENT_DEFINE_REGION_LAYOUTS
+        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#constant_EVENT_DEFINE_REGION_LAYOUTS" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -402,7 +430,49 @@
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">DEFINE_SCSS_COMPILER</span>
+    <span class="phpdocumentor-signature__name">EVENT_DEFINE_REGION_LAYOUTS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;define_region_layout&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">5.0.0</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EVENT_DEFINE_SCSS_COMPILER">
+        EVENT_DEFINE_SCSS_COMPILER
+        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#constant_EVENT_DEFINE_SCSS_COMPILER" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EVENT_DEFINE_SCSS_COMPILER</span>
     = <span class="phpdocumentor-signature__default-value">&#039;define_scss_compiler&#039;</span>
 </code>
 
@@ -438,7 +508,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -470,7 +540,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -493,16 +563,16 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__regions">
-        $_regions
-        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#property__regions" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property__regionLayouts">
+        $_regionLayouts
+        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#property__regionLayouts" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -510,12 +580,26 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_regions</span>
+    <span class="phpdocumentor-signature__name">$_regionLayouts</span>
     </code>
 
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">5.0.0</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
 
 </article>
                     <article
@@ -534,7 +618,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -578,7 +662,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -611,7 +695,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -644,7 +728,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -681,7 +765,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">227</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -727,7 +811,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">270</span>
 
     </aside>
 
@@ -773,7 +857,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">213</span>
+    <span class="phpdocumentor-element-found-in__line">263</span>
 
     </aside>
 
@@ -819,7 +903,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
@@ -864,7 +948,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -913,6 +997,98 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getDefaultRegionLayout">
+        getDefaultRegionLayout()
+        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getDefaultRegionLayout" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">241</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the default region layout</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getDefaultRegionLayout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-RegionLayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionLayoutInterface">RegionLayoutInterface</abbr></a></span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Ryssbowh-CraftThemes-interfaces-RegionLayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionLayoutInterface">RegionLayoutInterface</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDefaultRegionLayoutHandle">
+        getDefaultRegionLayoutHandle()
+        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getDefaultRegionLayoutHandle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">255</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the default region layout handle. Returning null will take the handle from the parent theme.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getDefaultRegionLayoutHandle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getExtends">
         getExtends()
         <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getExtends" class="headerlink"><i class="fas fa-link"></i></a>
@@ -920,7 +1096,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -966,7 +1142,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">234</span>
+    <span class="phpdocumentor-element-found-in__line">284</span>
 
     </aside>
 
@@ -1012,7 +1188,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -1058,7 +1234,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -1104,7 +1280,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">242</span>
+    <span class="phpdocumentor-element-found-in__line">292</span>
 
     </aside>
 
@@ -1143,22 +1319,78 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getRegions">
-        getRegions()
-        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getRegions" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getRegionLayout">
+        getRegionLayout()
+        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getRegionLayout" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">227</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get theme&#039;s regions definitions</p>
+        <p class="phpdocumentor-summary">Get a region layout by handle. Will return the default region layout if $handle is null</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getRegions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getRegionLayout</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$handle</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRegionLayouts">
+        getRegionLayouts()
+        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_getRegionLayouts" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">189</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get theme&#039;s region layouts definitions</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRegionLayouts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
     
@@ -1196,7 +1428,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">254</span>
+    <span class="phpdocumentor-element-found-in__line">304</span>
 
     </aside>
 
@@ -1204,10 +1436,20 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getRegionsTemplate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">getRegionsTemplate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-RegionLayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionLayoutInterface">RegionLayoutInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$layout</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$layout</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ryssbowh-CraftThemes-interfaces-RegionLayoutInterface.html"><abbr title="\Ryssbowh\CraftThemes\interfaces\RegionLayoutInterface">RegionLayoutInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -1242,7 +1484,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">262</span>
+    <span class="phpdocumentor-element-found-in__line">312</span>
 
     </aside>
 
@@ -1300,7 +1542,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -1346,7 +1588,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -1392,7 +1634,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -1438,7 +1680,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -1485,30 +1727,33 @@
         class="phpdocumentor-element
             -method
             -protected
-                                                        "
+                        -abstract                                "
 >
-    <h4 class="phpdocumentor-element__name" id="method_defineRegions">
-        defineRegions()
-        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_defineRegions" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_defineRegionLayouts">
+        defineRegionLayouts()
+        <a href="classes/Ryssbowh-CraftThemes-base-ThemePlugin.html#method_defineRegionLayouts" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">410</span>
+    <span class="phpdocumentor-element-found-in__line">463</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Define regions as array</p>
+        <p class="phpdocumentor-summary">Define region layouts as array</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">defineRegions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span></code>
+    <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">defineRegionLayouts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span></code>
 
-        <section class="phpdocumentor-description"><p>[
+        <section class="phpdocumentor-description"><p>'default' =&gt; [
+'label' =&gt; 'Default',
+'regions' =&gt;
 [
 'handle' =&gt; 'region-handle',
 'name' =&gt; 'Region',
 'width' =&gt; '100%' //Used in backend blocks section
+]
 ]
 ]</p>
 <p>Returning null will load parent's theme regions</p>
@@ -1536,7 +1781,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">382</span>
+    <span class="phpdocumentor-element-found-in__line">432</span>
 
     </aside>
 
@@ -1579,7 +1824,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">355</span>
+    <span class="phpdocumentor-element-found-in__line">405</span>
 
     </aside>
 
@@ -1612,7 +1857,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">365</span>
+    <span class="phpdocumentor-element-found-in__line">415</span>
 
     </aside>
 
@@ -1645,7 +1890,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">299</span>
+    <span class="phpdocumentor-element-found-in__line">349</span>
 
     </aside>
 
@@ -1678,7 +1923,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="base/ThemePlugin.php"><a href="files/base-themeplugin.html"><abbr title="base/ThemePlugin.php">ThemePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">315</span>
+    <span class="phpdocumentor-element-found-in__line">365</span>
 
     </aside>
 

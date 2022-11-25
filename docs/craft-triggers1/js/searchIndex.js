@@ -2516,6 +2516,26 @@ Search.appendIndex(
             "summary": "Initialize\u0020trigger",
             "url": "classes/Ryssbowh-CraftTriggers-models-triggers-UserLocked.html#method_initialize"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\UserLogsIn",
+            "name": "UserLogsIn",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-UserLogsIn.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\UserLogsIn\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Type\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-UserLogsIn.html#method_getType"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\UserLogsIn\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Handle\u0020getter",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-UserLogsIn.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\UserLogsIn\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020trigger",
+            "url": "classes/Ryssbowh-CraftTriggers-models-triggers-UserLogsIn.html#method_initialize"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\triggers\\UserSaved",
             "name": "UserSaved",
             "summary": "",
