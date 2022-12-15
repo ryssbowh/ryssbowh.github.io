@@ -346,6 +346,11 @@ Search.appendIndex(
             "summary": "Site\u0020name\u0020getter",
             "url": "classes/Ryssbowh-Activity-base-logs-ActivityLog.html#method_getSiteName"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\logs\\ActivityLog\u003A\u003AgetRequestName\u0028\u0029",
+            "name": "getRequestName",
+            "summary": "Request\u0020name\u0020getter",
+            "url": "classes/Ryssbowh-Activity-base-logs-ActivityLog.html#method_getRequestName"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\base\\logs\\ActivityLog\u003A\u003Asave\u0028\u0029",
             "name": "save",
             "summary": "Save\u0020this\u0020log\u0020in\u0020database",
@@ -5051,6 +5056,11 @@ Search.appendIndex(
             "summary": "Get\u0020paginated\u0020logs\u0020according\u0020to\u0020some\u0020filters",
             "url": "classes/Ryssbowh-Activity-services-Logs.html#method_getPaginatedLogs"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Logs\u003A\u003AgetLogsQuery\u0028\u0029",
+            "name": "getLogsQuery",
+            "summary": "Get\u0020a\u0020filtered\u0020logs\u0020query",
+            "url": "classes/Ryssbowh-Activity-services-Logs.html#method_getLogsQuery"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\services\\Logs\u003A\u003AgetUserLogs\u0028\u0029",
             "name": "getUserLogs",
             "summary": "Get\u0020the\u0020latest\u0020logs\u0020for\u0020a\u0020user",
@@ -5305,6 +5315,201 @@ Search.appendIndex(
             "name": "getLogs",
             "summary": "Get\u0020logs\u0020service",
             "url": "classes/Ryssbowh-Activity-twig-TwigActivity.html#method_getLogs"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter",
+            "name": "Exporter",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-base-Exporter.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Get\u0020this\u0020exporter\u0027s\u0020handle",
+            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetLabel\u0028\u0029",
+            "name": "getLabel",
+            "summary": "Get\u0020this\u0020exporter\u0020label,\u0020will\u0020be\u0020shown\u0020on\u0020the\u0020backend\u0020dropdown",
+            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getLabel"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetExportContent\u0028\u0029",
+            "name": "getExportContent",
+            "summary": "Export\u0020some\u0020logs",
+            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getExportContent"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetExtension\u0028\u0029",
+            "name": "getExtension",
+            "summary": "Get\u0020the\u0020extension\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate\u0020\u0028without\u0020dot\u0029",
+            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getExtension"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetMimeType\u0028\u0029",
+            "name": "getMimeType",
+            "summary": "Get\u0020the\u0020mime\u0020type\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate",
+            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getMimeType"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController",
+            "name": "ExportController",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003AactionIndex\u0028\u0029",
+            "name": "actionIndex",
+            "summary": "Export\u0020activity\u0020logs\u0020to\u0020a\u0020file",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#method_actionIndex"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003Aoptions\u0028\u0029",
+            "name": "options",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#method_options"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003AparseFilters\u0028\u0029",
+            "name": "parseFilters",
+            "summary": "Parse\u0020filters\u0020from\u0020options",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#method_parseFilters"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024types",
+            "name": "types",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_types"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024dateFrom",
+            "name": "dateFrom",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_dateFrom"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024dateTo",
+            "name": "dateTo",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_dateTo"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024users",
+            "name": "users",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_users"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_name"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024folder",
+            "name": "folder",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_folder"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\controllers\\ExportController",
+            "name": "ExportController",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-controllers-ExportController.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\controllers\\ExportController\u003A\u003AactionIndex\u0028\u0029",
+            "name": "actionIndex",
+            "summary": "Index\u0020action",
+            "url": "classes/Ryssbowh-Activity-controllers-ExportController.html#method_actionIndex"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent",
+            "name": "RegisterExportersEvent",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent\u003A\u003AgetExporters\u0028\u0029",
+            "name": "getExporters",
+            "summary": "Get\u0020registered\u0020exporters",
+            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html#method_getExporters"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "Add\u0020a\u0020field\u0020handler\u0020to\u0020register",
+            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html#method_add"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent\u003A\u003A\u0024_exporters",
+            "name": "_exporters",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html#property__exporters"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exceptions\\ExporterException",
+            "name": "ExporterException",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-exceptions-ExporterException.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exceptions\\ExporterException\u003A\u003Aregistered\u0028\u0029",
+            "name": "registered",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-exceptions-ExporterException.html#method_registered"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exceptions\\ExporterException\u003A\u003AnoHandle\u0028\u0029",
+            "name": "noHandle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-exceptions-ExporterException.html#method_noHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf",
+            "name": "Pdf",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Get\u0020this\u0020exporter\u0027s\u0020handle",
+            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetLabel\u0028\u0029",
+            "name": "getLabel",
+            "summary": "Get\u0020this\u0020exporter\u0020label,\u0020will\u0020be\u0020shown\u0020on\u0020the\u0020backend\u0020dropdown",
+            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getLabel"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetExportContent\u0028\u0029",
+            "name": "getExportContent",
+            "summary": "Export\u0020some\u0020logs",
+            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getExportContent"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetMimeType\u0028\u0029",
+            "name": "getMimeType",
+            "summary": "Get\u0020the\u0020mime\u0020type\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate",
+            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getMimeType"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetExtension\u0028\u0029",
+            "name": "getExtension",
+            "summary": "Get\u0020the\u0020extension\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate\u0020\u0028without\u0020dot\u0029",
+            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getExtension"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text",
+            "name": "Text",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Get\u0020this\u0020exporter\u0027s\u0020handle",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetLabel\u0028\u0029",
+            "name": "getLabel",
+            "summary": "Get\u0020this\u0020exporter\u0020label,\u0020will\u0020be\u0020shown\u0020on\u0020the\u0020backend\u0020dropdown",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getLabel"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetExportContent\u0028\u0029",
+            "name": "getExportContent",
+            "summary": "Export\u0020some\u0020logs",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getExportContent"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetMimeType\u0028\u0029",
+            "name": "getMimeType",
+            "summary": "Get\u0020the\u0020mime\u0020type\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getMimeType"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetExtension\u0028\u0029",
+            "name": "getExtension",
+            "summary": "Get\u0020the\u0020extension\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate\u0020\u0028without\u0020dot\u0029",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getExtension"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetUserName\u0028\u0029",
+            "name": "getUserName",
+            "summary": "User\u0020name\u0020getter",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getUserName"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Money",
             "name": "Money",
@@ -5571,6 +5776,36 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-ImageTransforms.html#method_getDescriptiveFieldName"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters",
+            "name": "Exporters",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-services-Exporters.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003AgetAll\u0028\u0029",
+            "name": "getAll",
+            "summary": "Get\u0020all\u0020exporters,\u0020indexed\u0020by\u0020handle",
+            "url": "classes/Ryssbowh-Activity-services-Exporters.html#method_getAll"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003AgetByHandle\u0028\u0029",
+            "name": "getByHandle",
+            "summary": "Get\u0020an\u0020exporter\u0020by\u0020handle",
+            "url": "classes/Ryssbowh-Activity-services-Exporters.html#method_getByHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "Register\u0020exporters",
+            "url": "classes/Ryssbowh-Activity-services-Exporters.html#method_register"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003AEVENT_REGISTER",
+            "name": "EVENT_REGISTER",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-services-Exporters.html#constant_EVENT_REGISTER"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003A\u0024exporters",
+            "name": "exporters",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-services-Exporters.html#property_exporters"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\TinyMceField",
             "name": "TinyMceField",
             "summary": "",
@@ -5601,15 +5836,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/ryssbowh-activity-assets.html"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\base\\fieldHandlers",
-            "name": "fieldHandlers",
-            "summary": "",
-            "url": "namespaces/ryssbowh-activity-base-fieldhandlers.html"
-        },                {
             "fqsen": "\\Ryssbowh\\Activity\\base",
             "name": "base",
             "summary": "",
             "url": "namespaces/ryssbowh-activity-base.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\fieldHandlers",
+            "name": "fieldHandlers",
+            "summary": "",
+            "url": "namespaces/ryssbowh-activity-base-fieldhandlers.html"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\base\\logs",
             "name": "logs",
@@ -5620,6 +5855,16 @@ Search.appendIndex(
             "name": "recorders",
             "summary": "",
             "url": "namespaces/ryssbowh-activity-base-recorders.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers",
+            "name": "controllers",
+            "summary": "",
+            "url": "namespaces/ryssbowh-activity-console-controllers.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console",
+            "name": "console",
+            "summary": "",
+            "url": "namespaces/ryssbowh-activity-console.html"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\controllers",
             "name": "controllers",
@@ -5635,6 +5880,11 @@ Search.appendIndex(
             "name": "exceptions",
             "summary": "",
             "url": "namespaces/ryssbowh-activity-exceptions.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters",
+            "name": "exporters",
+            "summary": "",
+            "url": "namespaces/ryssbowh-activity-exporters.html"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\helpers",
             "name": "helpers",
