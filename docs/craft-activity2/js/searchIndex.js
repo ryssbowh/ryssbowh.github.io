@@ -141,6 +141,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-assets-UserAssets.html#property_depends"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter",
+            "name": "Exporter",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-base-Exporter.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Get\u0020this\u0020exporter\u0027s\u0020handle",
+            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetLabel\u0028\u0029",
+            "name": "getLabel",
+            "summary": "Get\u0020this\u0020exporter\u0020label,\u0020will\u0020be\u0020shown\u0020on\u0020the\u0020backend\u0020dropdown",
+            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getLabel"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetExportContent\u0028\u0029",
+            "name": "getExportContent",
+            "summary": "Export\u0020some\u0020logs",
+            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getExportContent"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetExtension\u0028\u0029",
+            "name": "getExtension",
+            "summary": "Get\u0020the\u0020extension\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate\u0020\u0028without\u0020dot\u0029",
+            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getExtension"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetMimeType\u0028\u0029",
+            "name": "getMimeType",
+            "summary": "Get\u0020the\u0020mime\u0020type\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate",
+            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getMimeType"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\base\\fieldHandlers\\ConfigFieldHandler",
             "name": "ConfigFieldHandler",
             "summary": "",
@@ -911,6 +941,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-base-recorders-Recorder.html#property_logQueue"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController",
+            "name": "ExportController",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003AactionIndex\u0028\u0029",
+            "name": "actionIndex",
+            "summary": "Export\u0020activity\u0020logs\u0020to\u0020a\u0020file",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#method_actionIndex"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003Aoptions\u0028\u0029",
+            "name": "options",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#method_options"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003AparseFilters\u0028\u0029",
+            "name": "parseFilters",
+            "summary": "Parse\u0020filters\u0020from\u0020options",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#method_parseFilters"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024types",
+            "name": "types",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_types"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024dateFrom",
+            "name": "dateFrom",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_dateFrom"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024dateTo",
+            "name": "dateTo",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_dateTo"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024users",
+            "name": "users",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_users"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_name"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024folder",
+            "name": "folder",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_folder"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\controllers\\ActivityController",
             "name": "ActivityController",
             "summary": "",
@@ -941,6 +1021,16 @@ Search.appendIndex(
             "summary": "Return\u0020the\u0020value\u0020of\u0020a\u0020changed\u0020field,\u0020requires\u0020\u0027data\u0027\u0020to\u0020be\u0020set\u0020in\u0020the\u0020request\u0020as\u0020\u0027t\u0027\u0020or\u0020\u0027f\u0027\u0020for\u0020example",
             "url": "classes/Ryssbowh-Activity-controllers-ActivityController.html#method_actionFieldValue"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\controllers\\ExportController",
+            "name": "ExportController",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-controllers-ExportController.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\controllers\\ExportController\u003A\u003AactionIndex\u0028\u0029",
+            "name": "actionIndex",
+            "summary": "Index\u0020action",
+            "url": "classes/Ryssbowh-Activity-controllers-ExportController.html#method_actionIndex"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterElementFieldHandlersEvent",
             "name": "RegisterElementFieldHandlersEvent",
             "summary": "",
@@ -970,6 +1060,31 @@ Search.appendIndex(
             "name": "_handlers",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-events-RegisterElementFieldHandlersEvent.html#property__handlers"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent",
+            "name": "RegisterExportersEvent",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent\u003A\u003AgetExporters\u0028\u0029",
+            "name": "getExporters",
+            "summary": "Get\u0020registered\u0020exporters",
+            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html#method_getExporters"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "Add\u0020a\u0020field\u0020handler\u0020to\u0020register",
+            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html#method_add"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent\u003A\u003A\u0024_exporters",
+            "name": "_exporters",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html#property__exporters"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterFieldLabelsEvent",
             "name": "RegisterFieldLabelsEvent",
@@ -1161,6 +1276,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-exceptions-ActivityTypeException.html#method_registered"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exceptions\\ExporterException",
+            "name": "ExporterException",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-exceptions-ExporterException.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exceptions\\ExporterException\u003A\u003Aregistered\u0028\u0029",
+            "name": "registered",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-exceptions-ExporterException.html#method_registered"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exceptions\\ExporterException\u003A\u003AnoHandle\u0028\u0029",
+            "name": "noHandle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-exceptions-ExporterException.html#method_noHandle"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\exceptions\\FieldHandlerException",
             "name": "FieldHandlerException",
             "summary": "",
@@ -1175,6 +1305,71 @@ Search.appendIndex(
             "name": "projectConfigRegistered",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-exceptions-FieldHandlerException.html#method_projectConfigRegistered"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf",
+            "name": "Pdf",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Get\u0020this\u0020exporter\u0027s\u0020handle",
+            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetLabel\u0028\u0029",
+            "name": "getLabel",
+            "summary": "Get\u0020this\u0020exporter\u0020label,\u0020will\u0020be\u0020shown\u0020on\u0020the\u0020backend\u0020dropdown",
+            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getLabel"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetExportContent\u0028\u0029",
+            "name": "getExportContent",
+            "summary": "Export\u0020some\u0020logs",
+            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getExportContent"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetMimeType\u0028\u0029",
+            "name": "getMimeType",
+            "summary": "Get\u0020the\u0020mime\u0020type\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate",
+            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getMimeType"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetExtension\u0028\u0029",
+            "name": "getExtension",
+            "summary": "Get\u0020the\u0020extension\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate\u0020\u0028without\u0020dot\u0029",
+            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getExtension"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text",
+            "name": "Text",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "Get\u0020this\u0020exporter\u0027s\u0020handle",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetLabel\u0028\u0029",
+            "name": "getLabel",
+            "summary": "Get\u0020this\u0020exporter\u0020label,\u0020will\u0020be\u0020shown\u0020on\u0020the\u0020backend\u0020dropdown",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getLabel"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetExportContent\u0028\u0029",
+            "name": "getExportContent",
+            "summary": "Export\u0020some\u0020logs",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getExportContent"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetMimeType\u0028\u0029",
+            "name": "getMimeType",
+            "summary": "Get\u0020the\u0020mime\u0020type\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getMimeType"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetExtension\u0028\u0029",
+            "name": "getExtension",
+            "summary": "Get\u0020the\u0020extension\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate\u0020\u0028without\u0020dot\u0029",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getExtension"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetUserName\u0028\u0029",
+            "name": "getUserName",
+            "summary": "User\u0020name\u0020getter",
+            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getUserName"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\helpers\\PrettyPrint",
             "name": "PrettyPrint",
@@ -1510,6 +1705,66 @@ Search.appendIndex(
             "name": "_dirty",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Matrix.html#property__dirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Neo",
+            "name": "Neo",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Neo.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Neo\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Neo.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Neo\u003A\u003AgetDirty\u0028\u0029",
+            "name": "getDirty",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Neo.html#method_getDirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Neo\u003A\u003AisDirty\u0028\u0029",
+            "name": "isDirty",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Neo.html#method_isDirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Neo\u003A\u003A_getTargets\u0028\u0029",
+            "name": "_getTargets",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Neo.html#method__getTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Neo\u003A\u003AgetTemplate\u0028\u0029",
+            "name": "getTemplate",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Neo.html#method_getTemplate"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Neo\u003A\u003AgetDbValue\u0028\u0029",
+            "name": "getDbValue",
+            "summary": "Get\u0020the\u0020value\u0020to\u0020be\u0020stored\u0020in\u0020database.",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Neo.html#method_getDbValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Neo\u003A\u003AbuildDirty\u0028\u0029",
+            "name": "buildDirty",
+            "summary": "Build\u0020dirty\u0020values",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Neo.html#method_buildDirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Neo\u003A\u003AbuildDirtyBlocks\u0028\u0029",
+            "name": "buildDirtyBlocks",
+            "summary": "Build\u0020dirty\u0020values",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Neo.html#method_buildDirtyBlocks"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Neo\u003A\u003AbuildValues\u0028\u0029",
+            "name": "buildValues",
+            "summary": "Build\u0020the\u0020value",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Neo.html#method_buildValues"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Neo\u003A\u003AbuildBlockValues\u0028\u0029",
+            "name": "buildBlockValues",
+            "summary": "Build\u0020the\u0020value\u0020for\u0020one\u0020block",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Neo.html#method_buildBlockValues"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Neo\u003A\u003A\u0024_dirty",
+            "name": "_dirty",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Neo.html#property__dirty"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Plain",
             "name": "Plain",
@@ -2015,6 +2270,31 @@ Search.appendIndex(
             "name": "_dirty",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-LinkFieldTypes.html#property__dirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\NeoGroup",
+            "name": "NeoGroup",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-NeoGroup.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\NeoGroup\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-NeoGroup.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\NeoGroup\u003A\u003AhasFancyValue\u0028\u0029",
+            "name": "hasFancyValue",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-NeoGroup.html#method_hasFancyValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\NeoGroup\u003A\u003A_getTargets\u0028\u0029",
+            "name": "_getTargets",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-NeoGroup.html#method__getTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\NeoGroup\u003A\u003AgetGroupName\u0028\u0029",
+            "name": "getGroupName",
+            "summary": "Get\u0020a\u0020group\u0020name\u0020by\u0020uid",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-NeoGroup.html#method_getGroupName"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\Options",
             "name": "Options",
@@ -3180,6 +3460,136 @@ Search.appendIndex(
             "name": "getTitle",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-fields-MatrixBlockSaved.html#method_getTitle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockCreated",
+            "name": "NeoBlockCreated",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockCreated.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockCreated\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockCreated.html#method_getTitle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockCreated\u003A\u003AgetModelName\u0028\u0029",
+            "name": "getModelName",
+            "summary": "Get\u0020model\u0020name",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockCreated.html#method_getModelName"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockCreated\u003A\u003AgetFieldLabel\u0028\u0029",
+            "name": "getFieldLabel",
+            "summary": "Get\u0020the\u0020labels\u0020for\u0020one\u0020field",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockCreated.html#method_getFieldLabel"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockCreated\u003A\u003AloadModel\u0028\u0029",
+            "name": "loadModel",
+            "summary": "Load\u0020the\u0020model",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockCreated.html#method_loadModel"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockCreated\u003A\u003AgetField\u0028\u0029",
+            "name": "getField",
+            "summary": "Get\u0020the\u0020associated\u0020field",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockCreated.html#method_getField"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockCreated\u003A\u003AgetFieldName\u0028\u0029",
+            "name": "getFieldName",
+            "summary": "Get\u0020the\u0020associated\u0020field\u0020name",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockCreated.html#method_getFieldName"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockCreated\u003A\u003AgetModelLink\u0028\u0029",
+            "name": "getModelLink",
+            "summary": "Get\u0020a\u0020link\u0020to\u0020the\u0020model\u0020edit\u0020page",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockCreated.html#method_getModelLink"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockCreated\u003A\u003AgetFieldLabels\u0028\u0029",
+            "name": "getFieldLabels",
+            "summary": "Get\u0020the\u0020labels\u0020for\u0020the\u0020fields",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockCreated.html#method_getFieldLabels"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockDeleted",
+            "name": "NeoBlockDeleted",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockDeleted.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockDeleted\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockDeleted.html#method_getTitle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupCreated",
+            "name": "NeoBlockGroupCreated",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupCreated.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupCreated\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupCreated.html#method_getTitle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupCreated\u003A\u003AgetModelName\u0028\u0029",
+            "name": "getModelName",
+            "summary": "Get\u0020model\u0020name",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupCreated.html#method_getModelName"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupCreated\u003A\u003AgetFieldLabel\u0028\u0029",
+            "name": "getFieldLabel",
+            "summary": "Get\u0020the\u0020labels\u0020for\u0020one\u0020field",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupCreated.html#method_getFieldLabel"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupCreated\u003A\u003AloadModel\u0028\u0029",
+            "name": "loadModel",
+            "summary": "Load\u0020the\u0020model",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupCreated.html#method_loadModel"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupCreated\u003A\u003AgetField\u0028\u0029",
+            "name": "getField",
+            "summary": "Get\u0020the\u0020associated\u0020field",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupCreated.html#method_getField"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupCreated\u003A\u003AgetFieldName\u0028\u0029",
+            "name": "getFieldName",
+            "summary": "Get\u0020the\u0020associated\u0020field\u0020name",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupCreated.html#method_getFieldName"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupCreated\u003A\u003AgetModelLink\u0028\u0029",
+            "name": "getModelLink",
+            "summary": "Get\u0020a\u0020link\u0020to\u0020the\u0020model\u0020edit\u0020page",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupCreated.html#method_getModelLink"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupCreated\u003A\u003AgetFieldLabels\u0028\u0029",
+            "name": "getFieldLabels",
+            "summary": "Get\u0020the\u0020labels\u0020for\u0020the\u0020fields",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupCreated.html#method_getFieldLabels"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupDeleted",
+            "name": "NeoBlockGroupDeleted",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupDeleted.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupDeleted\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupDeleted.html#method_getTitle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupSaved",
+            "name": "NeoBlockGroupSaved",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupSaved.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockGroupSaved\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockGroupSaved.html#method_getTitle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockSaved",
+            "name": "NeoBlockSaved",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockSaved.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\NeoBlockSaved\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-logs-fields-NeoBlockSaved.html#method_getTitle"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\fields\\SuperTableBlockCreated",
             "name": "SuperTableBlockCreated",
@@ -4366,6 +4776,66 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-MatrixBlocks.html#method_getDescriptiveFieldName"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\NeoBlockGroups",
+            "name": "NeoBlockGroups",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-NeoBlockGroups.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\NeoBlockGroups\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-NeoBlockGroups.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\NeoBlockGroups\u003A\u003AmodifyParams\u0028\u0029",
+            "name": "modifyParams",
+            "summary": "Modify\u0020log\u0020param\u0020before\u0020it\u0027s\u0020saved",
+            "url": "classes/Ryssbowh-Activity-recorders-NeoBlockGroups.html#method_modifyParams"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\NeoBlockGroups\u003A\u003AgetActivityHandle\u0028\u0029",
+            "name": "getActivityHandle",
+            "summary": "Get\u0020the\u0020activity\u0020handle,\u0020used\u0020to\u0020build\u0020the\u0020log\u0020type",
+            "url": "classes/Ryssbowh-Activity-recorders-NeoBlockGroups.html#method_getActivityHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\NeoBlockGroups\u003A\u003AgetTrackedFieldNames\u0028\u0029",
+            "name": "getTrackedFieldNames",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-NeoBlockGroups.html#method_getTrackedFieldNames"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\NeoBlockGroups\u003A\u003AgetDescriptiveFieldName\u0028\u0029",
+            "name": "getDescriptiveFieldName",
+            "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
+            "url": "classes/Ryssbowh-Activity-recorders-NeoBlockGroups.html#method_getDescriptiveFieldName"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\NeoBlocks",
+            "name": "NeoBlocks",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-NeoBlocks.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\NeoBlocks\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-NeoBlocks.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\NeoBlocks\u003A\u003AmodifyParams\u0028\u0029",
+            "name": "modifyParams",
+            "summary": "Modify\u0020log\u0020param\u0020before\u0020it\u0027s\u0020saved",
+            "url": "classes/Ryssbowh-Activity-recorders-NeoBlocks.html#method_modifyParams"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\NeoBlocks\u003A\u003AgetActivityHandle\u0028\u0029",
+            "name": "getActivityHandle",
+            "summary": "Get\u0020the\u0020activity\u0020handle,\u0020used\u0020to\u0020build\u0020the\u0020log\u0020type",
+            "url": "classes/Ryssbowh-Activity-recorders-NeoBlocks.html#method_getActivityHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\NeoBlocks\u003A\u003AgetTrackedFieldNames\u0028\u0029",
+            "name": "getTrackedFieldNames",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-NeoBlocks.html#method_getTrackedFieldNames"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\NeoBlocks\u003A\u003AgetDescriptiveFieldName\u0028\u0029",
+            "name": "getDescriptiveFieldName",
+            "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
+            "url": "classes/Ryssbowh-Activity-recorders-NeoBlocks.html#method_getDescriptiveFieldName"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Plugins",
             "name": "Plugins",
             "summary": "",
@@ -4906,6 +5376,36 @@ Search.appendIndex(
             "summary": "Turn\u0020this\u0020record\u0020into\u0020a\u0020model",
             "url": "classes/Ryssbowh-Activity-records-ActivityLog.html#method_toModel"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters",
+            "name": "Exporters",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-services-Exporters.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003AgetAll\u0028\u0029",
+            "name": "getAll",
+            "summary": "Get\u0020all\u0020exporters,\u0020indexed\u0020by\u0020handle",
+            "url": "classes/Ryssbowh-Activity-services-Exporters.html#method_getAll"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003AgetByHandle\u0028\u0029",
+            "name": "getByHandle",
+            "summary": "Get\u0020an\u0020exporter\u0020by\u0020handle",
+            "url": "classes/Ryssbowh-Activity-services-Exporters.html#method_getByHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "Register\u0020exporters",
+            "url": "classes/Ryssbowh-Activity-services-Exporters.html#method_register"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003AEVENT_REGISTER",
+            "name": "EVENT_REGISTER",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-services-Exporters.html#constant_EVENT_REGISTER"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003A\u0024exporters",
+            "name": "exporters",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-services-Exporters.html#property_exporters"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\services\\FieldHandlers",
             "name": "FieldHandlers",
             "summary": "",
@@ -5201,6 +5701,16 @@ Search.appendIndex(
             "summary": "Get\u0020an\u0020element\u0020custom\u0020field\u0020values,\u0020returns\u0020an\u0020array\u0020of\u0020field\u0020handlers",
             "url": "classes/Ryssbowh-Activity-traits-ElementFields.html#method_getCustomFieldValues"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\traits\\NeoField",
+            "name": "NeoField",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-traits-NeoField.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\traits\\NeoField\u003A\u003AinitNeoField\u0028\u0029",
+            "name": "initNeoField",
+            "summary": "Register\u0020everything\u0020needed\u0020for\u0020Neo\u0020fields\u0020tracking",
+            "url": "classes/Ryssbowh-Activity-traits-NeoField.html#method_initNeoField"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\ProjectConfigFields",
             "name": "ProjectConfigFields",
             "summary": "",
@@ -5315,201 +5825,6 @@ Search.appendIndex(
             "name": "getLogs",
             "summary": "Get\u0020logs\u0020service",
             "url": "classes/Ryssbowh-Activity-twig-TwigActivity.html#method_getLogs"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter",
-            "name": "Exporter",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-base-Exporter.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetHandle\u0028\u0029",
-            "name": "getHandle",
-            "summary": "Get\u0020this\u0020exporter\u0027s\u0020handle",
-            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getHandle"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetLabel\u0028\u0029",
-            "name": "getLabel",
-            "summary": "Get\u0020this\u0020exporter\u0020label,\u0020will\u0020be\u0020shown\u0020on\u0020the\u0020backend\u0020dropdown",
-            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getLabel"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetExportContent\u0028\u0029",
-            "name": "getExportContent",
-            "summary": "Export\u0020some\u0020logs",
-            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getExportContent"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetExtension\u0028\u0029",
-            "name": "getExtension",
-            "summary": "Get\u0020the\u0020extension\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate\u0020\u0028without\u0020dot\u0029",
-            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getExtension"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\base\\Exporter\u003A\u003AgetMimeType\u0028\u0029",
-            "name": "getMimeType",
-            "summary": "Get\u0020the\u0020mime\u0020type\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate",
-            "url": "classes/Ryssbowh-Activity-base-Exporter.html#method_getMimeType"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController",
-            "name": "ExportController",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003AactionIndex\u0028\u0029",
-            "name": "actionIndex",
-            "summary": "Export\u0020activity\u0020logs\u0020to\u0020a\u0020file",
-            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#method_actionIndex"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003Aoptions\u0028\u0029",
-            "name": "options",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#method_options"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003AparseFilters\u0028\u0029",
-            "name": "parseFilters",
-            "summary": "Parse\u0020filters\u0020from\u0020options",
-            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#method_parseFilters"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024types",
-            "name": "types",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_types"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024dateFrom",
-            "name": "dateFrom",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_dateFrom"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024dateTo",
-            "name": "dateTo",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_dateTo"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024users",
-            "name": "users",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_users"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024name",
-            "name": "name",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_name"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\console\\controllers\\ExportController\u003A\u003A\u0024folder",
-            "name": "folder",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-console-controllers-ExportController.html#property_folder"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\controllers\\ExportController",
-            "name": "ExportController",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-controllers-ExportController.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\controllers\\ExportController\u003A\u003AactionIndex\u0028\u0029",
-            "name": "actionIndex",
-            "summary": "Index\u0020action",
-            "url": "classes/Ryssbowh-Activity-controllers-ExportController.html#method_actionIndex"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent",
-            "name": "RegisterExportersEvent",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent\u003A\u003Ainit\u0028\u0029",
-            "name": "init",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html#method_init"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent\u003A\u003AgetExporters\u0028\u0029",
-            "name": "getExporters",
-            "summary": "Get\u0020registered\u0020exporters",
-            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html#method_getExporters"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "Add\u0020a\u0020field\u0020handler\u0020to\u0020register",
-            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html#method_add"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterExportersEvent\u003A\u003A\u0024_exporters",
-            "name": "_exporters",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-events-RegisterExportersEvent.html#property__exporters"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exceptions\\ExporterException",
-            "name": "ExporterException",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-exceptions-ExporterException.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exceptions\\ExporterException\u003A\u003Aregistered\u0028\u0029",
-            "name": "registered",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-exceptions-ExporterException.html#method_registered"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exceptions\\ExporterException\u003A\u003AnoHandle\u0028\u0029",
-            "name": "noHandle",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-exceptions-ExporterException.html#method_noHandle"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf",
-            "name": "Pdf",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetHandle\u0028\u0029",
-            "name": "getHandle",
-            "summary": "Get\u0020this\u0020exporter\u0027s\u0020handle",
-            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getHandle"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetLabel\u0028\u0029",
-            "name": "getLabel",
-            "summary": "Get\u0020this\u0020exporter\u0020label,\u0020will\u0020be\u0020shown\u0020on\u0020the\u0020backend\u0020dropdown",
-            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getLabel"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetExportContent\u0028\u0029",
-            "name": "getExportContent",
-            "summary": "Export\u0020some\u0020logs",
-            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getExportContent"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetMimeType\u0028\u0029",
-            "name": "getMimeType",
-            "summary": "Get\u0020the\u0020mime\u0020type\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate",
-            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getMimeType"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Pdf\u003A\u003AgetExtension\u0028\u0029",
-            "name": "getExtension",
-            "summary": "Get\u0020the\u0020extension\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate\u0020\u0028without\u0020dot\u0029",
-            "url": "classes/Ryssbowh-Activity-exporters-Pdf.html#method_getExtension"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text",
-            "name": "Text",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-exporters-Text.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetHandle\u0028\u0029",
-            "name": "getHandle",
-            "summary": "Get\u0020this\u0020exporter\u0027s\u0020handle",
-            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getHandle"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetLabel\u0028\u0029",
-            "name": "getLabel",
-            "summary": "Get\u0020this\u0020exporter\u0020label,\u0020will\u0020be\u0020shown\u0020on\u0020the\u0020backend\u0020dropdown",
-            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getLabel"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetExportContent\u0028\u0029",
-            "name": "getExportContent",
-            "summary": "Export\u0020some\u0020logs",
-            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getExportContent"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetMimeType\u0028\u0029",
-            "name": "getMimeType",
-            "summary": "Get\u0020the\u0020mime\u0020type\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate",
-            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getMimeType"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetExtension\u0028\u0029",
-            "name": "getExtension",
-            "summary": "Get\u0020the\u0020extension\u0020of\u0020the\u0020file\u0020this\u0020exporter\u0020will\u0020generate\u0020\u0028without\u0020dot\u0029",
-            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getExtension"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\exporters\\Text\u003A\u003AgetUserName\u0028\u0029",
-            "name": "getUserName",
-            "summary": "User\u0020name\u0020getter",
-            "url": "classes/Ryssbowh-Activity-exporters-Text.html#method_getUserName"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Money",
             "name": "Money",
@@ -5775,36 +6090,6 @@ Search.appendIndex(
             "name": "getDescriptiveFieldName",
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-ImageTransforms.html#method_getDescriptiveFieldName"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters",
-            "name": "Exporters",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-services-Exporters.html"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003AgetAll\u0028\u0029",
-            "name": "getAll",
-            "summary": "Get\u0020all\u0020exporters,\u0020indexed\u0020by\u0020handle",
-            "url": "classes/Ryssbowh-Activity-services-Exporters.html#method_getAll"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003AgetByHandle\u0028\u0029",
-            "name": "getByHandle",
-            "summary": "Get\u0020an\u0020exporter\u0020by\u0020handle",
-            "url": "classes/Ryssbowh-Activity-services-Exporters.html#method_getByHandle"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003Aregister\u0028\u0029",
-            "name": "register",
-            "summary": "Register\u0020exporters",
-            "url": "classes/Ryssbowh-Activity-services-Exporters.html#method_register"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003AEVENT_REGISTER",
-            "name": "EVENT_REGISTER",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-services-Exporters.html#constant_EVENT_REGISTER"
-        },                {
-            "fqsen": "\\Ryssbowh\\Activity\\services\\Exporters\u003A\u003A\u0024exporters",
-            "name": "exporters",
-            "summary": "",
-            "url": "classes/Ryssbowh-Activity-services-Exporters.html#property_exporters"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\TinyMceField",
             "name": "TinyMceField",
