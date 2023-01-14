@@ -4361,6 +4361,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-Settings.html#property_autoDeleteLogsThreshold"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003A\u0024showUsersFullName",
+            "name": "showUsersFullName",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-Settings.html#property_showUsersFullName"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003A\u0024ignoreRules",
             "name": "ignoreRules",
             "summary": "",
