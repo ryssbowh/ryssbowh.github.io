@@ -96,6 +96,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-Activity.html#property_hasCpSection"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\Activity\u003A\u003A\u0024twigContext",
+            "name": "twigContext",
+            "summary": "The\u0020context\u0020used\u0020to\u0020render\u0020logs,\u0020can\u0020be\u0020\u0027web\u0027\u0020or\u0020\u0027export\u0027",
+            "url": "classes/Ryssbowh-Activity-Activity.html#property_twigContext"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\assets\\ActivityAssets",
             "name": "ActivityAssets",
             "summary": "",
@@ -445,6 +450,11 @@ Search.appendIndex(
             "name": "data",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-base-logs-ActivityLog.html#property_data"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\logs\\ActivityLog\u003A\u003A\u0024ip",
+            "name": "ip",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-base-logs-ActivityLog.html#property_ip"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\base\\logs\\ActivityLog\u003A\u003A\u0024dateCreated",
             "name": "dateCreated",
@@ -1415,6 +1425,21 @@ Search.appendIndex(
             "name": "safeDown",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-migrations-m221026-053038-ChangedRedactorHandler.html#method_safeDown"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\migrations\\m230202_180318_AddIPField",
+            "name": "m230202_180318_AddIPField",
+            "summary": "m230202_180318_AddIPField\u0020migration.",
+            "url": "classes/Ryssbowh-Activity-migrations-m230202-180318-AddIPField.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\migrations\\m230202_180318_AddIPField\u003A\u003AsafeUp\u0028\u0029",
+            "name": "safeUp",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-migrations-m230202-180318-AddIPField.html#method_safeUp"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\migrations\\m230202_180318_AddIPField\u003A\u003AsafeDown\u0028\u0029",
+            "name": "safeDown",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-migrations-m230202-180318-AddIPField.html#method_safeDown"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\ChangedField",
             "name": "ChangedField",
@@ -4366,6 +4391,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-Settings.html#property_showUsersFullName"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003A\u0024showUserIP",
+            "name": "showUserIP",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-Settings.html#property_showUserIP"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003A\u0024ignoreRules",
             "name": "ignoreRules",
             "summary": "",
@@ -5826,10 +5856,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-twig-TwigActivity.html"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\twig\\TwigActivity\u003A\u003AgetContext\u0028\u0029",
+            "name": "getContext",
+            "summary": "Get\u0020the\u0020current\u0020twig\u0020context,\u0020can\u0020be\u0020\u0027web\u0027\u0020or\u0020\u0027export\u0027",
+            "url": "classes/Ryssbowh-Activity-twig-TwigActivity.html#method_getContext"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\twig\\TwigActivity\u003A\u003AgetLogs\u0028\u0029",
             "name": "getLogs",
             "summary": "Get\u0020logs\u0020service",
             "url": "classes/Ryssbowh-Activity-twig-TwigActivity.html#method_getLogs"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\twig\\TwigActivity\u003A\u003AshowUserIP\u0028\u0029",
+            "name": "showUserIP",
+            "summary": "Show\u0020user\u0020IPs",
+            "url": "classes/Ryssbowh-Activity-twig-TwigActivity.html#method_showUserIP"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Money",
             "name": "Money",

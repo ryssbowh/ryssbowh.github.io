@@ -311,6 +311,11 @@ Search.appendIndex(
             "summary": "Resend\u0020email\u0020action",
             "url": "classes/Ryssbowh-CraftEmails-controllers-CpEmailsController.html#method_actionResend"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\controllers\\CpEmailsController\u003A\u003AactionReinstall\u0028\u0029",
+            "name": "actionReinstall",
+            "summary": "Reinstall\u0020all\u0020emails",
+            "url": "classes/Ryssbowh-CraftEmails-controllers-CpEmailsController.html#method_actionReinstall"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\controllers\\CpEmailsController\u003A\u003AeditContent\u0028\u0029",
             "name": "editContent",
             "summary": "Edit\u0020system\u0020message",
@@ -416,6 +421,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-Emails.html#method_getCpNavItem"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\Emails\u003A\u003AregisterPluginEvents\u0028\u0029",
+            "name": "registerPluginEvents",
+            "summary": "Register\u0020plugins\u0020events",
+            "url": "classes/Ryssbowh-CraftEmails-Emails.html#method_registerPluginEvents"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\Emails\u003A\u003AregisterBehaviors\u0028\u0029",
             "name": "registerBehaviors",
             "summary": "Register\u0020behaviors",
@@ -486,15 +496,15 @@ Search.appendIndex(
             "summary": "Register\u0020cp\u0020routes",
             "url": "classes/Ryssbowh-CraftEmails-Emails.html#method_registerCpRoutes"
         },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\Emails\u003A\u003AafterInstall\u0028\u0029",
-            "name": "afterInstall",
-            "summary": "After\u0020theme\u0020is\u0020installed,\u0020creates\u0020system\u0020emails.",
-            "url": "classes/Ryssbowh-CraftEmails-Emails.html#method_afterInstall"
-        },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\Emails\u003A\u003AafterUninstall\u0028\u0029",
             "name": "afterUninstall",
-            "summary": "Remove\u0020all\u0020config\u0020after\u0020uninstall",
+            "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-Emails.html#method_afterUninstall"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\Emails\u003A\u003AafterInstall\u0028\u0029",
+            "name": "afterInstall",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-Emails.html#method_afterInstall"
         },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\Emails\u003A\u003A\u0024plugin",
             "name": "plugin",
@@ -835,6 +845,21 @@ Search.appendIndex(
             "name": "shot",
             "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-jobs-EmailShotJob.html#property_shot"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\jobs\\ReinstallJob",
+            "name": "ReinstallJob",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-jobs-ReinstallJob.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\jobs\\ReinstallJob\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-jobs-ReinstallJob.html#method_execute"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\jobs\\ReinstallJob\u003A\u003AdefaultDescription\u0028\u0029",
+            "name": "defaultDescription",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-jobs-ReinstallJob.html#method_defaultDescription"
         },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\m220109_090357_Version11Changes",
             "name": "m220109_090357_Version11Changes",
@@ -1811,6 +1836,11 @@ Search.appendIndex(
             "summary": "Get\u0020Email\u0020by\u0020uid",
             "url": "classes/Ryssbowh-CraftEmails-services-EmailsService.html#method_getByUid"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\services\\EmailsService\u003A\u003AgetAllCustoms\u0028\u0029",
+            "name": "getAllCustoms",
+            "summary": "Get\u0020all\u0020custom\u0020emails",
+            "url": "classes/Ryssbowh-CraftEmails-services-EmailsService.html#method_getAllCustoms"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\services\\EmailsService\u003A\u003AgetByKey\u0028\u0029",
             "name": "getByKey",
             "summary": "Get\u0020email\u0020by\u0020key",
@@ -1880,6 +1910,11 @@ Search.appendIndex(
             "name": "triggerEvent",
             "summary": "Trigger\u0020an\u0020event",
             "url": "classes/Ryssbowh-CraftEmails-services-EmailsService.html#method_triggerEvent"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\services\\EmailsService\u003A\u003AisInProjectConfig\u0028\u0029",
+            "name": "isInProjectConfig",
+            "summary": "Does\u0020an\u0020email\u0020key\u0020exist\u0020in\u0020project\u0020config\u0020files",
+            "url": "classes/Ryssbowh-CraftEmails-services-EmailsService.html#method_isInProjectConfig"
         },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\services\\EmailsService\u003A\u003ACONFIG_KEY",
             "name": "CONFIG_KEY",
