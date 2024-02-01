@@ -21,9 +21,29 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-models-Settings.html"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003AdefineRules\u0028\u0029",
+            "name": "defineRules",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#method_defineRules"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003AgetWysiwygOptions\u0028\u0029",
+            "name": "getWysiwygOptions",
+            "summary": "Get\u0020all\u0020defined\u0020redactor\u0020configuration\u0020files",
+            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#method_getWysiwygOptions"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003AwysiwygEditorIsValid\u0028\u0029",
+            "name": "wysiwygEditorIsValid",
+            "summary": "Is\u0020a\u0020wysiwyg\u0020editor\u0020valid",
+            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#method_wysiwygEditorIsValid"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003AgetRedactorConfigOptions\u0028\u0029",
             "name": "getRedactorConfigOptions",
-            "summary": "Get\u0020all\u0020defined\u0020redactor\u0020configuration\u0020files",
+            "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#method_getRedactorConfigOptions"
         },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003A\u0024menuItemName",
@@ -45,6 +65,11 @@ Search.appendIndex(
             "name": "mailchimpCacheDuration",
             "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#property_mailchimpCacheDuration"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Settings\u003A\u003A\u0024wysiwygEditor",
+            "name": "wysiwygEditor",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-models-Settings.html#property_wysiwygEditor"
         },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\assets\\BaseAssetBundle",
             "name": "BaseAssetBundle",
@@ -200,6 +225,11 @@ Search.appendIndex(
             "name": "redactorInput",
             "summary": "Get\u0020redactor\u0020input",
             "url": "classes/Ryssbowh-CraftEmails-behaviors-MessageBehavior.html#method_redactorInput"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\behaviors\\MessageBehavior\u003A\u003AckeditorInput\u0028\u0029",
+            "name": "ckeditorInput",
+            "summary": "Get\u0020ckeditor\u0020input",
+            "url": "classes/Ryssbowh-CraftEmails-behaviors-MessageBehavior.html#method_ckeditorInput"
         },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\behaviors\\MessageBehavior\u003A\u003A_parsedBody\u0028\u0029",
             "name": "_parsedBody",
@@ -500,11 +530,6 @@ Search.appendIndex(
             "name": "afterUninstall",
             "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-Emails.html#method_afterUninstall"
-        },                {
-            "fqsen": "\\Ryssbowh\\CraftEmails\\Emails\u003A\u003AafterInstall\u0028\u0029",
-            "name": "afterInstall",
-            "summary": "",
-            "url": "classes/Ryssbowh-CraftEmails-Emails.html#method_afterInstall"
         },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\Emails\u003A\u003A\u0024plugin",
             "name": "plugin",
@@ -891,6 +916,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-migrations-m220131-093120-RemoveTestEmail.html#method_safeDown"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\m230721_035705_AddCkEditorConfigField",
+            "name": "m230721_035705_AddCkEditorConfigField",
+            "summary": "m230721_035705_AddCkEditorConfigField\u0020migration.",
+            "url": "classes/Ryssbowh-CraftEmails-migrations-m230721-035705-AddCkEditorConfigField.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\m230721_035705_AddCkEditorConfigField\u003A\u003AsafeUp\u0028\u0029",
+            "name": "safeUp",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-migrations-m230721-035705-AddCkEditorConfigField.html#method_safeUp"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\migrations\\m230721_035705_AddCkEditorConfigField\u003A\u003AsafeDown\u0028\u0029",
+            "name": "safeDown",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-migrations-m230721-035705-AddCkEditorConfigField.html#method_safeDown"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\models\\actions\\SendEmail",
             "name": "SendEmail",
             "summary": "",
@@ -1045,6 +1085,11 @@ Search.appendIndex(
             "name": "redactorConfig",
             "summary": "",
             "url": "classes/Ryssbowh-CraftEmails-models-Email.html#property_redactorConfig"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Email\u003A\u003A\u0024ckeConfig",
+            "name": "ckeConfig",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftEmails-models-Email.html#property_ckeConfig"
         },                {
             "fqsen": "\\Ryssbowh\\CraftEmails\\models\\Email\u003A\u003A\u0024system",
             "name": "system",

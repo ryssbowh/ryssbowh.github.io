@@ -4146,6 +4146,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-users-UserAssignedGroups.html"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserAssignedGroups\u003A\u003AsetRemovedGroups\u0028\u0029",
+            "name": "setRemovedGroups",
+            "summary": "Removed\u0020groups\u0020setter",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserAssignedGroups.html#method_setRemovedGroups"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserAssignedGroups\u003A\u003AsetNewGroups\u0028\u0029",
+            "name": "setNewGroups",
+            "summary": "New\u0020groups\u0020setter",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserAssignedGroups.html#method_setNewGroups"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserAssignedGroups\u003A\u003AgetTitle\u0028\u0029",
             "name": "getTitle",
             "summary": "",
@@ -4155,6 +4165,11 @@ Search.appendIndex(
             "name": "getDescription",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-users-UserAssignedGroups.html#method_getDescription"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserAssignedGroups\u003A\u003AgetGroupNames\u0028\u0029",
+            "name": "getGroupNames",
+            "summary": "Get\u0020group\u0020names\u0020from\u0020an\u0020array\u0020of\u0020data",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserAssignedGroups.html#method_getGroupNames"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserCreated",
             "name": "UserCreated",
@@ -5441,10 +5456,10 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020activity\u0020handle,\u0020used\u0020to\u0020build\u0020the\u0020log\u0020type",
             "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_getActivityHandle"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AgetGroupNames\u0028\u0029",
-            "name": "getGroupNames",
-            "summary": "Get\u0020the\u0020group\u0020names\u0020from\u0020an\u0020array\u0020of\u0020ids",
-            "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_getGroupNames"
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AgetGroupsData\u0028\u0029",
+            "name": "getGroupsData",
+            "summary": "Get\u0020the\u0020group\u0020data\u0020from\u0020an\u0020array\u0020of\u0020ids",
+            "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_getGroupsData"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AgetSavedActivityType\u0028\u0029",
             "name": "getSavedActivityType",
@@ -6010,6 +6025,11 @@ Search.appendIndex(
             "name": "showUserIP",
             "summary": "Show\u0020user\u0020IPs",
             "url": "classes/Ryssbowh-Activity-twig-TwigActivity.html#method_showUserIP"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\twig\\TwigActivity\u003A\u003AelementValue\u0028\u0029",
+            "name": "elementValue",
+            "summary": "Return\u0020an\u0020element\u0020value",
+            "url": "classes/Ryssbowh-Activity-twig-TwigActivity.html#method_elementValue"
         },                {
             "fqsen": "\\",
             "name": "\\",

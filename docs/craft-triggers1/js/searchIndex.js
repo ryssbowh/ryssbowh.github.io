@@ -1121,6 +1121,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-CraftTriggers-models-conditions-Draft.html#property_isDraft"
         },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\ElementSite",
+            "name": "ElementSite",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-ElementSite.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\ElementSite\u003A\u003AdefineRules\u0028\u0029",
+            "name": "defineRules",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-ElementSite.html#method_defineRules"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\ElementSite\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-ElementSite.html#method_getName"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\ElementSite\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-ElementSite.html#method_getDescription"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\ElementSite\u003A\u003AgetHandle\u0028\u0029",
+            "name": "getHandle",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-ElementSite.html#method_getHandle"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\ElementSite\u003A\u003AhasConfig\u0028\u0029",
+            "name": "hasConfig",
+            "summary": "Does\u0020this\u0020condition\u0020have\u0020configuration",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-ElementSite.html#method_hasConfig"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\ElementSite\u003A\u003AconfigTemplate\u0028\u0029",
+            "name": "configTemplate",
+            "summary": "Get\u0020configuration\u0020template",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-ElementSite.html#method_configTemplate"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\ElementSite\u003A\u003AgetAllSites\u0028\u0029",
+            "name": "getAllSites",
+            "summary": "Get\u0020all\u0020sites",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-ElementSite.html#method_getAllSites"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\ElementSite\u003A\u003Acheck\u0028\u0029",
+            "name": "check",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-ElementSite.html#method_check"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\ElementSite\u003A\u003AdefineForTriggers\u0028\u0029",
+            "name": "defineForTriggers",
+            "summary": "Triggers\u0020for\u0020which\u0020this\u0020condition\u0020applies.\u0020null\u0020means\u0020all",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-ElementSite.html#method_defineForTriggers"
+        },                {
+            "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\ElementSite\u003A\u003A\u0024sites",
+            "name": "sites",
+            "summary": "",
+            "url": "classes/Ryssbowh-CraftTriggers-models-conditions-ElementSite.html#property_sites"
+        },                {
             "fqsen": "\\Ryssbowh\\CraftTriggers\\models\\conditions\\EntrySection",
             "name": "EntrySection",
             "summary": "",

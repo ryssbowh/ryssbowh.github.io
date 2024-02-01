@@ -786,6 +786,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#property_currentEvent"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\ConfigModelRecorder\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\ConfigModelRecorder\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-base-recorders-ConfigModelRecorder.html#property_deleteTypes"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\ElementsRecorder",
             "name": "ElementsRecorder",
             "summary": "",
@@ -855,6 +865,16 @@ Search.appendIndex(
             "name": "oldFields",
             "summary": "Keep\u0020track\u0020of\u0020old\u0020fields\u0020values",
             "url": "classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#property_oldFields"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\ElementsRecorder\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\ElementsRecorder\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-base-recorders-ElementsRecorder.html#property_deleteTypes"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\base\\recorders\\ProjectConfigRecorder",
             "name": "ProjectConfigRecorder",
@@ -2220,6 +2240,11 @@ Search.appendIndex(
             "name": "_dirty",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-FieldLayout.html#property__dirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\FieldLayout\u003A\u003A\u0024unpacked",
+            "name": "unpacked",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-FieldLayout.html#property_unpacked"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\FieldType",
             "name": "FieldType",
@@ -4046,6 +4071,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-users-UserAssignedGroups.html"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserAssignedGroups\u003A\u003AsetRemovedGroups\u0028\u0029",
+            "name": "setRemovedGroups",
+            "summary": "Removed\u0020groups\u0020setter",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserAssignedGroups.html#method_setRemovedGroups"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserAssignedGroups\u003A\u003AsetNewGroups\u0028\u0029",
+            "name": "setNewGroups",
+            "summary": "New\u0020groups\u0020setter",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserAssignedGroups.html#method_setNewGroups"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserAssignedGroups\u003A\u003AgetTitle\u0028\u0029",
             "name": "getTitle",
             "summary": "",
@@ -4055,6 +4090,11 @@ Search.appendIndex(
             "name": "getDescription",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-logs-users-UserAssignedGroups.html#method_getDescription"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserAssignedGroups\u003A\u003AgetGroupNames\u0028\u0029",
+            "name": "getGroupNames",
+            "summary": "Get\u0020group\u0020names\u0020from\u0020an\u0020array\u0020of\u0020data",
+            "url": "classes/Ryssbowh-Activity-models-logs-users-UserAssignedGroups.html#method_getGroupNames"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\users\\UserCreated",
             "name": "UserCreated",
@@ -4346,6 +4386,21 @@ Search.appendIndex(
             "summary": "Is\u0020a\u0020log\u0020type\u0020ignored\u0020by\u0020the\u0020set\u0020of\u0020rules",
             "url": "classes/Ryssbowh-Activity-models-Settings.html#method_isTypeIgnored"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003AgetDeleteTypesOptions\u0028\u0029",
+            "name": "getDeleteTypesOptions",
+            "summary": "Get\u0020the\u0020options\u0020for\u0020the\u0020activity\u0020types\u0020that\u0020can\u0020be\u0020deleted",
+            "url": "classes/Ryssbowh-Activity-models-Settings.html#method_getDeleteTypesOptions"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003AshouldDeleteActivity\u0028\u0029",
+            "name": "shouldDeleteActivity",
+            "summary": "Should\u0020a\u0020type\u0020of\u0020activity\u0020be\u0020deleted",
+            "url": "classes/Ryssbowh-Activity-models-Settings.html#method_shouldDeleteActivity"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003AEVENT_REGISTER_DELETE_TYPES_OPTIONS",
+            "name": "EVENT_REGISTER_DELETE_TYPES_OPTIONS",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-Settings.html#constant_EVENT_REGISTER_DELETE_TYPES_OPTIONS"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003A\u0024ignoreResave",
             "name": "ignoreResave",
             "summary": "",
@@ -4360,6 +4415,11 @@ Search.appendIndex(
             "name": "deleteLogsWithUser",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-Settings.html#property_deleteLogsWithUser"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003A\u0024deleteLogsWithSite",
+            "name": "deleteLogsWithSite",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-Settings.html#property_deleteLogsWithSite"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003A\u0024ignorePropagate",
             "name": "ignorePropagate",
@@ -4396,10 +4456,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-Settings.html#property_showUserIP"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-Settings.html#property_deleteTypes"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003A\u0024ignoreRules",
             "name": "ignoreRules",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-Settings.html#property_ignoreRules"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\Settings\u003A\u003A\u0024_deleteTypesOptions",
+            "name": "_deleteTypesOptions",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-Settings.html#property__deleteTypesOptions"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Application",
             "name": "Application",
@@ -4440,6 +4510,16 @@ Search.appendIndex(
             "name": "getFieldsValues",
             "summary": "Get\u0020an\u0020element\u0020field\u0020values,\u0020returns\u0020an\u0020array\u0020of\u0020field\u0020handlers",
             "url": "classes/Ryssbowh-Activity-recorders-Assets.html#method_getFieldsValues"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Assets\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Assets.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Assets\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Assets.html#property_deleteTypes"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\AssetSettings",
             "name": "AssetSettings",
@@ -4501,6 +4581,16 @@ Search.appendIndex(
             "summary": "Get\u0020an\u0020element\u0020field\u0020values,\u0020returns\u0020an\u0020array\u0020of\u0020field\u0020handlers",
             "url": "classes/Ryssbowh-Activity-recorders-Categories.html#method_getFieldsValues"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Categories\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Categories.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Categories\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Categories.html#property_deleteTypes"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\CategoryGroups",
             "name": "CategoryGroups",
             "summary": "",
@@ -4525,6 +4615,16 @@ Search.appendIndex(
             "name": "getDescriptiveFieldName",
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-CategoryGroups.html#method_getDescriptiveFieldName"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\CategoryGroups\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-CategoryGroups.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\CategoryGroups\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-CategoryGroups.html#property_deleteTypes"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Dashboard",
             "name": "Dashboard",
@@ -4591,6 +4691,16 @@ Search.appendIndex(
             "summary": "Get\u0020an\u0020element\u0020field\u0020values,\u0020returns\u0020an\u0020array\u0020of\u0020field\u0020handlers",
             "url": "classes/Ryssbowh-Activity-recorders-Entries.html#method_getFieldsValues"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Entries\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Entries.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Entries\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Entries.html#property_deleteTypes"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\EntryTypes",
             "name": "EntryTypes",
             "summary": "",
@@ -4626,6 +4736,16 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-EntryTypes.html#method_getDescriptiveFieldName"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\EntryTypes\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-EntryTypes.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\EntryTypes\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-EntryTypes.html#property_deleteTypes"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\FieldGroups",
             "name": "FieldGroups",
             "summary": "",
@@ -4650,6 +4770,16 @@ Search.appendIndex(
             "name": "getDescriptiveFieldName",
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-FieldGroups.html#method_getDescriptiveFieldName"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\FieldGroups\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-FieldGroups.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\FieldGroups\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-FieldGroups.html#property_deleteTypes"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Fields",
             "name": "Fields",
@@ -4695,6 +4825,16 @@ Search.appendIndex(
             "name": "getDescriptiveFieldName",
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-Fields.html#method_getDescriptiveFieldName"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Fields\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Fields.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Fields\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Fields.html#property_deleteTypes"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\GeneralSettings",
             "name": "GeneralSettings",
@@ -4760,6 +4900,16 @@ Search.appendIndex(
             "name": "getDescriptiveFieldName",
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-GlobalSets.html#method_getDescriptiveFieldName"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\GlobalSets\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-GlobalSets.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\GlobalSets\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-GlobalSets.html#property_deleteTypes"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Mailer",
             "name": "Mailer",
@@ -4976,6 +5126,16 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-Sections.html#method_getDescriptiveFieldName"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Sections\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Sections.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Sections\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Sections.html#property_deleteTypes"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\SiteGroups",
             "name": "SiteGroups",
             "summary": "",
@@ -5001,6 +5161,16 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-SiteGroups.html#method_getDescriptiveFieldName"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\SiteGroups\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-SiteGroups.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\SiteGroups\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-SiteGroups.html#property_deleteTypes"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Sites",
             "name": "Sites",
             "summary": "",
@@ -5010,6 +5180,11 @@ Search.appendIndex(
             "name": "init",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-recorders-Sites.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Sites\u003A\u003AonRemove\u0028\u0029",
+            "name": "onRemove",
+            "summary": "Saved\u0020a\u0020log\u0020on\u0020remove",
+            "url": "classes/Ryssbowh-Activity-recorders-Sites.html#method_onRemove"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Sites\u003A\u003AgetActivityHandle\u0028\u0029",
             "name": "getActivityHandle",
@@ -5030,6 +5205,16 @@ Search.appendIndex(
             "name": "getDescriptiveFieldName",
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-Sites.html#method_getDescriptiveFieldName"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Sites\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Sites.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Sites\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Sites.html#property_deleteTypes"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\SuperTableBlocks",
             "name": "SuperTableBlocks",
@@ -5086,6 +5271,16 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-Tags.html#method_getDescriptiveFieldName"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Tags\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Tags.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Tags\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Tags.html#property_deleteTypes"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups",
             "name": "UserGroups",
             "summary": "",
@@ -5126,10 +5321,15 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#method_getDescriptiveFieldName"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003A\u0024inited",
-            "name": "inited",
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
             "summary": "",
-            "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#property_inited"
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroups\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-UserGroups.html#property_deleteTypes"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\UserGroupsPermissions",
             "name": "UserGroupsPermissions",
@@ -5306,10 +5506,10 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020activity\u0020handle,\u0020used\u0020to\u0020build\u0020the\u0020log\u0020type",
             "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_getActivityHandle"
         },                {
-            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AgetGroupNames\u0028\u0029",
-            "name": "getGroupNames",
-            "summary": "Get\u0020the\u0020group\u0020names\u0020from\u0020an\u0020array\u0020of\u0020ids",
-            "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_getGroupNames"
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AgetGroupsData\u0028\u0029",
+            "name": "getGroupsData",
+            "summary": "Get\u0020the\u0020group\u0020data\u0020from\u0020an\u0020array\u0020of\u0020ids",
+            "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_getGroupsData"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003AgetSavedActivityType\u0028\u0029",
             "name": "getSavedActivityType",
@@ -5320,6 +5520,16 @@ Search.appendIndex(
             "name": "getFieldsValues",
             "summary": "Get\u0020an\u0020element\u0020field\u0020values,\u0020returns\u0020an\u0020array\u0020of\u0020field\u0020handlers",
             "url": "classes/Ryssbowh-Activity-recorders-Users.html#method_getFieldsValues"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Users.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Users.html#property_deleteTypes"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\Users\u003A\u003A\u0024permissions",
             "name": "permissions",
@@ -5375,6 +5585,16 @@ Search.appendIndex(
             "name": "getDescriptiveFieldName",
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-Volumes.html#method_getDescriptiveFieldName"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Volumes\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Volumes.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\Volumes\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-Volumes.html#property_deleteTypes"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\records\\ActivityChangedField",
             "name": "ActivityChangedField",
@@ -5470,6 +5690,11 @@ Search.appendIndex(
             "name": "getForElementField",
             "summary": "Get\u0020the\u0020field\u0020handler\u0020class\u0020for\u0020an\u0020element\u0020field\u0020class",
             "url": "classes/Ryssbowh-Activity-services-FieldHandlers.html#method_getForElementField"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\FieldHandlers\u003A\u003AgetHandlerForField\u0028\u0029",
+            "name": "getHandlerForField",
+            "summary": "Get\u0020a\u0020field\u0020handler\u0020instance\u0020for\u0020a\u0020field\u0020and\u0020an\u0020element",
+            "url": "classes/Ryssbowh-Activity-services-FieldHandlers.html#method_getHandlerForField"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\services\\FieldHandlers\u003A\u003AgetForProjectConfigPath\u0028\u0029",
             "name": "getForProjectConfigPath",
@@ -5605,6 +5830,16 @@ Search.appendIndex(
             "name": "deleteUserLogs",
             "summary": "Deletes\u0020all\u0020logs\u0020created\u0020by\u0020a\u0020user",
             "url": "classes/Ryssbowh-Activity-services-Logs.html#method_deleteUserLogs"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Logs\u003A\u003AdeleteSiteLogs\u0028\u0029",
+            "name": "deleteSiteLogs",
+            "summary": "Deletes\u0020all\u0020logs\u0020created\u0020for\u0020a\u0020site",
+            "url": "classes/Ryssbowh-Activity-services-Logs.html#method_deleteSiteLogs"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\services\\Logs\u003A\u003AdeleteLogsByType\u0028\u0029",
+            "name": "deleteLogsByType",
+            "summary": "Deletes\u0020all\u0020logs\u0020related\u0020to\u0020some\u0020types\u0020and\u0020related\u0020to\u0020a\u0020target",
+            "url": "classes/Ryssbowh-Activity-services-Logs.html#method_deleteLogsByType"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\services\\Logs\u003A\u003AdeleteAllLogs\u0028\u0029",
             "name": "deleteAllLogs",
@@ -5871,6 +6106,51 @@ Search.appendIndex(
             "summary": "Show\u0020user\u0020IPs",
             "url": "classes/Ryssbowh-Activity-twig-TwigActivity.html#method_showUserIP"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\twig\\TwigActivity\u003A\u003AelementValue\u0028\u0029",
+            "name": "elementValue",
+            "summary": "Return\u0020an\u0020element\u0020value",
+            "url": "classes/Ryssbowh-Activity-twig-TwigActivity.html#method_elementValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\twig\\TwigActivity\u003A\u003AgetVersion\u0028\u0029",
+            "name": "getVersion",
+            "summary": "returns\u0020the\u0020version\u0020of\u0020Activity",
+            "url": "classes/Ryssbowh-Activity-twig-TwigActivity.html#method_getVersion"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\twig\\TwigActivity\u003A\u003AversionCompare\u0028\u0029",
+            "name": "versionCompare",
+            "summary": "Compare\u0020a\u0020version\u0020to\u0020the\u0020Activity\u0020plugin\u0020version",
+            "url": "classes/Ryssbowh-Activity-twig-TwigActivity.html#method_versionCompare"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterDeleteTypesOptions",
+            "name": "RegisterDeleteTypesOptions",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-events-RegisterDeleteTypesOptions.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterDeleteTypesOptions\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-events-RegisterDeleteTypesOptions.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterDeleteTypesOptions\u003A\u003AgetOptions\u0028\u0029",
+            "name": "getOptions",
+            "summary": "Get\u0020registered\u0020options",
+            "url": "classes/Ryssbowh-Activity-events-RegisterDeleteTypesOptions.html#method_getOptions"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterDeleteTypesOptions\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "Add\u0020an\u0020option",
+            "url": "classes/Ryssbowh-Activity-events-RegisterDeleteTypesOptions.html#method_add"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterDeleteTypesOptions\u003A\u003AaddMany\u0028\u0029",
+            "name": "addMany",
+            "summary": "Add\u0020many\u0020options",
+            "url": "classes/Ryssbowh-Activity-events-RegisterDeleteTypesOptions.html#method_addMany"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\events\\RegisterDeleteTypesOptions\u003A\u003A\u0024_options",
+            "name": "_options",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-events-RegisterDeleteTypesOptions.html#property__options"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Money",
             "name": "Money",
             "summary": "",
@@ -5890,6 +6170,96 @@ Search.appendIndex(
             "name": "_getTargets",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Money.html#method__getTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy",
+            "name": "Vizy",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy\u003A\u003AgetDirty\u0028\u0029",
+            "name": "getDirty",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html#method_getDirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy\u003A\u003AisDirty\u0028\u0029",
+            "name": "isDirty",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html#method_isDirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy\u003A\u003A_getTargets\u0028\u0029",
+            "name": "_getTargets",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html#method__getTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy\u003A\u003AgetTemplate\u0028\u0029",
+            "name": "getTemplate",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html#method_getTemplate"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy\u003A\u003AgetDbValue\u0028\u0029",
+            "name": "getDbValue",
+            "summary": "Get\u0020the\u0020value\u0020to\u0020be\u0020stored\u0020in\u0020database.",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html#method_getDbValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy\u003A\u003AbuildDirty\u0028\u0029",
+            "name": "buildDirty",
+            "summary": "Build\u0020dirty\u0020values",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html#method_buildDirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy\u003A\u003AbuildValues\u0028\u0029",
+            "name": "buildValues",
+            "summary": "Build\u0020the\u0020value",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html#method_buildValues"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy\u003A\u003AbuildBlockValue\u0028\u0029",
+            "name": "buildBlockValue",
+            "summary": "Build\u0020the\u0020value\u0020for\u0020one\u0020block",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html#method_buildBlockValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy\u003A\u003AbuildDirtyBlocks\u0028\u0029",
+            "name": "buildDirtyBlocks",
+            "summary": "Build\u0020dirty\u0020nodes",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html#method_buildDirtyBlocks"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy\u003A\u003AmatchBlock\u0028\u0029",
+            "name": "matchBlock",
+            "summary": "Match\u0020a\u0020block\u0020with\u0020an\u0020array\u0020of\u0020old\u0020blocks.",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html#method_matchBlock"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\elements\\Vizy\u003A\u003A\u0024_dirty",
+            "name": "_dirty",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-elements-Vizy.html#property__dirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\CkEditorConfig",
+            "name": "CkEditorConfig",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-CkEditorConfig.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\CkEditorConfig\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-CkEditorConfig.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\CkEditorConfig\u003A\u003A_getTargets\u0028\u0029",
+            "name": "_getTargets",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-CkEditorConfig.html#method__getTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\CkEditorConfig\u003A\u003AhasFancyValue\u0028\u0029",
+            "name": "hasFancyValue",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-CkEditorConfig.html#method_hasFancyValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\CkEditorConfig\u003A\u003AgetConfigName\u0028\u0029",
+            "name": "getConfigName",
+            "summary": "Get\u0020config\u0020name",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-CkEditorConfig.html#method_getConfigName"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\FileSystem",
             "name": "FileSystem",
@@ -5940,6 +6310,66 @@ Search.appendIndex(
             "name": "_getTargets",
             "summary": "",
             "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-FsType.html#method__getTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VizyBlockConfig",
+            "name": "VizyBlockConfig",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VizyBlockConfig.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VizyBlockConfig\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VizyBlockConfig.html#method_init"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VizyBlockConfig\u003A\u003AgetTemplate\u0028\u0029",
+            "name": "getTemplate",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VizyBlockConfig.html#method_getTemplate"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VizyBlockConfig\u003A\u003AgetDirty\u0028\u0029",
+            "name": "getDirty",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VizyBlockConfig.html#method_getDirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VizyBlockConfig\u003A\u003AisDirty\u0028\u0029",
+            "name": "isDirty",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VizyBlockConfig.html#method_isDirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VizyBlockConfig\u003A\u003AgetDbValue\u0028\u0029",
+            "name": "getDbValue",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VizyBlockConfig.html#method_getDbValue"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VizyBlockConfig\u003A\u003AbuildDirty\u0028\u0029",
+            "name": "buildDirty",
+            "summary": "Build\u0020dirty\u0020values",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VizyBlockConfig.html#method_buildDirty"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VizyBlockConfig\u003A\u003AbuildDirtyGroup\u0028\u0029",
+            "name": "buildDirtyGroup",
+            "summary": "Build\u0020dirty\u0020group\u0020values",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VizyBlockConfig.html#method_buildDirtyGroup"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VizyBlockConfig\u003A\u003AbuildDirtyType\u0028\u0029",
+            "name": "buildDirtyType",
+            "summary": "Build\u0020dirty\u0020block\u0020type\u0020values",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VizyBlockConfig.html#method_buildDirtyType"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VizyBlockConfig\u003A\u003A_getTargets\u0028\u0029",
+            "name": "_getTargets",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VizyBlockConfig.html#method__getTargets"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VizyBlockConfig\u003A\u003AbuildValues\u0028\u0029",
+            "name": "buildValues",
+            "summary": "Build\u0020values",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VizyBlockConfig.html#method_buildValues"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\models\\fieldHandlers\\projectConfig\\VizyBlockConfig\u003A\u003A\u0024_dirty",
+            "name": "_dirty",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-models-fieldHandlers-projectConfig-VizyBlockConfig.html#property__dirty"
         },                {
             "fqsen": "\\Ryssbowh\\Activity\\models\\logs\\addresses\\AddressLayoutSaved",
             "name": "AddressLayoutSaved",
@@ -6111,6 +6541,16 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-FileSystems.html#method_getDescriptiveFieldName"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\FileSystems\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-FileSystems.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\FileSystems\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-FileSystems.html#property_deleteTypes"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\recorders\\ImageTransforms",
             "name": "ImageTransforms",
             "summary": "",
@@ -6136,6 +6576,26 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020config\u0020field\u0020name\u0020that\u0020describes\u0020what\u0027s\u0020being\u0020changed",
             "url": "classes/Ryssbowh-Activity-recorders-ImageTransforms.html#method_getDescriptiveFieldName"
         },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\ImageTransforms\u003A\u003A\u0024deleteTypesCategory",
+            "name": "deleteTypesCategory",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-ImageTransforms.html#property_deleteTypesCategory"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\recorders\\ImageTransforms\u003A\u003A\u0024deleteTypes",
+            "name": "deleteTypes",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-recorders-ImageTransforms.html#property_deleteTypes"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\traits\\CkeditorField",
+            "name": "CkeditorField",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-traits-CkeditorField.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\traits\\CkeditorField\u003A\u003AinitCkeditorField\u0028\u0029",
+            "name": "initCkeditorField",
+            "summary": "Register\u0020everything\u0020needed\u0020for\u0020Redactor\u0020fields\u0020tracking",
+            "url": "classes/Ryssbowh-Activity-traits-CkeditorField.html#method_initCkeditorField"
+        },                {
             "fqsen": "\\Ryssbowh\\Activity\\traits\\TinyMceField",
             "name": "TinyMceField",
             "summary": "",
@@ -6145,6 +6605,16 @@ Search.appendIndex(
             "name": "initTinyMceField",
             "summary": "Register\u0020everything\u0020needed\u0020for\u0020Tiny\u0020MCE\u0020fields\u0020tracking",
             "url": "classes/Ryssbowh-Activity-traits-TinyMceField.html#method_initTinyMceField"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\traits\\VizyField",
+            "name": "VizyField",
+            "summary": "",
+            "url": "classes/Ryssbowh-Activity-traits-VizyField.html"
+        },                {
+            "fqsen": "\\Ryssbowh\\Activity\\traits\\VizyField\u003A\u003AinitVizyField\u0028\u0029",
+            "name": "initVizyField",
+            "summary": "Register\u0020everything\u0020needed\u0020for\u0020Vizy\u0020fields\u0020tracking",
+            "url": "classes/Ryssbowh-Activity-traits-VizyField.html#method_initVizyField"
         },                {
             "fqsen": "\\",
             "name": "\\",
